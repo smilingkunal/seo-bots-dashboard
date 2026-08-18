@@ -1,0 +1,62 @@
+{
+  "last_updated": "2026-08-19T03:56:46+05:30",
+  "site": {
+    "domain": "weedistillery.com",
+    "site_url": "https://weedistillery.com/",
+    "ga4_property_id": "546660625",
+    "gbp_location_id": null
+  },
+  "bots": {
+    "seo-tracker": {
+      "status": "live",
+      "last_run": "2026-08-19T03:56:46+05:30",
+      "summary": {
+        "keywords_tracked": 2,
+        "your_best_rank": 1
+      }
+    },
+    "gsc-reader": {
+      "status": "live",
+      "last_run": "2026-08-19T03:51:16+05:30",
+      "summary": {
+        "queries_total": 25,
+        "avg_position": 12.4
+      }
+    },
+    "ga4-reader": {
+      "status": "pending",
+      "last_run": null,
+      "model": "haiku",
+      "risk": "read-only",
+      "summary": null
+    },
+    "seo-analyst": {
+      "status": "waiting",
+      "last_run": null,
+      "model": "sonnet",
+      "risk": "analysis-only",
+      "summary": null
+    },
+    "gbp-analyzer": {
+      "status": "pending",
+      "last_run": null,
+      "model": "haiku",
+      "risk": "read-only",
+      "summary": null
+    },
+    "gbp-improver": {
+      "status": "pending",
+      "last_run": null,
+      "model": "sonnet",
+      "risk": "approval-gated",
+      "summary": null
+    },
+    "dashboard": {
+      "status": "waiting",
+      "last_run": null,
+      "model": "sonnet",
+      "risk": "approval-gated",
+      "summary": null
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "last_updated": "2026-08-19T03:15:00+05:30",
+  "source": "Cross-correlated GSC + DataForSEO + (GA4 pending) + (GBP pending)",
+  "summary": {
+    "high_impact": 1,
+    "medium_impact": 1,
+    "low_impact": 1,
+    "total_opportunities": 3
+  },
+  "opportunities": [
+    {
+      "id": "opp-001",
+      "priority": "high",
+      "impact": "high",
+      "category": "geo_targeting",
+      "title": "Create dedicated Brampton landing page",
+      "context": "Query 'weed delivery brampton' has 36 monthly impressions but you're at position 24.8 — far below page 1. Brampton is a key market adjacent to your Mississauga base.",
+      "estimated_clicks_per_month": 24,
+      "estimated_revenue_impact": "$3-5K/mo if conversion rate is 3%",
+      "action": "Build /weed-delivery-brampton with local schema, Brampton-specific keywords, and 500+ words of unique content",
+      "effort": "high",
+      "reversible": true,
+      "approval_required": true,
+      "suggested_by": "seo-analyst",
+      "date": "2026-08-19"
+    },
+    {
+      "id": "opp-002",
+      "priority": "medium",
+      "impact": "medium",
+      "category": "title_optimization",
+      "title": "Rewrite product page titles for '2000mg edibles' keywords",
+      "context": "Multiple '2000 mg *' queries rank position 6-11 with 0% CTR. Title tags likely don't match search intent. You're visible but not clickable.",
+      "estimated_clicks_per_month": 8,
+      "estimated_revenue_impact": "$1-2K/mo",
+      "action": "Update top 5 product page titles to lead with '2000mg THC Edibles' and include price/benefit",
+      "effort": "low",
+      "reversible": true,
+      "approval_required": true,
+      "suggested_by": "seo-analyst",
+      "date": "2026-08-19"
+    },
+    {
+      "id": "opp-003",
+      "priority": "low",
+      "impact": "low",
+      "category": "content_gap",
+      "title": "Build backlinks for 'top tier edibles' cluster",
+      "context": "You rank #7 for 'top tier edibles' with 4 monthly impressions. The query has commercial intent — opportunity to push to top 3.",
+      "estimated_clicks_per_month": 4,
+      "estimated_revenue_impact": "$500-1K/mo",
+      "action": "Outreach to 5 cannabis review sites for backlinks; add 'top tier' content section to product pages",
+      "effort": "medium",
+      "reversible": true,
+      "approval_required": true,
+      "suggested_by": "seo-analyst",
+      "date": "2026-08-19"
+    }
+  ]
+}

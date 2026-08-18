@@ -1,0 +1,15 @@
+{
+  "last_updated": "2026-08-19T03:15:00+05:30",
+  "pending": [],
+  "approved": [],
+  "executed": [],
+  "rejected": [],
+  "reverted": [],
+  "summary": {
+    "total_pending": 0,
+    "total_approved": 0,
+    "total_executed": 0,
+    "total_reverted": 0
+  },
+  "note": "Approval queue starts empty. GBP Improver bot will populate this when running."
+}

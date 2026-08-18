@@ -1,0 +1,88 @@
+{
+  "last_updated": "2026-08-19T03:51:17+05:30",
+  "total_actions": 8,
+  "actions": [
+    {
+      "ts": 1787091500,
+      "action": "publish_post",
+      "bot": "gbp-improver",
+      "action_id": "publish_post:test-001",
+      "details": {
+        "result": "success"
+      }
+    },
+    {
+      "ts": "2026-08-19T03:00:00+05:30",
+      "action": "token_issued",
+      "bot": "gbp-oauth-flow",
+      "action_id": "oauth_flow_test",
+      "token": "apr_1787083011_0456e1",
+      "details": {
+        "ttl_minutes": 10,
+        "preview_len": 80
+      }
+    },
+    {
+      "ts": "2026-08-19T03:00:01+05:30",
+      "action": "token_consumed",
+      "bot": "gbp-oauth-flow",
+      "action_id": "oauth_flow_test",
+      "token": "apr_1787083011_0456e1",
+      "details": {
+        "result": "success"
+      }
+    },
+    {
+      "ts": "2026-08-19T03:05:00+05:30",
+      "action": "draft_rejected",
+      "bot": "cli",
+      "action_id": "draft-test-001",
+      "details": {
+        "reason": "user rejected"
+      }
+    },
+    {
+      "ts": "2026-08-19T03:10:00+05:30",
+      "action": "publish_post",
+      "bot": "gbp-improver",
+      "action_id": "publish_post:gbp-post-draft-test",
+      "token": "apr_1787083011_xxx",
+      "details": {
+        "draft_id": "gbp-post-draft-test",
+        "result": "success"
+      }
+    },
+    {
+      "ts": "2026-08-19T03:11:00+05:30",
+      "action": "publish_post_failed",
+      "bot": "gbp-improver",
+      "action_id": "publish_post:gbp-post-draft-002",
+      "token": "apr_1787083012_xxx",
+      "details": {
+        "error": "API timeout",
+        "result": "failure"
+      }
+    },
+    {
+      "ts": "2026-08-19T03:15:00+05:30",
+      "action": "token_revoked",
+      "bot": "cli",
+      "action_id": "test-token-revoked",
+      "details": {
+        "reason": "user changed mind"
+      }
+    },
+    {
+      "ts": "2026-08-19T03:15:30+05:30",
+      "action": "publish_post",
+      "bot": "gbp-improver",
+      "action_id": "publish_post:gbp-post-draft-real",
+      "token": "apr_1787083013_xxx",
+      "details": {
+        "draft_id": "gbp-post-draft-real",
+        "post_name": "accounts/123/locations/456/localPosts/789",
+        "result": "success"
+      }
+    }
+  ]
+}
