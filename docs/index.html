@@ -1,0 +1,1995 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SEO Bot Dashboard · weedistillery.com</title>
+<meta name="description" content="Live interactive dashboard for 7 SEO bots">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg-0: #020617;
+    --bg-1: #0f172a;
+    --bg-2: #1e293b;
+    --bg-3: #334155;
+    --text-0: #f8fafc;
+    --text-1: #cbd5e1;
+    --text-2: #94a3b8;
+    --text-3: #64748b;
+    --accent-cyan: #22d3ee;
+    --accent-emerald: #34d399;
+    --accent-violet: #a78bfa;
+    --accent-amber: #fbbf24;
+    --accent-rose: #fb7185;
+    --accent-orange: #fb923c;
+    --green: #10b981;
+    --yellow: #f59e0b;
+    --red: #ef4444;
+    --border: #1e293b;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    background: var(--bg-0);
+    color: var(--text-0);
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    min-height: 100vh;
+  }
+  body { padding: 0; }
+
+  /* Top bar */
+  .topbar {
+    background: var(--bg-1);
+    border-bottom: 1px solid var(--border);
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .brand { display: flex; align-items: center; gap: 0.75rem; }
+  .brand-mark {
+    width: 32px; height: 32px;
+    background: linear-gradient(135deg, var(--accent-cyan), var(--accent-violet));
+    border-radius: 8px;
+    display: grid; place-items: center;
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: 700;
+    color: var(--bg-0);
+    font-size: 16px;
+  }
+  .brand-text h1 { font-size: 1.125rem; font-weight: 600; }
+  .brand-text small {
+    color: var(--text-2);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+  }
+  .topbar-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    color: var(--text-2);
+  }
+  .pulse {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--green);
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.6; transform: scale(0.85); }
+  }
+
+  /* Layout */
+  .layout {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    min-height: calc(100vh - 70px);
+  }
+  .sidebar {
+    background: var(--bg-1);
+    border-right: 1px solid var(--border);
+    padding: 1.5rem 0;
+  }
+  .sidebar-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-3);
+    padding: 0 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .nav { list-style: none; padding: 0; }
+  .nav-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    border-left: 3px solid transparent;
+    transition: all 0.15s;
+    color: var(--text-1);
+    font-size: 13px;
+  }
+  .nav-item:hover { background: var(--bg-2); color: var(--text-0); }
+  .nav-item.active {
+    background: var(--bg-2);
+    border-left-color: var(--accent-cyan);
+    color: var(--accent-cyan);
+    font-weight: 600;
+  }
+  .nav-icon {
+    width: 16px; height: 16px;
+    border-radius: 4px;
+    flex-shrink: 0;
+  }
+  .nav-badge {
+    margin-left: auto;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    padding: 1px 6px;
+    border-radius: 8px;
+    background: var(--bg-3);
+    color: var(--text-1);
+  }
+  .nav-badge.live { background: var(--green); color: var(--bg-0); font-weight: 600; }
+  .nav-badge.pending { background: var(--yellow); color: var(--bg-0); }
+
+  /* Main */
+  main { padding: 2rem; max-width: 100%; overflow-x: hidden; }
+  .tab { display: none; }
+  .tab.active { display: block; }
+
+  .tab-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border);
+    flex-wrap: wrap;
+  }
+  .tab-header h2 { font-size: 1.5rem; font-weight: 600; }
+  .tab-header p {
+    color: var(--text-2);
+    font-size: 13px;
+    margin-top: 0.25rem;
+    width: 100%;
+  }
+  .header-pill {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    padding: 4px 10px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    color: var(--text-2);
+    margin-left: auto;
+  }
+  .header-pill.live { color: var(--green); border-color: var(--green); }
+  .header-pill.pending { color: var(--yellow); border-color: var(--yellow); }
+  .header-pill.waiting { color: var(--text-3); }
+
+  /* Toolbar */
+  .toolbar {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .toolbar input,
+  .toolbar select {
+    background: var(--bg-1);
+    border: 1px solid var(--border);
+    color: var(--text-1);
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    font-size: 13px;
+    font-family: 'JetBrains Mono', monospace;
+  }
+  .toolbar input:focus,
+  .toolbar select:focus {
+    outline: none;
+    border-color: var(--accent-cyan);
+  }
+  .toolbar input[type="search"] {
+    min-width: 220px;
+  }
+
+  /* Cards */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  .stat-card {
+    background: var(--bg-1);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.25rem;
+    cursor: pointer;
+    transition: all 0.15s;
+    position: relative;
+  }
+  .stat-card:hover {
+    background: var(--bg-2);
+    transform: translateY(-1px);
+  }
+  .stat-card .stat-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-3);
+    margin-bottom: 0.5rem;
+  }
+  .stat-card .stat-value {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.875rem;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  .stat-card .stat-delta {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    margin-top: 0.25rem;
+    color: var(--text-2);
+  }
+  .stat-card .stat-delta.up { color: var(--green); }
+  .stat-card .stat-delta.down { color: var(--red); }
+  .stat-card .sparkline {
+    margin-top: 0.5rem;
+    height: 32px;
+  }
+  .stat-card .sparkline path { stroke: var(--accent-cyan); fill: none; stroke-width: 1.5; }
+  .stat-card .sparkline path.area { fill: rgba(34, 211, 238, 0.1); stroke: none; }
+
+  /* Tables */
+  .panel {
+    background: var(--bg-1);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+  }
+  .panel-header {
+    padding: 1rem 1.25rem;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .panel-header h3 { font-size: 0.875rem; font-weight: 600; }
+  .panel-body { padding: 0; }
+  .panel-body.padded { padding: 1.25rem; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+  }
+  th, td {
+    text-align: left;
+    padding: 0.75rem 1.25rem;
+    border-bottom: 1px solid var(--border);
+  }
+  th {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-3);
+    background: var(--bg-2);
+    font-weight: 600;
+    position: sticky;
+    top: 0;
+  }
+  tr:last-child td { border-bottom: none; }
+  tr.clickable { cursor: pointer; transition: background 0.1s; }
+  tr.clickable:hover { background: var(--bg-2); }
+  tr.clickable:hover td { color: var(--accent-cyan); }
+  td.num { font-family: 'JetBrains Mono', monospace; text-align: right; }
+  td.mono { font-family: 'JetBrains Mono', monospace; font-size: 12px; }
+  td.actions { white-space: nowrap; }
+
+  /* Tags */
+  .tag {
+    display: inline-block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    padding: 2px 8px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .tag.high { background: rgba(239, 68, 68, 0.15); color: var(--red); }
+  .tag.medium { background: rgba(245, 158, 11, 0.15); color: var(--yellow); }
+  .tag.low { background: rgba(100, 116, 139, 0.15); color: var(--text-2); }
+  .tag.live { background: rgba(16, 185, 129, 0.15); color: var(--green); }
+  .tag.pending { background: rgba(245, 158, 11, 0.15); color: var(--yellow); }
+  .tag.waiting { background: rgba(100, 116, 139, 0.15); color: var(--text-3); }
+  .tag.success { background: rgba(16, 185, 129, 0.15); color: var(--green); }
+  .tag.failure { background: rgba(239, 68, 68, 0.15); color: var(--red); }
+  .tag.revoked { background: rgba(251, 113, 133, 0.15); color: var(--accent-rose); }
+
+  /* Buttons */
+  .btn {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    padding: 0.5rem 0.9rem;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: var(--bg-2);
+    color: var(--text-1);
+    cursor: pointer;
+    transition: all 0.15s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  .btn:hover { background: var(--bg-3); color: var(--text-0); }
+  .btn.primary { background: var(--accent-cyan); color: var(--bg-0); border-color: var(--accent-cyan); font-weight: 600; }
+  .btn.primary:hover { background: #67e8f9; color: var(--bg-0); }
+  .btn.success { background: var(--green); color: var(--bg-0); border-color: var(--green); }
+  .btn.danger { background: var(--red); color: var(--bg-0); border-color: var(--red); }
+  .btn.amber { background: var(--accent-amber); color: var(--bg-0); border-color: var(--accent-amber); }
+  .btn.small { padding: 0.25rem 0.55rem; font-size: 11px; }
+  .btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+  /* Opportunity cards */
+  .opp-grid { display: grid; gap: 1rem; }
+  .opp-card {
+    background: var(--bg-1);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+    border-left: 4px solid var(--accent-cyan);
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .opp-card:hover { background: var(--bg-2); transform: translateX(2px); }
+  .opp-card.high { border-left-color: var(--red); }
+  .opp-card.medium { border-left-color: var(--yellow); }
+  .opp-card.low { border-left-color: var(--text-3); }
+  .opp-head { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; }
+  .opp-head h4 { font-size: 1rem; font-weight: 600; }
+  .opp-context {
+    color: var(--text-2);
+    font-size: 13px;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    background: var(--bg-2);
+    border-radius: 6px;
+    border-left: 3px solid var(--accent-violet);
+  }
+  .opp-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  .opp-stat { background: var(--bg-2); padding: 0.75rem; border-radius: 6px; }
+  .opp-stat-label {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: var(--text-3);
+  }
+  .opp-stat-value {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.125rem;
+    font-weight: 700;
+    margin-top: 0.25rem;
+  }
+  .opp-action {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 12px;
+    padding: 0.75rem;
+    background: var(--bg-2);
+    border-radius: 6px;
+    color: var(--text-1);
+    margin-bottom: 0.75rem;
+  }
+  .opp-footer {
+    display: flex;
+    gap: 0.5rem;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--text-3);
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  /* Approval queue */
+  .approval-row {
+    display: grid;
+    grid-template-columns: 90px 160px 1fr auto;
+    gap: 1rem;
+    padding: 0.75rem 1.25rem;
+    border-bottom: 1px solid var(--border);
+    align-items: center;
+    font-size: 13px;
+  }
+  .approval-row:last-child { border-bottom: none; }
+  .approval-actions { display: flex; gap: 0.4rem; }
+  .approval-actions .btn { padding: 0.3rem 0.6rem; font-size: 11px; }
+
+  .empty-state {
+    padding: 3rem;
+    text-align: center;
+    color: var(--text-3);
+    font-size: 14px;
+  }
+  .empty-state.success { color: var(--green); }
+  .empty-state .icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    display: block;
+  }
+
+  /* Modal */
+  .modal-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(4px);
+    z-index: 200;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  .modal-backdrop.active { display: flex; }
+  .modal {
+    background: var(--bg-1);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    max-width: 720px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  }
+  .modal-header {
+    padding: 1.25rem 1.5rem;
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .modal-header h3 { font-size: 1.125rem; font-weight: 600; }
+  .modal-close {
+    background: transparent;
+    border: none;
+    color: var(--text-2);
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+  }
+  .modal-close:hover { color: var(--text-0); }
+  .modal-body { padding: 1.5rem; }
+  .modal-body pre {
+    background: var(--bg-0);
+    padding: 1rem;
+    border-radius: 6px;
+    overflow-x: auto;
+    font-size: 12px;
+    line-height: 1.5;
+    color: var(--text-1);
+    margin: 0.5rem 0;
+  }
+  .modal-body .field {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 1rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .modal-body .field:last-child { border-bottom: none; }
+  .modal-body .field-label {
+    color: var(--text-3);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    text-transform: uppercase;
+  }
+  .modal-body .field-value {
+    color: var(--text-0);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+  }
+  .modal-footer {
+    padding: 1rem 1.5rem;
+    border-top: 1px solid var(--border);
+    display: flex;
+    gap: 0.5rem;
+    justify-content: flex-end;
+  }
+
+  /* Toast */
+  .toast-container {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 300;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .toast {
+    background: var(--bg-1);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--accent-cyan);
+    padding: 0.75rem 1rem;
+    border-radius: 6px;
+    font-size: 13px;
+    color: var(--text-1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    animation: slideIn 0.2s ease-out;
+    max-width: 320px;
+  }
+  .toast.success { border-left-color: var(--green); }
+  .toast.error { border-left-color: var(--red); }
+  @keyframes slideIn {
+    from { transform: translateX(20px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+  }
+
+  /* Chart */
+  .chart {
+    width: 100%;
+    height: 200px;
+    margin: 1rem 0;
+  }
+
+  /* Two-column layouts */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  @media (max-width: 1024px) {
+    .two-col { grid-template-columns: 1fr; }
+    .layout { grid-template-columns: 200px 1fr; }
+    .opp-stats { grid-template-columns: 1fr; }
+    .approval-row { grid-template-columns: 90px 1fr auto; }
+  }
+  @media (max-width: 700px) {
+    .layout { grid-template-columns: 1fr; }
+    .sidebar { display: none; }
+    .toolbar { flex-direction: column; align-items: stretch; }
+  }
+
+  /* Footer */
+  .footer {
+    padding: 1.5rem 2rem;
+    text-align: center;
+    color: var(--text-3);
+    font-size: 12px;
+    border-top: 1px solid var(--border);
+    margin-top: 3rem;
+  }
+  .footer code {
+    font-family: 'JetBrains Mono', monospace;
+    background: var(--bg-2);
+    padding: 1px 6px;
+    border-radius: 3px;
+    color: var(--accent-cyan);
+  }
+
+  /* Refresh button */
+  .refresh-btn {
+    background: var(--bg-2);
+    border: 1px solid var(--border);
+    color: var(--text-1);
+    padding: 0.4rem 0.75rem;
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+    font-family: 'JetBrains Mono', monospace;
+    transition: all 0.15s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+  .refresh-btn:hover { background: var(--bg-3); color: var(--text-0); }
+  .refresh-btn.loading { pointer-events: none; opacity: 0.6; }
+  .refresh-btn .spinner {
+    display: inline-block;
+    width: 10px; height: 10px;
+    border: 2px solid currentColor;
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* Highlight matched text */
+  .match-highlight { background: rgba(251, 191, 36, 0.25); padding: 1px 2px; border-radius: 2px; }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="brand">
+    <div class="brand-mark">SEO</div>
+    <div class="brand-text">
+      <h1>SEO Bot Dashboard</h1>
+      <small>weedistillery.com · <span id="last-update">—</span></small>
+    </div>
+  </div>
+  <div class="topbar-meta">
+    <span class="live-indicator"><span class="pulse"></span><span id="bot-count">0</span> bots active</span>
+    <button class="refresh-btn" id="refresh-btn" onclick="loadAllData(true)"><span id="refresh-icon">↻</span> <span id="refresh-label">Refresh</span></button>
+  </div>
+</div>
+
+<div class="layout">
+  <aside class="sidebar">
+    <div class="sidebar-title">Overview</div>
+    <ul class="nav">
+      <li class="nav-item active" data-tab="overview" onclick="switchTab('overview')">
+        <span class="nav-icon" style="background: var(--accent-cyan);"></span>
+        Overview
+      </li>
+      <li class="nav-item" data-tab="opportunities" onclick="switchTab('opportunities')">
+        <span class="nav-icon" style="background: var(--accent-amber);"></span>
+        Opportunities
+        <span class="nav-badge pending" id="badge-opportunities">3</span>
+      </li>
+      <li class="nav-item" data-tab="approvals" onclick="switchTab('approvals')">
+        <span class="nav-icon" style="background: var(--accent-rose);"></span>
+        Approvals
+        <span class="nav-badge" id="badge-approvals">0</span>
+      </li>
+    </ul>
+
+    <div class="sidebar-title" style="margin-top: 1.5rem;">Bots</div>
+    <ul class="nav">
+      <li class="nav-item" data-tab="seo-tracker" onclick="switchTab('seo-tracker')">
+        <span class="nav-icon" style="background: var(--accent-cyan);"></span>
+        SEO Rank Tracker
+        <span class="nav-badge live" id="badge-seo-tracker">live</span>
+      </li>
+      <li class="nav-item" data-tab="gsc-reader" onclick="switchTab('gsc-reader')">
+        <span class="nav-icon" style="background: var(--accent-emerald);"></span>
+        GSC Reader
+        <span class="nav-badge live" id="badge-gsc-reader">live</span>
+      </li>
+      <li class="nav-item" data-tab="ga4-reader" onclick="switchTab('ga4-reader')">
+        <span class="nav-icon" style="background: var(--accent-violet);"></span>
+        GA4 Reader
+        <span class="nav-badge pending" id="badge-ga4-reader">wait</span>
+      </li>
+      <li class="nav-item" data-tab="seo-analyst" onclick="switchTab('seo-analyst')">
+        <span class="nav-icon" style="background: var(--accent-amber);"></span>
+        SEO Analyst
+        <span class="nav-badge waiting" id="badge-seo-analyst">wait</span>
+      </li>
+      <li class="nav-item" data-tab="gbp-analyzer" onclick="switchTab('gbp-analyzer')">
+        <span class="nav-icon" style="background: var(--accent-orange);"></span>
+        GBP Analyzer
+        <span class="nav-badge pending" id="badge-gbp-analyzer">wait</span>
+      </li>
+      <li class="nav-item" data-tab="gbp-improver" onclick="switchTab('gbp-improver')">
+        <span class="nav-icon" style="background: var(--accent-rose);"></span>
+        GBP Improver
+        <span class="nav-badge pending" id="badge-gbp-improver">wait</span>
+      </li>
+    </ul>
+
+    <div class="sidebar-title" style="margin-top: 1.5rem;">Audit</div>
+    <ul class="nav">
+      <li class="nav-item" data-tab="audit" onclick="switchTab('audit')">
+        <span class="nav-icon" style="background: var(--text-2);"></span>
+        Audit Log
+      </li>
+    </ul>
+  </aside>
+
+  <main>
+    <!-- OVERVIEW TAB -->
+    <section class="tab active" id="tab-auto-overview">
+      <div class="tab-header">
+        <div>
+          <h2>Overview</h2>
+          <p>Click any card or row to see details · last data pull: <span id="overview-time">—</span></p>
+        </div>
+        <span class="header-pill live">live</span>
+      </div>
+
+      <div class="grid" id="overview-stats"></div>
+
+      <div class="toolbar">
+        <input type="search" id="bot-search" placeholder="Filter bots by name…" onkeyup="filterBotTable()">
+      </div>
+
+      <div class="panel">
+        <div class="panel-header">
+          <h3>Bot Fleet Status — click for details</h3>
+          <button class="btn" onclick="exportData('bots')">⤓ Export</button>
+        </div>
+        <div class="panel-body">
+          <table id="bots-table">
+            <thead>
+              <tr>
+                <th>Bot</th>
+                <th>Status</th>
+                <th>Risk</th>
+                <th>Model</th>
+                <th>Last Run</th>
+                <th>Summary</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="bots-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="two-col">
+        <div class="panel">
+          <div class="panel-header">
+            <h3>Top SEO Wins (auto-detected)</h3>
+          </div>
+          <div class="panel-body padded" id="overview-wins"></div>
+        </div>
+        <div class="panel">
+          <div class="panel-header">
+            <h3>Recent Audit (last 10)</h3>
+            <button class="btn small" onclick="loadAuditLog()">↻ Refresh</button>
+          </div>
+          <div class="panel-body">
+            <table>
+              <thead>
+                <tr>
+                  <th>Time</th>
+                  <th>Action</th>
+                  <th>Bot</th>
+                  <th>Result</th>
+                </tr>
+              </thead>
+              <tbody id="overview-audit-tbody"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEO TRACKER TAB -->
+    <section class="tab" id="tab-auto-seo-tracker">
+      <div class="tab-header">
+        <div>
+          <h2>SEO Rank Tracker</h2>
+          <p>Daily keyword rank monitoring · location: Canada · click any keyword for details</p>
+        </div>
+        <span class="header-pill live">live</span>
+      </div>
+
+      <div class="toolbar">
+        <input type="search" id="rank-search" placeholder="Filter keywords…" onkeyup="filterRankTable()">
+        <select id="rank-filter" onchange="filterRankTable()">
+          <option value="all">All keywords</option>
+          <option value="ranking">Ranking only</option>
+          <option value="not-ranking">Not ranking</option>
+        </select>
+        <button class="btn" onclick="openModal('run-bot', {bot: 'seo-tracker'})">▶ Run Bot</button>
+        <button class="btn" onclick="exportData('ranks')">⤓ Export CSV</button>
+      </div>
+
+      <div class="grid" id="rank-stats"></div>
+
+      <div class="panel">
+        <div class="panel-header"><h3>Keyword Rankings</h3></div>
+        <div class="panel-body">
+          <table id="rank-table">
+            <thead>
+              <tr>
+                <th>Keyword</th>
+                <th>Your Rank</th>
+                <th>Search Vol</th>
+                <th>Top Competitor</th>
+                <th>Notes</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="rank-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-header"><h3>SERP Competitors (for top keyword)</h3></div>
+        <div class="panel-body">
+          <table>
+            <thead>
+              <tr><th>Rank</th><th>Domain</th><th>Title</th><th>URL</th></tr>
+            </thead>
+            <tbody id="serp-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- GSC READER TAB -->
+    <section class="tab" id="tab-auto-gsc-reader">
+      <div class="tab-header">
+        <div>
+          <h2>GSC Reader</h2>
+          <p>Google Search Console data · last 7 days · click queries for details</p>
+        </div>
+        <span class="header-pill live">live</span>
+      </div>
+
+      <div class="toolbar">
+        <input type="search" id="gsc-search" placeholder="Filter queries…" onkeyup="filterGscTable()">
+        <select id="gsc-filter" onchange="filterGscTable()">
+          <option value="all">All queries</option>
+          <option value="high-impression">High impression, low CTR</option>
+          <option value="quick-win">Quick wins (pos 8–20)</option>
+        </select>
+        <button class="btn" onclick="openModal('run-bot', {bot: 'gsc-reader'})">▶ Run Bot</button>
+        <button class="btn" onclick="exportData('gsc')">⤓ Export CSV</button>
+      </div>
+
+      <div class="grid" id="gsc-stats"></div>
+
+      <div class="panel">
+        <div class="panel-header"><h3>Top Queries</h3></div>
+        <div class="panel-body">
+          <table id="gsc-queries-table">
+            <thead>
+              <tr><th>Query</th><th class="num">Clicks</th><th class="num">Impr</th><th class="num">CTR%</th><th class="num">Pos</th><th></th></tr>
+            </thead>
+            <tbody id="gsc-queries-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-header"><h3>Top Pages</h3></div>
+        <div class="panel-body">
+          <table>
+            <thead>
+              <tr><th>Page</th><th class="num">Clicks</th><th class="num">Impr</th><th class="num">CTR%</th><th class="num">Pos</th></tr>
+            </thead>
+            <tbody id="gsc-pages-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- GA4 READER TAB -->
+    <section class="tab" id="tab-auto-ga4-reader">
+      <div class="tab-header">
+        <div>
+          <h2>GA4 Reader</h2>
+          <p>Google Analytics 4 data · awaiting first run</p>
+        </div>
+        <span class="header-pill pending">pending</span>
+      </div>
+      <div class="panel">
+        <div class="panel-body padded">
+          <div class="empty-state">
+            <span class="icon">📊</span>
+            <strong>GA4 Reader not yet running</strong>
+            <p style="margin-top: 0.5rem;">Will populate once the daily ga4-reader cron job fires.</p>
+            <button class="btn primary" style="margin-top: 1rem;" onclick="openModal('run-bot', {bot: 'ga4-reader'})">▶ Run Bot Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEO ANALYST TAB -->
+    <section class="tab" id="tab-auto-seo-analyst">
+      <div class="tab-header">
+        <div>
+          <h2>SEO Analyst</h2>
+          <p>Cross-correlates GSC + GA4 + GBP + rank data into prioritized opportunities</p>
+        </div>
+        <span class="header-pill waiting">waiting</span>
+      </div>
+      <div class="panel">
+        <div class="panel-body padded" id="analyst-output">
+          <div class="empty-state">
+            <span class="icon">🧠</span>
+            <strong>Analyst will run once 3+ bots have data</strong>
+            <p style="margin-top: 0.5rem;">Needs: GSC (ready) + DataForSEO (ready) + GA4 (pending)</p>
+            <button class="btn primary" style="margin-top: 1rem;" onclick="openModal('run-bot', {bot: 'seo-analyst'})">▶ Run Bot Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GBP ANALYZER TAB -->
+    <section class="tab" id="tab-auto-gbp-analyzer">
+      <div class="tab-header">
+        <div>
+          <h2>GBP Analyzer</h2>
+          <p>Google Business Profile snapshot · completeness, reviews, photos</p>
+        </div>
+        <span class="header-pill pending">pending</span>
+      </div>
+      <div class="panel">
+        <div class="panel-body padded">
+          <div class="empty-state">
+            <span class="icon">🏪</span>
+            <strong>GBP Analyzer waiting on quota approval</strong>
+            <p style="margin-top: 0.5rem;">Submit quota request at <code>cloud.google.com/docs/quotas/help/request_increase</code></p>
+            <button class="btn primary" style="margin-top: 1rem;" onclick="openModal('run-bot', {bot: 'gbp-analyzer'})">▶ Run Bot Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GBP IMPROVER TAB -->
+    <section class="tab" id="tab-auto-gbp-improver">
+      <div class="tab-header">
+        <div>
+          <h2>GBP Improver</h2>
+          <p>Drafts posts &amp; reply suggestions · every write requires human approval</p>
+        </div>
+        <span class="header-pill pending">approval-gated</span>
+      </div>
+      <div class="grid" id="gbp-stats"></div>
+      <div class="panel">
+        <div class="panel-header"><h3>Safety Guarantees</h3></div>
+        <div class="panel-body padded">
+          <ul style="list-style: none; font-size: 13px; color: var(--text-1);">
+            <li style="padding: 0.4rem 0;">✅ Every draft requires a single-use approval token</li>
+            <li style="padding: 0.4rem 0;">✅ Tokens expire in 10 minutes</li>
+            <li style="padding: 0.4rem 0;">✅ Snapshot taken before every write</li>
+            <li style="padding: 0.4rem 0;">✅ Auto-revert on API failure</li>
+            <li style="padding: 0.4rem 0;">✅ Full audit log (every action)</li>
+            <li style="padding: 0.4rem 0;">✅ Reversible: <code>hermes revert &lt;action-id&gt;</code></li>
+          </ul>
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel-header"><h3>Run GBP Improver</h3></div>
+        <div class="panel-body padded">
+          <p style="font-size: 13px; color: var(--text-2); margin-bottom: 1rem;">
+            This bot creates DRAFTS only. It never publishes without your explicit approval.
+            To run the bot locally (which generates drafts to the approval queue):
+          </p>
+          <pre style="background: var(--bg-0); padding: 1rem; border-radius: 6px; font-size: 12px; color: var(--text-1);">~/.hermes/seo-bots/bin/run_bot.sh gbp-improver "Draft 2 weekly GBP posts and reply drafts"</pre>
+          <button class="btn" onclick="copyText('~/.hermes/seo-bots/bin/run_bot.sh gbp-improver &quot;Draft 2 weekly GBP posts and reply drafts&quot;')">📋 Copy command</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- OPPORTUNITIES TAB -->
+    <section class="tab" id="tab-auto-opportunities">
+      <div class="tab-header">
+        <div>
+          <h2>Opportunities</h2>
+          <p>Prioritized actions ranked by impact · click any opportunity for full details &amp; approval</p>
+        </div>
+        <span class="header-pill pending">3 pending</span>
+      </div>
+
+      <div class="grid" id="opps-stats"></div>
+
+      <div class="toolbar">
+        <select id="opp-filter" onchange="filterOppCards()">
+          <option value="all">All priorities</option>
+          <option value="high">High only</option>
+          <option value="medium">Medium only</option>
+          <option value="low">Low only</option>
+        </select>
+        <input type="search" id="opp-search" placeholder="Filter opportunities…" onkeyup="filterOppCards()">
+        <button class="btn" onclick="exportData('opportunities')">⤓ Export</button>
+      </div>
+
+      <div class="opp-grid" id="opportunities-grid"></div>
+    </section>
+
+    <!-- APPROVALS TAB -->
+    <section class="tab" id="tab-auto-approvals">
+      <div class="tab-header">
+        <div>
+          <h2>Approval Queue</h2>
+          <p>All GBP writes require explicit human approval · nothing irreversible without your click</p>
+        </div>
+        <span class="header-pill pending" id="approvals-count">0 pending</span>
+      </div>
+
+      <div class="panel">
+        <div class="panel-header">
+          <h3>⏳ Pending — approve or reject</h3>
+          <button class="btn small" onclick="showCliCommands()">💻 CLI Commands</button>
+        </div>
+        <div class="panel-body" id="approvals-pending"></div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-header"><h3>✓ Recently Approved</h3></div>
+        <div class="panel-body" id="approvals-approved"></div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-header"><h3>⏪ Recently Reverted</h3></div>
+        <div class="panel-body" id="approvals-reverted"></div>
+      </div>
+    </section>
+
+    <!-- AUDIT TAB -->
+    <section class="tab" id="tab-auto-audit">
+      <div class="tab-header">
+        <div>
+          <h2>Audit Log</h2>
+          <p>Every action · append-only · click any row for details</p>
+        </div>
+        <span class="header-pill">append-only</span>
+      </div>
+
+      <div class="toolbar">
+        <input type="search" id="audit-search" placeholder="Filter by bot, action, ID…" onkeyup="filterAuditTable()">
+        <select id="audit-filter" onchange="filterAuditTable()">
+          <option value="all">All actions</option>
+          <option value="success">Success only</option>
+          <option value="failure">Failures only</option>
+          <option value="publish">Publish actions</option>
+          <option value="token">Token actions</option>
+        </select>
+        <button class="btn" onclick="exportData('audit')">⤓ Export JSON</button>
+      </div>
+
+      <div class="panel">
+        <div class="panel-header"><h3>Recent Actions (last50</h3></div>
+        <div class="panel-body">
+          <table id="audit-table">
+            <thead>
+              <tr><th>Timestamp</th><th>Action</th><th>Bot</th><th>Action ID</th><th>Result</th><th></th></tr>
+            </thead>
+            <tbody id="audit-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<div class="footer">
+  <p>Dashboard auto-refreshes every 30 seconds · last refresh: <span id="footer-refresh">—</span></p>
+  <p style="margin-top: 0.5rem;">Built with the SEO Bot Fleet · <code>~/.hermes/seo-bots/</code></p>
+</div>
+
+<!-- Modal backdrop -->
+<div class="modal-backdrop" id="modal-backdrop" onclick="closeModal(event)">
+  <div class="modal" id="modal-content" onclick="event.stopPropagation()">
+    <div class="modal-header">
+      <h3 id="modal-title">Modal</h3>
+      <button class="modal-close" onclick="closeModal()">×</button>
+    </div>
+    <div class="modal-body" id="modal-body"></div>
+    <div class="modal-footer" id="modal-footer"></div>
+  </div>
+</div>
+
+<!-- Toast container -->
+<div class="toast-container" id="toast-container"></div>
+
+<script>
+  const DATA_BASE = './data/';
+  const HISTORICAL_BASE = './history/';
+
+  // ============================================================
+  // STATE
+  // ============================================================
+  const state = {
+    bots: null,
+    gsc: null,
+    ga4: null,
+    ranks: null,
+    gbp: null,
+    opportunities: null,
+    approvals: null,
+    audit: null,
+  };
+
+  let refreshTimer = null;
+  let isLoading = false;
+
+  // ============================================================
+  // UTILITIES
+  // ============================================================
+  async function fetchJson(name) {
+    try {
+      const r = await fetch(DATA_BASE + name + '?t=' + Date.now());
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      return await r.json();
+    } catch (e) {
+      console.warn('Failed to load', name, e);
+      return null;
+    }
+  }
+
+  function fmt(n, decimals = 0) {
+    if (n === null || n === undefined || n === '') return '—';
+    if (typeof n === 'string') return n;
+    return Number(n).toLocaleString(undefined, { maximumFractionDigits: decimals });
+  }
+  function pct(n) {
+    if (n === null || n === undefined) return '—';
+    return Number(n).toFixed(1) + '%';
+  }
+  function timeAgo(iso) {
+    if (!iso) return '—';
+    const d = new Date(iso);
+    const diff = (Date.now() - d.getTime()) / 1000;
+    if (diff < 60) return Math.floor(diff) + 's ago';
+    if (diff < 3600) return Math.floor(diff / 60) + 'm ago';
+    if (diff < 86400) return Math.floor(diff / 3600) + 'h ago';
+    return Math.floor(diff / 86400) + 'd ago';
+  }
+  function escHtml(s) {
+    if (s === null || s === undefined) return '';
+    return String(s)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt')
+      .replace(/>/g, '&gt')
+      .replace(/"/g, '&quot')
+      .replace(/'/g, '&#39');
+  }
+  function statusTag(status) {
+    const s = (status || 'unknown').toLowerCase();
+    if (s.includes('live') || s === 'success') return '<span class="tag live">live</span>';
+    if (s.includes('pending')) return '<span class="tag pending">pending</span>';
+    if (s.includes('wait')) return '<span class="tag waiting">waiting</span>';
+    if (s.includes('fail') || s.includes('revoked')) return '<span class="tag failure">failed</span>';
+    return `<span class="tag ${s}">${escHtml(status)}</span>`;
+  }
+
+  // ============================================================
+  // SPARKLINE
+  // ============================================================
+  function sparkline(values, color = 'var(--accent-cyan)') {
+    if (!values || values.length === 0) return '';
+    const w = 100, h = 30;
+    const max = Math.max(...values);
+    const min = Math.min(...values);
+    const range = max - min || 1;
+    const points = values.map((v, i) => {
+      const x = (i / (values.length - 1)) * w;
+      const y = h - ((v - min) / range) * h;
+      return `${x},${y}`;
+    }).join(' ');
+    const areaPoints = `0,${h} ${points} ${w},${h}`;
+    return `<svg class="sparkline" viewBox="0 0 ${w} ${h}" preserveAspectRatio="none">
+      <path class="area" d="M ${areaPoints.replace(/ /g, ' L ').replace('0,', '0,').replace(',30', ',30')} Z" style="fill: rgba(34, 211, 238, 0.1)"/>
+      <path d="M ${points.replace(/ /g, ' L ')}" stroke="${color}" fill="none" stroke-width="1.5"/>
+    </svg>`;
+  }
+
+  // ============================================================
+  // TOAST
+  // ============================================================
+  function toast(msg, type = 'success', duration = 3000) {
+    const container = document.getElementById('toast-container');
+    const t = document.createElement('div');
+    t.className = `toast ${type}`;
+    t.textContent = msg;
+    container.appendChild(t);
+    setTimeout(() => {
+      t.style.opacity = '0';
+      setTimeout(() => t.remove(), 200);
+    }, duration);
+  }
+
+  // ============================================================
+  // CLIPBOARD
+  // ============================================================
+  async function copyText(text) {
+    try {
+      await navigator.clipboard.writeText(text);
+      toast('📋 Copied to clipboard');
+    } catch (e) {
+      // Fallback
+      const ta = document.createElement('textarea');
+      ta.value = text;
+      ta.style.position = 'fixed';
+      ta.style.left = '-9999px';
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand('copy');
+      ta.remove();
+      toast('📋 Copied');
+    }
+  }
+
+  // ============================================================
+  // MODAL
+  // ============================================================
+  function openModal(type, data = {}) {
+    const backdrop = document.getElementById('modal-backdrop');
+    const titleEl = document.getElementById('modal-title');
+    const bodyEl = document.getElementById('modal-body');
+    const footerEl = document.getElementById('modal-footer');
+    backdrop.classList.add('active');
+
+    if (type === 'bot-detail') {
+      const bot = state.bots?.bots?.[data.botName];
+      if (!bot) { closeModal(); return; }
+      titleEl.textContent = data.botName;
+      const summaryJson = JSON.stringify(bot, null, 2);
+      bodyEl.innerHTML = `
+        <div class="field">
+          <span class="field-label">Status</span>
+          <span class="field-value">${statusTag(bot.status)}</span>
+        </div>
+        <div class="field">
+          <span class="field-label">Risk Level</span>
+          <span class="field-value">${escHtml(bot.risk || '—')}</span>
+        </div>
+        <div class="field">
+          <span class="field-label">Model</span>
+          <span class="field-value">${escHtml(bot.model || '—')}</span>
+        </div>
+        <div class="field">
+          <span class="field-label">Last Run</span>
+          <span class="field-value">${bot.last_run ? new Date(bot.last_run).toLocaleString() : '—'}</span>
+        </div>
+        <div class="field">
+          <span class="field-label">Summary</span>
+          <span class="field-value">${bot.summary ? Object.entries(bot.summary).map(([k,v]) => `${k}: ${v}`).join(' · ') : '—'}</span>
+        </div>
+        <div style="margin-top: 1rem;">
+          <h4 style="margin-bottom: 0.5rem; color: var(--text-2); font-size: 12px; text-transform: uppercase;">Full JSON</h4>
+          <pre>${escHtml(summaryJson)}</pre>
+        </div>
+      `;
+      footerEl.innerHTML = `
+        <button class="btn" onclick="copyBotConfig('${data.botName}')">📋 Copy Run Command</button>
+        <button class="btn" onclick="closeModal()">Close</button>
+      `;
+    } else if (type === 'opp-detail') {
+      const opp = data.opp;
+      titleEl.textContent = opp.title;
+      bodyEl.innerHTML = `
+        <div class="field">
+          <span class="field-label">Priority</span>
+          <span class="field-value"><span class="tag ${opp.priority}">${opp.priority}</span></span>
+        </div>
+        <div class="field">
+          <span class="field-label">Impact</span>
+          <span class="field-value">${opp.impact}</span>
+        </div>
+        <div class="field">
+          <span class="field-label">Category</span>
+          <span class="field-value">${opp.category}</span>
+        </div>
+        <div class="field">
+          <span class="field-label">Est. Clicks/mo</span>
+          <span class="field-value">+${fmt(opp.estimated_clicks_per_month)}</span>
+        </div>
+        <div class="field">
+          <span class="field-label">Revenue Impact</span>
+          <span class="field-value">${escHtml(opp.estimated_revenue_impact || '—')}</span>
+        </div>
+        <div class="field">
+          <span class="field-label">Effort</span>
+          <span class="field-value">${opp.effort}</span>
+        </div>
+        <div style="margin: 1rem 0;">
+          <h4 style="margin-bottom: 0.5rem; color: var(--text-2); font-size: 12px; text-transform: uppercase;">Context</h4>
+          <p style="font-size: 13px; line-height: 1.6;">${escHtml(opp.context)}</p>
+        </div>
+        <div>
+          <h4 style="margin-bottom: 0.5rem; color: var(--text-2); font-size: 12px; text-transform: uppercase;">Recommended Action</h4>
+          <pre>${escHtml(opp.action)}</pre>
+        </div>
+        <div style="margin-top: 1rem; padding: 1rem; background: var(--bg-2); border-radius: 6px; font-size: 12px;">
+          <strong>Reversible:</strong> ${opp.reversible ? '✓ Yes' : '✗ No'} · <strong>Approval Required:</strong> ${opp.approval_required ? '✓ Yes' : '✗ No'}
+        </div>
+      `;
+      footerEl.innerHTML = `
+        <button class="btn primary" onclick="copyOppCommand('${opp.id}')">📋 Copy Command</button>
+        <button class="btn" onclick="closeModal()">Close</button>
+      `;
+    } else if (type === 'audit-detail') {
+      const a = data.action;
+      titleEl.textContent = `${a.action} · ${a.bot}`;
+      const ts = a.ts ? new Date(a.ts * 1000).toLocaleString() : '—';
+      const resultTag = a.action.includes('failed') ? 'failure' :
+                         a.action.includes('revoked') ? 'revoked' :
+                         a.action.includes('success') || a.action === 'token_consumed' ? 'success' :
+                         a.action === 'token_issued' ? 'live' : 'pending';
+      bodyEl.innerHTML = `
+        <div class="field">
+          <span class="field-label">Timestamp</span>
+          <span class="field-value">${ts}</span>
+        </div>
+        <div class="field">
+          <span class="field-label">Action</span>
+          <span class="field-value">${escHtml(a.action)}</span>
+        </div>
+        <div class="field">
+          <span class="field-label">Bot</span>
+          <span class="field-value">${escHtml(a.bot)}</span>
+        </div>
+        <div class="field">
+          <span class="field-label">Action ID</span>
+          <span class="field-value">${escHtml(a.action_id || '—')}</span>
+        </div>
+        <div class="field">
+          <span class="field-label">Token</span>
+          <span class="field-value">${escHtml(a.token || '—')}</span>
+        </div>
+        <div class="field">
+          <span class="field-label">Result</span>
+          <span class="field-value"><span class="tag ${resultTag}">${resultTag}</span></span>
+        </div>
+        <div style="margin-top: 1rem;">
+          <h4 style="margin-bottom: 0.5rem; color: var(--text-2); font-size: 12px; text-transform: uppercase;">Full JSON</h4>
+          <pre>${escHtml(JSON.stringify(a, null, 2))}</pre>
+        </div>
+      `;
+      footerEl.innerHTML = `<button class="btn" onclick="closeModal()">Close</button>`;
+    } else if (type === 'run-bot') {
+      const botName = data.bot;
+      titleEl.textContent = `Run ${botName}`;
+      bodyEl.innerHTML = `
+        <p style="margin-bottom: 1rem;">This dashboard is hosted on GitHub Pages. To run the bot, execute this command on the machine hosting hermes-agent:</p>
+        <pre>~/.hermes/seo-bots/bin/run_bot.sh ${botName} "Run ${botName} now"</pre>
+        <p style="margin-top: 1rem; font-size: 12px; color: var(--text-2);">
+          Or trigger via hermes CLI:<br>
+          <code style="background: var(--bg-0); padding: 0.5rem; border-radius: 4px; display: block; margin-top: 0.5rem;">hermes --profile ${botName} --prompt "Run ${botName}"</code>
+        </p>
+        <p style="margin-top: 1rem; font-size: 12px; color: var(--text-2);">
+          💡 After the bot finishes, the wrapper automatically updates the dashboard and pushes to GitHub.
+          Refresh this page in 30s to see new data.
+        </p>
+      `;
+      footerEl.innerHTML = `
+        <button class="btn primary" onclick="copyText('~/.hermes/seo-bots/bin/run_bot.sh ${botName} &quot;Run ${botName} now&quot;')">📋 Copy</button>
+        <button class="btn" onclick="closeModal()">Close</button>
+      `;
+    } else if (type === 'cli-commands') {
+      titleEl.textContent = 'CLI Commands for Approvals';
+      bodyEl.innerHTML = `
+        <p style="margin-bottom: 1rem;">All approval management happens on the host machine. Open a terminal there:</p>
+        <pre># List pending approvals
+python -m seo_bots.cli_approval list
+
+# List pending drafts (GBP posts + replies)
+python -m seo_bots.cli_approval drafts
+
+# Approve a draft (issues token)
+python -m seo_bots.cli_approval approve &lt;draft-id&gt;
+
+# Reject a draft
+python -m seo_bots.cli_approval reject &lt;draft-id&gt;
+
+# Revoke an issued token
+python -m seo_bots.cli_approval revoke &lt;token&gt;
+
+# View audit log
+python -m seo_bots.cli_approval audit
+
+# Revert a published action
+python -m seo_bots.revert --action-id &lt;action-id&gt;</pre>
+        <p style="margin-top: 1rem; font-size: 12px; color: var(--text-2);">
+          Each approved token is single-use, expires in 10 minutes, and is scoped to one action.
+        </p>
+      `;
+      footerEl.innerHTML = `<button class="btn" onclick="closeModal()">Close</button>`;
+    }
+  }
+
+  function closeModal(event) {
+    if (event && event.target !== event.currentTarget) return;
+    document.getElementById('modal-backdrop').classList.remove('active');
+  }
+
+  // ============================================================
+  // TABS
+  // ============================================================
+  function switchTab(tab) {
+    document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+    document.getElementById('tab-auto-' + tab).classList.add('active');
+    document.querySelector(`.nav-item[data-tab="${tab}"]`).classList.add('active');
+    location.hash = tab;
+  }
+
+  // ============================================================
+  // EXPORT
+  // ============================================================
+  function exportData(type) {
+    let data;
+    switch(type) {
+      case 'bots': data = state.bots; break;
+      case 'gsc': data = state.gsc; break;
+      case 'ranks': data = state.ranks; break;
+      case 'opportunities': data = state.opportunities; break;
+      case 'audit': data = state.audit; break;
+      default: return;
+    }
+    if (!data) { toast('No data to export', 'error'); return; }
+    const json = JSON.stringify(data, null, 2);
+    const blob = new Blob([json], {type: 'application/json'});
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = `seo-${type}-${new Date().toISOString().split('T')[0]}.json`;
+    a.click();
+    URL.revokeObjectURL(url);
+    toast('⤓ Exported');
+  }
+
+  // ============================================================
+  // COPY COMMANDS
+  // ============================================================
+  function copyBotConfig(botName) {
+    const cmd = `~/.hermes/seo-bots/bin/run_bot.sh ${botName} "Run ${botName} now"`;
+    copyText(cmd);
+  }
+
+  function copyOppCommand(oppId) {
+    const opp = state.opportunities?.opportunities?.find(o => o.id === oppId);
+    if (!opp) return;
+    const cmd = `# To implement this opportunity:
+# 1. Review the full details in the dashboard
+# 2. Make the change in your CMS / codebase
+# 3. Mark as done: hermes --profile seo-analyst --prompt "Mark ${oppId} as done"
+
+# Estimated impact: +${opp.estimated_clicks_per_month} clicks/month
+# Action: ${opp.action}`;
+    copyText(cmd);
+  }
+
+  function showCliCommands() { openModal('cli-commands'); }
+
+  // ============================================================
+  // OVERVIEW
+  // ============================================================
+  async function loadOverview() {
+    if (!state.bots || !state.opportunities || !state.audit) return;
+
+    const live = Object.values(state.bots.bots).filter(b => b.status === 'live').length;
+    const pending = state.opportunities.summary;
+    const auditCount = state.audit.total_actions || 0;
+
+    document.getElementById('bot-count').textContent = live;
+    document.getElementById('last-update').textContent = new Date(state.bots.last_updated).toLocaleString();
+
+    // Stat cards
+    const statsHtml = `
+      <div class="stat-card" onclick="openModal('bot-detail', {botName: 'fleet'})">
+        <div class="stat-label">Bot Status</div>
+        <div class="stat-value">${live}/${Object.keys(state.bots.bots).length}</div>
+        <div class="stat-delta up">${live} live · ${Object.values(state.bots.bots).filter(b=>b.status==='pending').length} pending</div>
+      </div>
+      <div class="stat-card" onclick="switchTab('approvals')">
+        <div class="stat-label">Pending Approvals</div>
+        <div class="stat-value">${state.approvals?.pending?.length || 0}</div>
+        <div class="stat-delta">${(state.approvals?.pending?.length || 0) > 0 ? 'Action required' : 'All clear'}</div>
+      </div>
+      <div class="stat-card" onclick="switchTab('opportunities')">
+        <div class="stat-label">Open Opportunities</div>
+        <div class="stat-value">${pending.total_opportunities || 0}</div>
+        <div class="stat-delta up">${pending.high_impact || 0} high · ${pending.medium_impact || 0} med</div>
+      </div>
+      <div class="stat-card" onclick="switchTab('audit')">
+        <div class="stat-label">Audit Actions</div>
+        <div class="stat-value">${auditCount}</div>
+        <div class="stat-delta">all-time total</div>
+      </div>
+    `;
+    document.getElementById('overview-stats').innerHTML = statsHtml;
+
+    // Bot table
+    const botsTbody = document.getElementById('bots-tbody');
+    botsTbody.innerHTML = '';
+    Object.entries(state.bots.bots).forEach(([name, bot]) => {
+      const summary = bot.summary ? JSON.stringify(bot.summary).slice(0, 100) : '—';
+      botsTbody.innerHTML += `
+        <tr class="clickable" onclick="openModal('bot-detail', {botName: '${name}'})">
+          <td><strong>${name}</strong></td>
+          <td>${statusTag(bot.status)}</td>
+          <td><span class="tag ${bot.risk === 'read-only' ? 'live' : bot.risk === 'approval-gated' ? 'failure' : 'pending'}">${bot.risk}</span></td>
+          <td class="mono">${bot.model || '—'}</td>
+          <td class="mono">${bot.last_run ? timeAgo(bot.last_run) : '—'}</td>
+          <td class="mono" style="font-size: 11px; color: var(--text-2);">${summary}</td>
+          <td><button class="btn small" onclick="event.stopPropagation(); copyBotConfig('${name}')">▶</button></td>
+        </tr>`;
+    });
+
+    // Top wins (auto-detected from opportunities)
+    const winsEl = document.getElementById('overview-wins');
+    const topOpp = state.opportunities.opportunities.find(o => o.priority === 'high');
+    if (topOpp) {
+      winsEl.innerHTML = `
+        <div style="padding: 0.75rem; background: var(--bg-2); border-radius: 6px; border-left: 3px solid var(--red); margin-bottom: 0.75rem;">
+          <div style="font-weight: 600; color: var(--red); font-size: 12px; margin-bottom: 0.25rem;">HIGHEST IMPACT</div>
+          <div style="font-size: 14px; margin-bottom: 0.5rem;">${escHtml(topOpp.title)}</div>
+          <div style="font-size: 12px; color: var(--text-2);">+${topOpp.estimated_clicks_per_month} clicks/mo · ${escHtml(topOpp.estimated_revenue_impact)}</div>
+        </div>
+        <div style="font-size: 12px; color: var(--text-3); font-family: 'JetBrains Mono', monospace;">Click Opportunities tab for full list →</div>
+      `;
+    } else {
+      winsEl.innerHTML = '<div class="empty-state">Run seo-analyst to populate wins</div>';
+    }
+  }
+
+  function filterBotTable() {
+    const q = document.getElementById('bot-search').value.toLowerCase();
+    document.querySelectorAll('#bots-tbody tr').forEach(row => {
+      const text = row.textContent.toLowerCase();
+      row.style.display = text.includes(q) ? '' : 'none';
+    });
+  }
+
+  // ============================================================
+  // GSC
+  // ============================================================
+  async function loadGsc() {
+    if (!state.gsc) return;
+    const t = state.gsc.totals;
+    const stats = `
+      <div class="stat-card">
+        <div class="stat-label">Clicks (7d)</div>
+        <div class="stat-value">${fmt(t.clicks)}</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Impressions (7d)</div>
+        <div class="stat-value">${fmt(t.impressions)}</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Avg CTR</div>
+        <div class="stat-value">${pct(t.ctr)}</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Avg Position</div>
+        <div class="stat-value">${fmt(t.position, 1)}</div>
+      </div>
+    `;
+    document.getElementById('gsc-stats').innerHTML = stats;
+
+    const tbody = document.getElementById('gsc-queries-tbody');
+    tbody.innerHTML = '';
+    state.gsc.top_queries.forEach(q => {
+      tbody.innerHTML += `
+        <tr class="clickable" onclick="openModal('opp-detail', {opp: {
+          id: 'gsc-' + q.query.replace(/\\W/g,'_'),
+          priority: q.position > 10 && q.impressions > 20 ? 'medium' : 'low',
+          impact: q.position > 20 ? 'high' : 'medium',
+          category: 'gsc-query',
+          title: q.query,
+          context: 'Position ' + q.position.toFixed(1) + ' · ' + q.impressions + ' impressions · ' + q.clicks + ' clicks · CTR ' + q.ctr.toFixed(1) + '%',
+          estimated_clicks_per_month: Math.round(q.impressions * 0.05 - q.clicks),
+          estimated_revenue_impact: '—',
+          action: 'Improve title/meta for this query',
+          effort: 'low',
+          reversible: true,
+          approval_required: false,
+          suggested_by: 'gsc-reader',
+          date: state.gsc.last_updated?.split('T')[0] || ''
+        }})">
+          <td>${escHtml(q.query)}</td>
+          <td class="num">${fmt(q.clicks)}</td>
+          <td class="num">${fmt(q.impressions)}</td>
+          <td class="num">${pct(q.ctr)}</td>
+          <td class="num">${fmt(q.position, 1)}</td>
+          <td>→</td>
+        </tr>`;
+    });
+
+    const pagesTbody = document.getElementById('gsc-pages-tbody');
+    pagesTbody.innerHTML = '';
+    state.gsc.top_pages.forEach(p => {
+      pagesTbody.innerHTML += `
+        <tr>
+          <td class="mono" style="font-size: 11px;">${escHtml(p.page)}</td>
+          <td class="num">${fmt(p.clicks)}</td>
+          <td class="num">${fmt(p.impressions)}</td>
+          <td class="num">${pct(p.ctr)}</td>
+          <td class="num">${fmt(p.position, 1)}</td>
+        </tr>`;
+    });
+  }
+
+  function filterGscTable() {
+    const q = document.getElementById('gsc-search').value.toLowerCase();
+    const filter = document.getElementById('gsc-filter').value;
+    document.querySelectorAll('#gsc-queries-tbody tr').forEach(row => {
+      const text = row.textContent.toLowerCase();
+      let show = text.includes(q);
+      if (filter === 'high-impression' && show) {
+        const cells = row.querySelectorAll('td');
+        const imp = parseFloat(cells[2].textContent.replace(/,/g, ''));
+        const ctrText = cells[3].textContent.replace('%', '');
+        const ctr = parseFloat(ctrText);
+        show = imp > 20 && ctr < 5;
+      } else if (filter === 'quick-win' && show) {
+        const pos = parseFloat(row.querySelectorAll('td')[4].textContent);
+        show = pos >= 8 && pos <= 20;
+      }
+      row.style.display = show ? '' : 'none';
+    });
+  }
+
+  // ============================================================
+  // RANK TRACKER
+  // ============================================================
+  async function loadRanks() {
+    if (!state.ranks) return;
+    const s = state.ranks.summary;
+    const stats = `
+      <div class="stat-card">
+        <div class="stat-label">Keywords Tracked</div>
+        <div class="stat-value">${fmt(s.keywords_tracked)}</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">In Top 3</div>
+        <div class="stat-value" style="color: var(--green);">${fmt(s.keywords_in_top_3)}</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">In Top 10</div>
+        <div class="stat-value">${fmt(s.keywords_in_top_10)}</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Not Ranking</div>
+        <div class="stat-value" style="color: var(--red);">${fmt(s.keywords_not_ranking)}</div>
+      </div>
+    `;
+    document.getElementById('rank-stats').innerHTML = stats;
+
+    const tbody = document.getElementById('rank-tbody');
+    tbody.innerHTML = '';
+    state.ranks.keywords.forEach(k => {
+      const rank = k.your_rank
+        ? `<span class="tag live">#${k.your_rank}</span>`
+        : '<span class="tag failure">not ranking</span>';
+      const topComp = k.top_competitors?.[0]?.domain || '—';
+      tbody.innerHTML += `
+        <tr class="clickable" data-ranking="${k.your_rank ? 'yes' : 'no'}" data-keyword="${escHtml(k.keyword.toLowerCase())}">
+          <td><strong>${escHtml(k.keyword)}</strong></td>
+          <td>${rank}</td>
+          <td class="num">${k.search_volume ?? '—'}</td>
+          <td class="mono" style="font-size: 11px;">${escHtml(topComp)}</td>
+          <td class="mono" style="font-size: 11px; color: var(--text-2);">${escHtml(k.note || '')}</td>
+          <td><button class="btn small" onclick="event.stopPropagation(); openModal('run-bot', {bot: 'seo-tracker'})">↻</button></td>
+        </tr>`;
+    });
+
+    const serpTbody = document.getElementById('serp-tbody');
+    serpTbody.innerHTML = '';
+    const firstKw = state.ranks.keywords.find(k => k.top_competitors?.length > 0);
+    if (firstKw) {
+      firstKw.top_competitors.forEach(c => {
+        serpTbody.innerHTML += `
+          <tr>
+            <td class="num"><strong>${c.rank}</strong></td>
+            <td class="mono">${escHtml(c.domain)}</td>
+            <td>${escHtml(c.title)}</td>
+            <td class="mono" style="font-size: 11px; color: var(--text-2);">${escHtml(c.url)}</td>
+          </tr>`;
+      });
+    }
+  }
+
+  function filterRankTable() {
+    const q = document.getElementById('rank-search').value.toLowerCase();
+    const filter = document.getElementById('rank-filter').value;
+    document.querySelectorAll('#rank-tbody tr').forEach(row => {
+      const kw = row.dataset.keyword || '';
+      const ranking = row.dataset.ranking || '';
+      let show = kw.includes(q);
+      if (filter === 'ranking') show = show && ranking === 'yes';
+      if (filter === 'not-ranking') show = show && ranking === 'no';
+      row.style.display = show ? '' : 'none';
+    });
+  }
+
+  // ============================================================
+  // OPPORTUNITIES
+  // ============================================================
+  async function loadOpportunities() {
+    if (!state.opportunities) return;
+    const s = state.opportunities.summary;
+
+    document.getElementById('badge-opportunities').textContent = s.total_opportunities || 0;
+    document.getElementById('stat-opps') && (document.getElementById('stat-opps').textContent = s.total_opportunities || 0);
+
+    const totalClicks = state.opportunities.opportunities.reduce((sum, o) =>
+      sum + (typeof o.estimated_clicks_per_month === 'number' ? o.estimated_clicks_per_month : 0), 0);
+
+    const stats = `
+      <div class="stat-card">
+        <div class="stat-label">High Impact</div>
+        <div class="stat-value" style="color: var(--red);">${fmt(s.high_impact)}</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Medium Impact</div>
+        <div class="stat-value" style="color: var(--yellow);">${fmt(s.medium_impact)}</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Low Impact</div>
+        <div class="stat-value">${fmt(s.low_impact)}</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-label">Est. Total Clicks/mo</div>
+        <div class="stat-value" style="color: var(--green);">+${fmt(totalClicks)}</div>
+      </div>
+    `;
+    document.getElementById('opps-stats').innerHTML = stats;
+
+    renderOppCards(state.opportunities.opportunities);
+  }
+
+  function renderOppCards(opps) {
+    const grid = document.getElementById('opportunities-grid');
+    grid.innerHTML = '';
+    opps.forEach(opp => {
+      const priorityClass = opp.priority === 'high' ? 'high' : opp.priority === 'medium' ? 'medium' : 'low';
+      grid.innerHTML += `
+        <div class="opp-card ${priorityClass}" data-priority="${opp.priority}" data-title="${escHtml(opp.title.toLowerCase())}" onclick="openModal('opp-detail', {opp: ${JSON.stringify(opp).replace(/"/g, '&quot;')}})">
+          <div class="opp-head">
+            <span class="tag ${priorityClass}">${opp.priority}</span>
+            <h4>${escHtml(opp.title)}</h4>
+            <span style="margin-left: auto; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--text-3);">${escHtml(opp.id)}</span>
+          </div>
+          <div class="opp-context">${escHtml(opp.context)}</div>
+          <div class="opp-stats">
+            <div class="opp-stat">
+              <div class="opp-stat-label">Est. Clicks/mo</div>
+              <div class="opp-stat-value">+${fmt(opp.estimated_clicks_per_month)}</div>
+            </div>
+            <div class="opp-stat">
+              <div class="opp-stat-label">Revenue Impact</div>
+              <div class="opp-stat-value" style="font-size: 0.875rem;">${escHtml(opp.estimated_revenue_impact)}</div>
+            </div>
+            <div class="opp-stat">
+              <div class="opp-stat-label">Effort</div>
+              <div class="opp-stat-value" style="font-size: 0.875rem;">${opp.effort}</div>
+            </div>
+          </div>
+          <div class="opp-action">▸ ${escHtml(opp.action)}</div>
+          <div class="opp-footer">
+            <span>📂 ${ escHtml(opp.category)}</span>
+            <span>↩ reversible: ${opp.reversible ? '✓' : '✗'}</span>
+            <span>🔒 approval: ${opp.approval_required ? 'required' : 'auto'}</span>
+            <span style="margin-left: auto;">by ${escHtml(opp.suggested_by)} · ${escHtml(opp.date || '')}</span>
+          </div>
+        </div>`;
+    });
+  }
+
+  function filterOppCards() {
+    const filter = document.getElementById('opp-filter').value;
+    const search = document.getElementById('opp-search').value.toLowerCase();
+    document.querySelectorAll('.opp-card').forEach(card => {
+      const priority = card.dataset.priority;
+      const title = card.dataset.title;
+      let show = title.includes(search);
+      if (filter !== 'all') show = show && priority === filter;
+      card.style.display = show ? '' : 'none';
+    });
+  }
+
+  // ============================================================
+  // APPROVALS
+  // ============================================================
+  async function loadApprovals() {
+    if (!state.approvals) return;
+    const pending = state.approvals.pending || [];
+    const approved = state.approvals.approved || [];
+    const reverted = state.approvals.reverted || [];
+
+    document.getElementById('badge-approvals').textContent = pending.length;
+    document.getElementById('badge-approvals').className = 'nav-badge ' + (pending.length > 0 ? 'pending' : '');
+    document.getElementById('approvals-count').textContent = pending.length + ' pending';
+
+    const pendingEl = document.getElementById('approvals-pending');
+    if (pending.length === 0) {
+      pendingEl.innerHTML = '<div class="empty-state success"><span class="icon">✓</span>No pending approvals — all clean.</div>';
+    } else {
+      pendingEl.innerHTML = '';
+      pending.forEach((p, i) => {
+        const approveCmd = `python -m seo_bots.cli_approval approve ${p.action_id?.replace(/.*:/, '') || ''}`;
+        const rejectCmd = `python -m seo_bots.cli_approval reject ${p.action_id?.replace(/.*:/, '') || ''}`;
+        pendingEl.innerHTML += `
+          <div class="approval-row">
+            <span class="tag pending">pending</span>
+            <span class="mono" style="font-size: 11px;">${escHtml(p.bot || '—')}</span>
+            <div>
+              <strong>${escHtml(p.action_id || '—')}</strong><br>
+              <span style="color: var(--text-2); font-size: 11px;">${escHtml(p.preview || '')}</span>
+            </div>
+            <div class="approval-actions">
+              <button class="btn success small" onclick="copyText('${approveCmd.replace(/'/g, "\\'")}')">✓ Approve cmd</button>
+              <button class="btn danger small" onclick="copyText('${rejectCmd.replace(/'/g, "\\'")}')">✗ Reject cmd</button>
+            </div>
+          </div>`;
+      });
+    }
+
+    const approvedEl = document.getElementById('approvals-approved');
+    if (approved.length === 0) {
+      approvedEl.innerHTML = '<div class="empty-state">No recent approvals</div>';
+    } else {
+      approvedEl.innerHTML = '';
+      approved.forEach(p => {
+        approvedEl.innerHTML += `
+          <div class="approval-row">
+            <span class="tag success">approved</span>
+            <span class="mono" style="font-size: 11px;">${escHtml(p.bot || '—')}</span>
+            <span><strong>${escHtml(p.action_id || '—')}</strong></span>
+            <span class="mono" style="font-size: 11px; color: var(--text-3);">${p.used_at ? timeAgo(p.used_at * 1000) : '—'}</span>
+          </div>`;
+      });
+    }
+
+    const revertedEl = document.getElementById('approvals-reverted');
+    if (reverted.length === 0) {
+      revertedEl.innerHTML = '<div class="empty-state">No reverts</div>';
+    } else {
+      revertedEl.innerHTML = '';
+      reverted.forEach(p => {
+        revertedEl.innerHTML += `
+          <div class="approval-row">
+            <span class="tag revoked">reverted</span>
+            <span class="mono" style="font-size: 11px;">${escHtml(p.bot || '—')}</span>
+            <span><strong>${escHtml(p.action_id || '—')}</strong></span>
+            <span class="mono" style="font-size: 11px; color: var(--text-3);">—</span>
+          </div>`;
+      });
+    }
+  }
+
+  // ============================================================
+  // AUDIT
+  // ============================================================
+  async function loadAuditLog() {
+    if (!state.audit) return;
+    const tbody = document.getElementById('audit-tbody');
+    const overviewTbody = document.getElementById('overview-audit-tbody');
+    const actions = state.audit.actions || [];
+
+    const rows = (limit) => actions.slice(0, limit).map((a, i) => {
+      const resultTag = a.action.includes('failed') ? 'failure' :
+                         a.action.includes('revoked') ? 'revoked' :
+                         a.action.includes('success') || a.action === 'token_consumed' ? 'success' :
+                         a.action === 'token_issued' ? 'live' : 'pending';
+      return `<tr class="clickable" data-result="${resultTag}" onclick='openModal("audit-detail", {action: ${JSON.stringify(a).replace(/'/g, "\\'")}})'>
+        <td class="mono" style="font-size: 11px;">${a.ts ? new Date(a.ts * 1000).toLocaleString() : '—'}</td>
+        <td><span class="mono" style="font-size: 11px;">${escHtml(a.action)}</span></td>
+        <td class="mono">${escHtml(a.bot)}</td>
+        <td class="mono" style="font-size: 11px;">${escHtml(a.action_id || '—')}</td>
+        <td><span class="tag ${resultTag}">${resultTag}</span></td>
+        <td>→</td>
+      </tr>`;
+    }).join('');
+
+    if (actions.length === 0) {
+      const empty = '<tr><td colspan="6" class="empty-state">No audit events yet</td></tr>';
+      overviewTbody.innerHTML = empty;
+      tbody.innerHTML = empty;
+    } else {
+      overviewTbody.innerHTML = rows(10);
+      tbody.innerHTML = rows(50);
+    }
+
+    filterAuditTable();
+  }
+
+  function filterAuditTable() {
+    const q = document.getElementById('audit-search').value.toLowerCase();
+    const filter = document.getElementById('audit-filter').value;
+    document.querySelectorAll('#audit-tbody tr').forEach(row => {
+      if (!row.dataset.result) return;
+      const text = row.textContent.toLowerCase();
+      let show = text.includes(q);
+      if (filter === 'success') show = show && row.dataset.result === 'success';
+      else if (filter === 'failure') show = show && (row.dataset.result === 'failure' || row.dataset.result === 'revoked');
+      else if (filter === 'publish') show = show && text.includes('publish');
+      else if (filter === 'token') show = show && text.includes('token');
+      row.style.display = show ? '' : 'none';
+    });
+  }
+
+  // ============================================================
+  // LOAD ALL
+  // ============================================================
+  async function loadAllData(userTriggered = false) {
+    if (isLoading) return;
+    isLoading = true;
+
+    if (userTriggered) {
+      const btn = document.getElementById('refresh-btn');
+      btn.classList.add('loading');
+      document.getElementById('refresh-icon').className = 'spinner';
+      document.getElementById('refresh-label').textContent = 'Loading…';
+    }
+
+    const t0 = Date.now();
+    const [bots, gsc, ga4, ranks, gbp, opportunities, approvals, audit] = await Promise.all([
+      fetchJson('bots-status.json'),
+      fetchJson('gsc-data.json'),
+      fetchJson('ga4-data.json'),
+      fetchJson('ranks-data.json'),
+      fetchJson('gbp-data.json'),
+      fetchJson('opportunities.json'),
+      fetchJson('approvals.json'),
+      fetchJson('audit-log.json'),
+    ]);
+    state.bots = bots;
+    state.gsc = gsc;
+    state.ga4 = ga4;
+    state.ranks = ranks;
+    state.gbp = gbp;
+    state.opportunities = opportunities;
+    state.approvals = approvals;
+    state.audit = audit;
+
+    await Promise.all([
+      loadOverview(),
+      loadGsc(),
+      loadRanks(),
+      loadOpportunities(),
+      loadApprovals(),
+      loadAuditLog(),
+    ]);
+
+    document.getElementById('overview-time').textContent = new Date().toLocaleTimeString();
+    document.getElementById('footer-refresh').textContent = new Date().toLocaleTimeString() + ` (${Date.now() - t0}ms)`;
+
+    if (userTriggered) {
+      toast('✓ Refreshed', 'success', 1500);
+      const btn = document.getElementById('refresh-btn');
+      btn.classList.remove('loading');
+      document.getElementById('refresh-icon').className = '';
+      document.getElementById('refresh-icon').textContent = '↻';
+      document.getElementById('refresh-label').textContent = 'Refresh';
+    }
+
+    isLoading = false;
+  }
+
+  // ============================================================
+  // INIT
+  // ============================================================
+  // Hash routing
+  const hash = location.hash.slice(1);
+  if (hash && document.getElementById('tab-auto-' + hash)) {
+    switchTab(hash);
+  }
+
+  loadAllData();
+
+  // Auto-refresh every 30s, but only if page is visible
+  function startAutoRefresh() {
+    if (refreshTimer) clearInterval(refreshTimer);
+    refreshTimer = setInterval(() => {
+      if (!document.hidden) loadAllData();
+    }, 30000);
+  }
+  startAutoRefresh();
+
+  // Keyboard shortcut: 'r' to refresh
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'r' && !e.ctrlKey && !e.metaKey && document.activeElement.tagName !== 'INPUT') {
+      loadAllData(true);
+    }
+  });
+
+  // Escape closes modal
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeModal();
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "location": "Canada",
+  "device": "desktop",
+  "keywords": [
+    {
+      "keyword": "weedistillery",
+      "your_rank": 1,
+      "search_volume": 10,
+      "top_competitors": [],
+      "note": "Brand name"
+    },
+    {
+      "keyword": "weed delivery brampton",
+      "your_rank": null,
+      "search_volume": null,
+      "top_competitors": [],
+      "note": "GEO opportunity"
+    }
+  ],
+  "summary": {
+    "keywords_tracked": 2,
+    "keywords_in_top_3": 1,
+    "keywords_in_top_10": 1,
+    "keywords_not_ranking": 1
+  },
+  "last_updated": "2026-08-19T03:58:10+05:30"
+}
