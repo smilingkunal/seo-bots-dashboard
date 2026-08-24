@@ -1,0 +1,12 @@
+{
+  "last_updated": "2026-08-24T15:06:22.218856Z",
+  "homepage_fix_note": "homepage-fix-2026-08-24.md",
+  "schema_files": [
+    "example-product-schema.jsonld",
+    "homepage-faq.jsonld",
+    "homepage-localbusiness.jsonld",
+    "homepage-combined-schema.html"
+  ],
+  "sitemap_urls": 59,
+  "ready_to_apply": true
+}

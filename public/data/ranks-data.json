@@ -1,27 +1,110 @@
 {
-  "location": "Canada",
+  "last_updated": "2026-08-24T15:06:22.123736Z",
+  "source_file": "ranks_1787089413_desktop.json",
+  "location": "Canada / Ontario",
   "device": "desktop",
-  "keywords": [
-    {
-      "keyword": "weedistillery",
-      "your_rank": 1,
-      "search_volume": 10,
-      "top_competitors": [],
+  "keywords": {
+    "weedistillery": {
+      "our_rank": 1,
+      "competitors": [
+        {
+          "domain": "ca.trustpilot.com",
+          "rank": 2,
+          "title": "Weedistillery Cannabis Dispensary |Same-Day Weed ..."
+        },
+        {
+          "domain": "cannaradar.ca",
+          "rank": 3,
+          "title": "Weedistillery in Mississauga, ON"
+        },
+        {
+          "domain": "cannawayz.com",
+          "rank": 4,
+          "title": "WeeDistillery Cannabis Dispensary-Same Day Delivery!"
+        },
+        {
+          "domain": "www.yelp.ca",
+          "rank": 5,
+          "title": "WEEDISTILLERY - Updated August 2026 - 25 Photos"
+        },
+        {
+          "domain": "www.scribd.com",
+          "rank": 6,
+          "title": "Weedistillery Locations | PDF"
+        }
+      ],
+      "our_url": "https://weedistillery.com/",
       "note": "Brand name"
     },
-    {
-      "keyword": "weed delivery brampton",
-      "your_rank": null,
-      "search_volume": null,
-      "top_competitors": [],
-      "note": "GEO opportunity"
+    "weed delivery brampton": {
+      "our_rank": 26,
+      "competitors": [
+        {
+          "domain": "twdshop.co",
+          "rank": 4,
+          "title": "Weed Delivery Brampton [2026 Fast & Same Day ..."
+        },
+        {
+          "domain": "farmerslink.ca",
+          "rank": 5,
+          "title": "Farmers Link Weed Delivery Brampton"
+        },
+        {
+          "domain": "ganjika-house.com",
+          "rank": 6,
+          "title": "Canada's Online Dispensary & Cannabis Shop"
+        },
+        {
+          "domain": "chillincheetah.ca",
+          "rank": 7,
+          "title": "1-Hour Weed Delivery Brampton"
+        },
+        {
+          "domain": "thewoodscannabis.ca",
+          "rank": 9,
+          "title": "Cannabis & Weed Delivery Brampton & Mississauga"
+        }
+      ],
+      "our_url": "https://weedistillery.com/",
+      "note": null
+    },
+    "cannabis dispensary": {
+      "our_rank": null,
+      "competitors": [
+        {
+          "domain": "popscannabis.ca",
+          "rank": 4,
+          "title": "Pop's Cannabis: Canada's Best Cannabis Store"
+        },
+        {
+          "domain": "inspiredcannabis.ca",
+          "rank": 5,
+          "title": "Downtown Vancouver Cannabis Store"
+        },
+        {
+          "domain": "weedmaps.com",
+          "rank": 6,
+          "title": "Montreal, QC Weed Dispensaries Near Me | Recreational ..."
+        },
+        {
+          "domain": "thecrownleaf.ca",
+          "rank": 7,
+          "title": "Best Cannabis Dispensary Chain in Brampton, Mississauga ..."
+        },
+        {
+          "domain": "budbardispensary.ca",
+          "rank": 8,
+          "title": "Calgary's Best Cannabis Dispensary | Weed Delivery In Calgar"
+        }
+      ],
+      "our_url": "https://weedistillery.com/",
+      "note": null
     }
-  ],
-  "summary": {
-    "keywords_tracked": 2,
-    "keywords_in_top_3": 1,
-    "keywords_in_top_10": 1,
-    "keywords_not_ranking": 1
   },
-  "last_updated": "2026-08-19T03:58:10+05:30"
+  "summary": {
+    "total_keywords": 3,
+    "ranking_top_10": 1,
+    "ranking_top_30": 2,
+    "not_ranking": 1
+  }
 }

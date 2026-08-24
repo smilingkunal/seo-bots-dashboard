@@ -1,88 +1,848 @@
 {
-  "last_updated": "2026-08-19T03:51:17+05:30",
-  "total_actions": 8,
+  "last_updated": "2026-08-24T15:06:22.396774Z",
+  "total_actions": 61,
   "actions": [
     {
-      "ts": 1787091500,
-      "action": "publish_post",
-      "bot": "gbp-improver",
-      "action_id": "publish_post:test-001",
+      "timestamp": "2026-08-24T14:50:22.481496Z",
+      "action": "fix_generated",
       "details": {
-        "result": "success"
-      }
+        "date": "2026-08-24",
+        "tags": false,
+        "schema": false,
+        "sitemap": true,
+        "urls_in_sitemap": 59
+      },
+      "_source_log": "homepage-fix-audit.jsonl"
     },
     {
-      "ts": "2026-08-19T03:00:00+05:30",
-      "action": "token_issued",
-      "bot": "gbp-oauth-flow",
-      "action_id": "oauth_flow_test",
-      "token": "apr_1787083011_0456e1",
+      "timestamp": "2026-08-24T14:47:34.628285Z",
+      "action": "fix_generated",
       "details": {
-        "ttl_minutes": 10,
-        "preview_len": 80
-      }
+        "date": "2026-08-24",
+        "tags": true,
+        "schema": true,
+        "sitemap": true,
+        "urls_in_sitemap": 30
+      },
+      "_source_log": "homepage-fix-audit.jsonl"
     },
     {
-      "ts": "2026-08-19T03:00:01+05:30",
-      "action": "token_consumed",
-      "bot": "gbp-oauth-flow",
-      "action_id": "oauth_flow_test",
-      "token": "apr_1787083011_0456e1",
+      "timestamp": "2026-08-24T14:37:16.590865Z",
+      "action": "run_complete",
       "details": {
-        "result": "success"
-      }
+        "date": "2026-08-24",
+        "topics": 1,
+        "cities": 1,
+        "briefs": 1,
+        "drafts": 1
+      },
+      "_source_log": "content-bot-audit.jsonl"
     },
     {
-      "ts": "2026-08-19T03:05:00+05:30",
-      "action": "draft_rejected",
-      "bot": "cli",
-      "action_id": "draft-test-001",
+      "timestamp": "2026-08-24T14:37:10.162424Z",
+      "action": "run_start",
       "details": {
-        "reason": "user rejected"
-      }
+        "date": "2026-08-24",
+        "topics": [
+          "pink-chapo-strain"
+        ],
+        "cities": [
+          "Brampton"
+        ]
+      },
+      "_source_log": "content-bot-audit.jsonl"
     },
     {
-      "ts": "2026-08-19T03:10:00+05:30",
-      "action": "publish_post",
-      "bot": "gbp-improver",
-      "action_id": "publish_post:gbp-post-draft-test",
-      "token": "apr_1787083011_xxx",
+      "timestamp": "2026-08-24T14:37:09.585137Z",
+      "action": "run_complete",
       "details": {
-        "draft_id": "gbp-post-draft-test",
-        "result": "success"
-      }
+        "date": "2026-08-24",
+        "topics": 1,
+        "cities": 1,
+        "briefs": 1,
+        "drafts": 1
+      },
+      "_source_log": "content-bot-audit.jsonl"
     },
     {
-      "ts": "2026-08-19T03:11:00+05:30",
-      "action": "publish_post_failed",
-      "bot": "gbp-improver",
-      "action_id": "publish_post:gbp-post-draft-002",
-      "token": "apr_1787083012_xxx",
+      "timestamp": "2026-08-24T14:37:02.737323Z",
+      "action": "run_start",
       "details": {
-        "error": "API timeout",
-        "result": "failure"
-      }
+        "date": "2026-08-24",
+        "topics": [
+          "best-sativa-strains"
+        ],
+        "cities": [
+          "Brampton"
+        ]
+      },
+      "_source_log": "content-bot-audit.jsonl"
     },
     {
-      "ts": "2026-08-19T03:15:00+05:30",
-      "action": "token_revoked",
-      "bot": "cli",
-      "action_id": "test-token-revoked",
+      "timestamp": "2026-08-24T14:37:02.178076Z",
+      "action": "run_complete",
       "details": {
-        "reason": "user changed mind"
-      }
+        "date": "2026-08-24",
+        "topics": 1,
+        "cities": 1,
+        "briefs": 1,
+        "drafts": 1
+      },
+      "_source_log": "content-bot-audit.jsonl"
     },
     {
-      "ts": "2026-08-19T03:15:30+05:30",
-      "action": "publish_post",
-      "bot": "gbp-improver",
-      "action_id": "publish_post:gbp-post-draft-real",
-      "token": "apr_1787083013_xxx",
+      "timestamp": "2026-08-24T14:36:52.633430Z",
+      "action": "run_start",
       "details": {
-        "draft_id": "gbp-post-draft-real",
-        "post_name": "accounts/123/locations/456/localPosts/789",
-        "result": "success"
-      }
+        "date": "2026-08-24",
+        "topics": [
+          "best-edibles"
+        ],
+        "cities": [
+          "Mississauga"
+        ]
+      },
+      "_source_log": "content-bot-audit.jsonl"
+    },
+    {
+      "timestamp": "2026-08-24T14:36:51.987607Z",
+      "action": "run_complete",
+      "details": {
+        "date": "2026-08-24",
+        "topics": 1,
+        "cities": 1,
+        "briefs": 1,
+        "drafts": 1
+      },
+      "_source_log": "content-bot-audit.jsonl"
+    },
+    {
+      "timestamp": "2026-08-24T14:36:45.409322Z",
+      "action": "run_start",
+      "details": {
+        "date": "2026-08-24",
+        "topics": [
+          "weed-delivery-guide"
+        ],
+        "cities": [
+          "Burlington"
+        ]
+      },
+      "_source_log": "content-bot-audit.jsonl"
+    },
+    {
+      "timestamp": "2026-08-24T14:36:45.132241Z",
+      "action": "run_complete",
+      "details": {
+        "date": "2026-08-24",
+        "topics": 1,
+        "cities": 1,
+        "briefs": 1,
+        "drafts": 1
+      },
+      "_source_log": "content-bot-audit.jsonl"
+    },
+    {
+      "timestamp": "2026-08-24T14:36:36.228841Z",
+      "action": "run_start",
+      "details": {
+        "date": "2026-08-24",
+        "topics": [
+          "weed-delivery-guide"
+        ],
+        "cities": [
+          "Mississauga"
+        ]
+      },
+      "_source_log": "content-bot-audit.jsonl"
+    },
+    {
+      "timestamp": "2026-08-24T14:32:30.644060Z",
+      "action": "run_complete",
+      "details": {
+        "date": "2026-08-24",
+        "topics": 1,
+        "cities": 1,
+        "briefs": 1,
+        "drafts": 1
+      },
+      "_source_log": "content-bot-audit.jsonl"
+    },
+    {
+      "timestamp": "2026-08-24T14:32:23.828974Z",
+      "action": "run_start",
+      "details": {
+        "date": "2026-08-24",
+        "topics": [
+          "edibles-dosage"
+        ],
+        "cities": [
+          "Brampton"
+        ]
+      },
+      "_source_log": "content-bot-audit.jsonl"
+    },
+    {
+      "timestamp": "2026-08-24T14:32:09.016857Z",
+      "action": "run_complete",
+      "details": {
+        "date": "2026-08-24",
+        "topics": 2,
+        "cities": 6,
+        "briefs": 12,
+        "drafts": 12
+      },
+      "_source_log": "content-bot-audit.jsonl"
+    },
+    {
+      "timestamp": "2026-08-24T14:31:26.673543Z",
+      "action": "run_start",
+      "details": {
+        "date": "2026-08-24",
+        "topics": [
+          "best-indica-strains",
+          "24-hour-delivery"
+        ],
+        "cities": [
+          "Brampton",
+          "Mississauga",
+          "Burlington",
+          "Oakville",
+          "Milton",
+          "Halton Hills"
+        ]
+      },
+      "_source_log": "content-bot-audit.jsonl"
+    },
+    {
+      "timestamp": "2026-08-24T14:31:09.372831Z",
+      "action": "run_complete",
+      "details": {
+        "date": "2026-08-24",
+        "topics": 1,
+        "cities": 3,
+        "briefs": 3,
+        "drafts": 3
+      },
+      "_source_log": "content-bot-audit.jsonl"
+    },
+    {
+      "timestamp": "2026-08-24T14:30:55.005107Z",
+      "action": "run_start",
+      "details": {
+        "date": "2026-08-24",
+        "topics": [
+          "first-time-buyer"
+        ],
+        "cities": [
+          "Burlington",
+          "Oakville",
+          "Milton"
+        ]
+      },
+      "_source_log": "content-bot-audit.jsonl"
+    },
+    {
+      "timestamp": "2026-08-24T14:30:36.130876Z",
+      "action": "run_complete",
+      "details": {
+        "date": "2026-08-24",
+        "topics": 1,
+        "cities": 1,
+        "briefs": 1,
+        "drafts": 1
+      },
+      "_source_log": "content-bot-audit.jsonl"
+    },
+    {
+      "timestamp": "2026-08-24T14:30:29.116266Z",
+      "action": "run_start",
+      "details": {
+        "date": "2026-08-24",
+        "topics": [
+          "best-sativa-strains"
+        ],
+        "cities": [
+          "Brampton"
+        ]
+      },
+      "_source_log": "content-bot-audit.jsonl"
+    },
+    {
+      "timestamp": "2026-08-24T14:30:20.046282Z",
+      "action": "run_complete",
+      "details": {
+        "date": "2026-08-24",
+        "topics": 1,
+        "cities": 6,
+        "briefs": 6,
+        "drafts": 6
+      },
+      "_source_log": "content-bot-audit.jsonl"
+    },
+    {
+      "timestamp": "2026-08-24T14:29:54.951213Z",
+      "action": "run_start",
+      "details": {
+        "date": "2026-08-24",
+        "topics": [
+          "pink-chapo-strain"
+        ],
+        "cities": [
+          "Brampton",
+          "Mississauga",
+          "Burlington",
+          "Oakville",
+          "Milton",
+          "Halton Hills"
+        ]
+      },
+      "_source_log": "content-bot-audit.jsonl"
+    },
+    {
+      "timestamp": "2026-08-24T14:29:35.258827Z",
+      "action": "run_complete",
+      "details": {
+        "date": "2026-08-24",
+        "topics": 1,
+        "cities": 1,
+        "briefs": 1,
+        "drafts": 1
+      },
+      "_source_log": "content-bot-audit.jsonl"
+    },
+    {
+      "timestamp": "2026-08-24T14:29:29.312104Z",
+      "action": "run_start",
+      "details": {
+        "date": "2026-08-24",
+        "topics": [
+          "best-edibles"
+        ],
+        "cities": [
+          "Mississauga"
+        ]
+      },
+      "_source_log": "content-bot-audit.jsonl"
+    },
+    {
+      "timestamp": "2026-08-24T14:29:19.775226Z",
+      "action": "run_complete",
+      "details": {
+        "date": "2026-08-24",
+        "topics": 1,
+        "cities": 2,
+        "briefs": 2,
+        "drafts": 2
+      },
+      "_source_log": "content-bot-audit.jsonl"
+    },
+    {
+      "timestamp": "2026-08-24T14:29:10.918064Z",
+      "action": "run_start",
+      "details": {
+        "date": "2026-08-24",
+        "topics": [
+          "weed-delivery-guide"
+        ],
+        "cities": [
+          "Mississauga",
+          "Burlington"
+        ]
+      },
+      "_source_log": "content-bot-audit.jsonl"
+    },
+    {
+      "timestamp": "2026-08-24T14:14:38.920711Z",
+      "action": "drafts_complete",
+      "details": {
+        "date": "2026-08-24",
+        "count": 9
+      },
+      "_source_log": "gbp-drafts-audit.jsonl"
+    },
+    {
+      "timestamp": "2026-08-24T14:13:51.173246Z",
+      "action": "audit_complete",
+      "details": {
+        "date": "2026-08-24",
+        "profile_found": true,
+        "cities_analyzed": 6,
+        "critical_issues": 2
+      },
+      "_source_log": "gbp-audit-audit.jsonl"
+    },
+    {
+      "timestamp": "2026-08-24T13:58:27.454437Z",
+      "action": "run_complete",
+      "details": {
+        "date": "2026-08-24",
+        "topics": 2,
+        "cities": 2,
+        "briefs": 4,
+        "drafts": 4
+      },
+      "_source_log": "content-bot-audit.jsonl"
+    },
+    {
+      "timestamp": "2026-08-24T13:58:23.317531Z",
+      "action": "run_start",
+      "details": {
+        "date": "2026-08-24",
+        "topics": [
+          "cannabis-edibles-guide",
+          "first-time-buyer"
+        ],
+        "cities": [
+          "Brampton",
+          "Mississauga"
+        ]
+      },
+      "_source_log": "content-bot-audit.jsonl"
+    },
+    {
+      "timestamp": "2026-08-24T13:57:47.937932Z",
+      "action": "run_complete",
+      "details": {
+        "date": "2026-08-24",
+        "topics": 1,
+        "cities": 1,
+        "briefs": 1,
+        "drafts": 1
+      },
+      "_source_log": "content-bot-audit.jsonl"
+    },
+    {
+      "timestamp": "2026-08-24T13:57:41.717878Z",
+      "action": "run_start",
+      "details": {
+        "date": "2026-08-24",
+        "topics": [
+          "best-sativa-strains"
+        ],
+        "cities": [
+          "Brampton"
+        ]
+      },
+      "_source_log": "content-bot-audit.jsonl"
+    },
+    {
+      "timestamp": "2026-08-24T13:57:03.990687Z",
+      "action": "run_complete",
+      "details": {
+        "date": "2026-08-24",
+        "topics": 1,
+        "cities": 1,
+        "briefs": 1,
+        "drafts": 0
+      },
+      "_source_log": "content-bot-audit.jsonl"
+    },
+    {
+      "timestamp": "2026-08-24T13:56:56.428092Z",
+      "action": "run_start",
+      "details": {
+        "date": "2026-08-24",
+        "topics": [
+          "best-sativa-strains"
+        ],
+        "cities": [
+          "Brampton"
+        ]
+      },
+      "_source_log": "content-bot-audit.jsonl"
+    },
+    {
+      "timestamp": "2026-08-24T13:53:06.607722Z",
+      "action": "run_start",
+      "details": {
+        "date": "2026-08-24",
+        "topics": [
+          "best-sativa-strains"
+        ],
+        "cities": [
+          "Brampton"
+        ]
+      },
+      "_source_log": "content-bot-audit.jsonl"
+    },
+    {
+      "timestamp": "2026-08-24T13:36:11.256444Z",
+      "action": "audit_complete",
+      "details": {
+        "date": "2026-08-24",
+        "competitors": 8,
+        "keywords": 21,
+        "opportunities": 1,
+        "obsidian_notes": 10
+      },
+      "_source_log": "competitor-analyst-audit.jsonl"
+    },
+    {
+      "timestamp": "2026-08-24T13:29:41.961222Z",
+      "action": "audit_start",
+      "details": {
+        "date": "2026-08-24",
+        "competitors": [
+          "shopkindling.ca",
+          "thewoodscannabis.ca",
+          "farmerslink.ca",
+          "thehunnypot.com",
+          "thecrownleaf.ca",
+          "canna-express.co",
+          "www.leafly.ca",
+          "weedmaps.com"
+        ],
+        "keywords_count": 21,
+        "keywords_only": false
+      },
+      "_source_log": "competitor-analyst-audit.jsonl"
+    },
+    {
+      "timestamp": "2026-08-24T13:28:13.692451Z",
+      "action": "audit_start",
+      "details": {
+        "date": "2026-08-24",
+        "competitors": [
+          "shopkindling.ca",
+          "thewoodscannabis.ca",
+          "farmerslink.ca",
+          "thehunnypot.com",
+          "thecrownleaf.ca",
+          "canna-express.co",
+          "www.leafly.ca",
+          "weedmaps.com"
+        ],
+        "keywords_count": 21,
+        "keywords_only": false
+      },
+      "_source_log": "competitor-analyst-audit.jsonl"
+    },
+    {
+      "timestamp": "2026-08-24T13:24:27.431234Z",
+      "action": "audit_start",
+      "details": {
+        "date": "2026-08-24",
+        "competitors": [
+          "shopkindling.ca",
+          "thewoodscannabis.ca",
+          "farmerslink.ca",
+          "thehunnypot.com",
+          "thecrownleaf.ca",
+          "canna-express.co",
+          "www.leafly.ca",
+          "weedmaps.com"
+        ],
+        "keywords_count": 21,
+        "keywords_only": false
+      },
+      "_source_log": "competitor-analyst-audit.jsonl"
+    },
+    {
+      "timestamp": "2026-08-24T13:23:59.437308Z",
+      "action": "audit_complete",
+      "details": {
+        "date": "2026-08-24",
+        "competitors": 8,
+        "keywords": 5,
+        "opportunities": 0,
+        "obsidian_notes": 10
+      },
+      "_source_log": "competitor-analyst-audit.jsonl"
+    },
+    {
+      "timestamp": "2026-08-24T13:21:49.924253Z",
+      "action": "audit_start",
+      "details": {
+        "date": "2026-08-24",
+        "competitors": [
+          "shopkindling.ca",
+          "thewoodscannabis.ca",
+          "farmerslink.ca",
+          "thehunnypot.com",
+          "thecrownleaf.ca",
+          "canna-express.co",
+          "www.leafly.ca",
+          "weedmaps.com"
+        ],
+        "keywords_count": 5,
+        "keywords_only": false
+      },
+      "_source_log": "competitor-analyst-audit.jsonl"
+    },
+    {
+      "timestamp": "2026-08-24T13:21:44.502454Z",
+      "action": "audit_complete",
+      "details": {
+        "date": "2026-08-24",
+        "competitors": 8,
+        "keywords": 5,
+        "opportunities": 0,
+        "obsidian_notes": 10
+      },
+      "_source_log": "competitor-analyst-audit.jsonl"
+    },
+    {
+      "timestamp": "2026-08-24T13:19:29.135041Z",
+      "action": "audit_start",
+      "details": {
+        "date": "2026-08-24",
+        "competitors": [
+          "shopkindling.ca",
+          "thewoodscannabis.ca",
+          "farmerslink.ca",
+          "thehunnypot.com",
+          "thecrownleaf.ca",
+          "canna-express.co",
+          "www.leafly.ca",
+          "weedmaps.com"
+        ],
+        "keywords_count": 5,
+        "keywords_only": false
+      },
+      "_source_log": "competitor-analyst-audit.jsonl"
+    },
+    {
+      "timestamp": "2026-08-24T13:18:20.066889Z",
+      "action": "audit_complete",
+      "details": {
+        "date": "2026-08-24",
+        "competitors": 8,
+        "keywords": 5,
+        "opportunities": 0,
+        "obsidian_notes": 10
+      },
+      "_source_log": "competitor-analyst-audit.jsonl"
+    },
+    {
+      "timestamp": "2026-08-24T13:16:03.740136Z",
+      "action": "audit_start",
+      "details": {
+        "date": "2026-08-24",
+        "competitors": [
+          "shopkindling.ca",
+          "thewoodscannabis.ca",
+          "farmerslink.ca",
+          "thehunnypot.com",
+          "thecrownleaf.ca",
+          "canna-express.co",
+          "www.leafly.ca",
+          "weedmaps.com"
+        ],
+        "keywords_count": 5,
+        "keywords_only": false
+      },
+      "_source_log": "competitor-analyst-audit.jsonl"
+    },
+    {
+      "timestamp": "2026-08-24T13:15:52.279949Z",
+      "action": "audit_complete",
+      "details": {
+        "date": "2026-08-24",
+        "competitors": 8,
+        "keywords": 5,
+        "opportunities": 0,
+        "obsidian_notes": 10
+      },
+      "_source_log": "competitor-analyst-audit.jsonl"
+    },
+    {
+      "timestamp": "2026-08-24T13:14:17.183162Z",
+      "action": "audit_start",
+      "details": {
+        "date": "2026-08-24",
+        "competitors": [
+          "shopkindling.ca",
+          "thewoodscannabis.ca",
+          "farmerslink.ca",
+          "thehunnypot.com",
+          "thecrownleaf.ca",
+          "canna-express.co",
+          "www.leafly.ca",
+          "weedmaps.com"
+        ],
+        "keywords_count": 5,
+        "keywords_only": true
+      },
+      "_source_log": "competitor-analyst-audit.jsonl"
+    },
+    {
+      "timestamp": "2026-08-24T13:11:46.792919Z",
+      "action": "audit_complete",
+      "details": {
+        "date": "2026-08-24",
+        "competitors": 8,
+        "keywords": 5,
+        "opportunities": 0,
+        "obsidian_notes": 10
+      },
+      "_source_log": "competitor-analyst-audit.jsonl"
+    },
+    {
+      "timestamp": "2026-08-24T13:10:29.380429Z",
+      "action": "audit_start",
+      "details": {
+        "date": "2026-08-24",
+        "competitors": [
+          "shopkindling.ca",
+          "thewoodscannabis.ca",
+          "farmerslink.ca",
+          "thehunnypot.com",
+          "thecrownleaf.ca",
+          "canna-express.co",
+          "www.leafly.ca",
+          "weedmaps.com"
+        ],
+        "keywords_count": 5,
+        "keywords_only": true
+      },
+      "_source_log": "competitor-analyst-audit.jsonl"
+    },
+    {
+      "timestamp": "2026-08-24T13:05:56.155765Z",
+      "action": "audit_complete",
+      "details": {
+        "date": "2026-08-24",
+        "crawled_pages": 20,
+        "orphan_count": 1,
+        "broken_external": 4,
+        "total_backlinks": 538,
+        "obsidian_notes": 4
+      },
+      "_source_log": "link-auditor-audit.jsonl"
+    },
+    {
+      "timestamp": "2026-08-24T13:04:41.897521Z",
+      "action": "audit_start",
+      "details": {
+        "date": "2026-08-24",
+        "site": "https://weedistillery.com",
+        "max_pages": 20
+      },
+      "_source_log": "link-auditor-audit.jsonl"
+    },
+    {
+      "timestamp": "2026-08-24T13:04:00.496471Z",
+      "action": "audit_complete",
+      "details": {
+        "date": "2026-08-24",
+        "crawled_pages": 5,
+        "orphan_count": 1,
+        "broken_external": 3,
+        "total_backlinks": 538,
+        "obsidian_notes": 4
+      },
+      "_source_log": "link-auditor-audit.jsonl"
+    },
+    {
+      "timestamp": "2026-08-24T13:02:58.739379Z",
+      "action": "audit_start",
+      "details": {
+        "date": "2026-08-24",
+        "site": "https://weedistillery.com",
+        "max_pages": 5
+      },
+      "_source_log": "link-auditor-audit.jsonl"
+    },
+    {
+      "timestamp": "2026-08-24T13:01:51.704214Z",
+      "action": "audit_complete",
+      "details": {
+        "date": "2026-08-24",
+        "crawled_pages": 5,
+        "orphan_count": 1,
+        "broken_external": 3,
+        "total_backlinks": 538,
+        "obsidian_notes": 4
+      },
+      "_source_log": "link-auditor-audit.jsonl"
+    },
+    {
+      "timestamp": "2026-08-24T13:01:02.736361Z",
+      "action": "audit_start",
+      "details": {
+        "date": "2026-08-24",
+        "site": "https://weedistillery.com",
+        "max_pages": 5
+      },
+      "_source_log": "link-auditor-audit.jsonl"
+    },
+    {
+      "timestamp": "2026-08-24T13:00:25.701569Z",
+      "action": "audit_complete",
+      "details": {
+        "date": "2026-08-24",
+        "crawled_pages": 5,
+        "orphan_count": 1,
+        "broken_external": 3,
+        "total_backlinks": null,
+        "obsidian_notes": 4
+      },
+      "_source_log": "link-auditor-audit.jsonl"
+    },
+    {
+      "timestamp": "2026-08-24T12:59:24.708051Z",
+      "action": "audit_start",
+      "details": {
+        "date": "2026-08-24",
+        "site": "https://weedistillery.com",
+        "max_pages": 5
+      },
+      "_source_log": "link-auditor-audit.jsonl"
+    },
+    {
+      "timestamp": "2026-08-24T12:45:23.806468Z",
+      "action": "draft_complete",
+      "details": {
+        "date": "2026-08-24",
+        "notes_created": 18
+      },
+      "_source_log": "obsidian-drafter-audit.jsonl"
+    },
+    {
+      "timestamp": "2026-08-24T12:45:23.774296Z",
+      "action": "draft_start",
+      "details": {
+        "date": "2026-08-24"
+      },
+      "_source_log": "obsidian-drafter-audit.jsonl"
+    },
+    {
+      "timestamp": "2026-08-24T12:35:00.954640Z",
+      "action": "draft_complete",
+      "details": {
+        "date": "2026-08-24",
+        "notes_created": 18,
+        "note_files": [
+          "2026-08-24-opportunity-httpsweedistillerycom.md",
+          "2026-08-24-opportunity-httpsweedistillerycomlocationsweed-delivery-brampt.md",
+          "2026-08-24-opportunity-httpsweedistillerycomedibles.md",
+          "2026-08-24-opportunity-httpsweedistillerycomproductpink-chapo-lso-top-she.md",
+          "2026-08-24-opportunity-httpsweedistillerycomproducttop-tier-2500mg.md",
+          "2026-08-24-opportunity-httpsweedistillerycomproductdvp-premium-disposable.md",
+          "2026-08-24-opportunity-httpsweedistillerycomproductgas-gang.md",
+          "2026-08-24-opportunity-httpsweedistillerycomedibles-delivery-milton.md",
+          "2026-08-24-opportunity-httpsweedistillerycomounce-special.md",
+          "2026-08-24-opportunity-httpsweedistillerycomproduct-categoryedibles.md",
+          "2026-08-24-opportunity-httpsweedistillerycomproduct300mg-thc-gummies-gta-.md",
+          "2026-08-24-opportunity-httpsweedistillerycomweed-delivery-locations.md",
+          "2026-08-24-opportunity-httpsweedistillerycomweed-delivery-locationsweed-d.md",
+          "2026-08-24-opportunity-httpsweedistillerycombest-cannabis-strains-burling.md",
+          "2026-08-24-opportunity-httpsweedistillerycombest-edibles-mississauga.md",
+          "2026-08-24-opportunity-httpsweedistillerycombrampton-cannabis-guide-first.md",
+          "2026-08-24-opportunity-httpsweedistillerycomedibles-delivery-halton-hills.md",
+          "2026-08-24-opportunity-httpsweedistillerycomedibles-delivery-oakville.md"
+        ]
+      },
+      "_source_log": "obsidian-drafter-audit.jsonl"
+    },
+    {
+      "timestamp": "2026-08-24T12:35:00.888450Z",
+      "action": "draft_start",
+      "details": {
+        "date": "2026-08-24"
+      },
+      "_source_log": "obsidian-drafter-audit.jsonl"
     }
   ]
 }
