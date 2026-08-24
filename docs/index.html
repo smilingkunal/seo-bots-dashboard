@@ -686,6 +686,40 @@
         GBP Improver
         <span class="nav-badge pending" id="badge-gbp-improver">wait</span>
       </li>
+      <li class="nav-item" data-tab="obsidian-drafter" onclick="switchTab('obsidian-drafter')">
+        <span class="nav-icon" style="background: var(--accent-cyan);"></span>
+        Obsidian Drafter
+        <span class="nav-badge live" id="badge-obsidian-drafter">live</span>
+      </li>
+      <li class="nav-item" data-tab="link-auditor" onclick="switchTab('link-auditor')">
+        <span class="nav-icon" style="background: var(--accent-violet);"></span>
+        Link Auditor
+        <span class="nav-badge live" id="badge-link-auditor">live</span>
+      </li>
+      <li class="nav-item" data-tab="competitor-analyst" onclick="switchTab('competitor-analyst')">
+        <span class="nav-icon" style="background: var(--accent-orange);"></span>
+        Competitor Analyst
+        <span class="nav-badge live" id="badge-competitor-analyst">live</span>
+      </li>
+      <li class="nav-item" data-tab="content-bot" onclick="switchTab('content-bot')">
+        <span class="nav-icon" style="background: var(--accent-emerald);"></span>
+        Content Bot
+        <span class="nav-badge live" id="badge-content-bot">live</span>
+      </li>
+    </ul>
+
+    <div class="sidebar-title" style="margin-top: 1.5rem;">Reports</div>
+    <ul class="nav">
+      <li class="nav-item" data-tab="gbp-audit" onclick="switchTab('gbp-audit')">
+        <span class="nav-icon" style="background: var(--accent-rose);"></span>
+        GBP Audit
+        <span class="nav-badge live" id="badge-gbp-audit">live</span>
+      </li>
+      <li class="nav-item" data-tab="seo-fixes" onclick="switchTab('seo-fixes')">
+        <span class="nav-icon" style="background: var(--accent-amber);"></span>
+        SEO Fixes
+        <span class="nav-badge ready" id="badge-seo-fixes">ready</span>
+      </li>
     </ul>
 
     <div class="sidebar-title" style="margin-top: 1.5rem;">Audit</div>
@@ -969,6 +1003,196 @@
     </section>
 
     <!-- OPPORTUNITIES TAB -->
+
+    <!-- COMPETITOR ANALYST TAB -->
+    <section class="tab" id="tab-auto-competitor-analyst">
+      <div class="tab-header">
+        <div>
+          <h2>Competitor Analyst</h2>
+          <p>Tracks Tier 1 + Tier 2 competitors across keyword rankings, backlinks, and anchor text</p>
+        </div>
+        <span class="header-pill live" id="header-pill-competitor-analyst">live</span>
+      </div>
+
+      <div class="grid" id="competitor-stats"></div>
+
+      <div class="panel">
+        <div class="panel-header">
+          <h3>Tracked Competitors</h3>
+          <small>Domain · backlinks · referring domains · rank · shared keywords</small>
+        </div>
+        <div class="panel-body">
+          <table id="competitor-table">
+            <thead>
+              <tr>
+                <th>Domain</th>
+                <th>Backlinks</th>
+                <th>Referring Domains</th>
+                <th>Domain Rank</th>
+                <th>Avg Rank</th>
+                <th>Rank Share</th>
+                <th>Shared Keywords</th>
+              </tr>
+            </thead>
+            <tbody id="competitor-tbody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-header">
+          <h3>Keyword Gaps</h3>
+          <small>Opportunities: competitors rank top 10 but we don't</small>
+        </div>
+        <div class="panel-body" id="competitor-gaps"></div>
+      </div>
+    </section>
+
+    <!-- LINK AUDITOR TAB -->
+    <section class="tab" id="tab-auto-link-auditor">
+      <div class="tab-header">
+        <div>
+          <h2>Link Auditor</h2>
+          <p>Internal links, external links, and backlink profile</p>
+        </div>
+        <span class="header-pill live" id="header-pill-link-auditor">live</span>
+      </div>
+
+      <div class="grid" id="link-stats"></div>
+
+      <div class="panel">
+        <div class="panel-header">
+          <h3>Backlink Profile</h3>
+          <small>Total backlinks · referring domains · domain rank · broken backlinks</small>
+        </div>
+        <div class="panel-body" id="link-backlinks"></div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-header">
+          <h3>Obsidian Notes</h3>
+          <small>Internal/External/Backlink audit reports saved to Obsidian</small>
+        </div>
+        <div class="panel-body" id="link-notes"></div>
+      </div>
+    </section>
+
+    <!-- CONTENT BOT TAB -->
+    <section class="tab" id="tab-auto-content-bot">
+      <div class="tab-header">
+        <div>
+          <h2>Content Bot</h2>
+          <p>Keyword research + local pack analysis + content briefs + blog drafts</p>
+        </div>
+        <span class="header-pill live" id="header-pill-content-bot">live</span>
+      </div>
+
+      <div class="grid" id="content-stats"></div>
+
+      <div class="panel">
+        <div class="panel-header">
+          <h3>Pipeline Outputs</h3>
+          <small>Generated by content-bot runs</small>
+        </div>
+        <div class="panel-body" id="content-outputs"></div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-header">
+          <h3>Topics Registered</h3>
+          <small>All content topics the bot can generate</small>
+        </div>
+        <div class="panel-body" id="content-topics"></div>
+      </div>
+    </section>
+
+    <!-- OBSIDIAN DRAFTER TAB -->
+    <section class="tab" id="tab-auto-obsidian-drafter">
+      <div class="tab-header">
+        <div>
+          <h2>Obsidian Drafter</h2>
+          <p>Cross-correlates GSC + ranks data into draft Obsidian notes</p>
+        </div>
+        <span class="header-pill live" id="header-pill-obsidian-drafter">live</span>
+      </div>
+
+      <div class="grid" id="obsidian-stats"></div>
+
+      <div class="panel">
+        <div class="panel-header">
+          <h3>Draft Notes Created</h3>
+          <small>From the latest run</small>
+        </div>
+        <div class="panel-body" id="obsidian-notes"></div>
+      </div>
+    </section>
+
+    <!-- GBP AUDIT TAB -->
+    <section class="tab" id="tab-auto-gbp-audit">
+      <div class="tab-header">
+        <div>
+          <h2>GBP Audit</h2>
+          <p>Google Business Profile completeness audit + local map pack status by city</p>
+        </div>
+        <span class="header-pill live" id="header-pill-gbp-audit">live</span>
+      </div>
+
+      <div class="grid" id="gbp-audit-stats"></div>
+
+      <div class="panel">
+        <div class="panel-header">
+          <h3>Profile Completeness</h3>
+          <small>From latest audit run</small>
+        </div>
+        <div class="panel-body" id="gbp-audit-profile"></div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-header">
+          <h3>Local Map Pack Status by City</h3>
+          <small>Are we appearing in the top 20 for "weed delivery {city}"?</small>
+        </div>
+        <div class="panel-body" id="gbp-audit-pack"></div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-header">
+          <h3>Issues</h3>
+          <small>By priority</small>
+        </div>
+        <div class="panel-body" id="gbp-audit-issues"></div>
+      </div>
+    </section>
+
+    <!-- SEO FIXES TAB -->
+    <section class="tab" id="tab-auto-seo-fixes">
+      <div class="tab-header">
+        <div>
+          <h2>SEO Fixes</h2>
+          <p>Homepage title/meta fixes + schema markup + sitemap</p>
+        </div>
+        <span class="header-pill ready" id="header-pill-seo-fixes">ready</span>
+      </div>
+
+      <div class="grid" id="seo-fixes-stats"></div>
+
+      <div class="panel">
+        <div class="panel-header">
+          <h3>Generated Artifacts</h3>
+          <small>Schema files + sitemap + homepage fix note</small>
+        </div>
+        <div class="panel-body" id="seo-fixes-outputs"></div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-header">
+          <h3>Implementation Status</h3>
+          <small>What still needs to be applied manually</small>
+        </div>
+        <div class="panel-body" id="seo-fixes-status"></div>
+      </div>
+    </section>
+
     <section class="tab" id="tab-auto-opportunities">
       <div class="tab-header">
         <div>
@@ -1850,6 +2074,268 @@ python -m seo_bots.revert --action-id &lt;action-id&gt;</pre>
   }
 
   // ============================================================
+  // COMPETITOR ANALYST
+  // ============================================================
+  async function loadCompetitorAnalyst() {
+    const data = state.competitors;
+    const statsEl = document.getElementById('competitor-stats');
+    const tbody = document.getElementById('competitor-tbody');
+    const gapsEl = document.getElementById('competitor-gaps');
+    if (!statsEl || !tbody) return;
+
+    if (!data || data.status === 'no_data') {
+      statsEl.innerHTML = '<div class="empty">Run competitor-analyst to populate this tab.</div>';
+      return;
+    }
+
+    const ourBl = data.our_profile?.total_backlinks || 0;
+    const ourRD = data.our_profile?.referring_domains || 0;
+    const ourRank = data.our_profile?.rank || 'N/A';
+
+    statsEl.innerHTML = `
+      <div class="stat-card"><div class="stat-label">Our Backlinks</div><div class="stat-value">${fmt(ourBl)}</div></div>
+      <div class="stat-card"><div class="stat-label">Our Referring Domains</div><div class="stat-value">${fmt(ourRD)}</div></div>
+      <div class="stat-card"><div class="stat-label">Our Domain Rank</div><div class="stat-value">${escHtml(ourRank)}</div></div>
+      <div class="stat-card"><div class="stat-label">Competitors Tracked</div><div class="stat-value">${fmt(data.summary?.competitors_tracked || 0)}</div></div>
+      <div class="stat-card"><div class="stat-label">Keywords We Win</div><div class="stat-value">${fmt(data.gaps?.keywords_we_win || 0)}</div></div>
+      <div class="stat-card"><div class="stat-label">Keywords We Lose</div><div class="stat-value">${fmt(data.gaps?.keywords_we_lose || 0)}</div></div>
+      <div class="stat-card highlight"><div class="stat-label">Keyword Opportunities</div><div class="stat-value">${fmt(data.gaps?.opportunities_count || 0)}</div></div>
+    `;
+
+    let rows = '';
+    for (const c of data.competitors || []) {
+      rows += `<tr>
+        <td><strong>${escHtml(c.domain)}</strong></td>
+        <td>${fmt(c.total_backlinks)}</td>
+        <td>${fmt(c.referring_domains)}</td>
+        <td>${escHtml(c.rank || '—')}</td>
+        <td>${fmt(c.avg_rank)}</td>
+        <td>${fmt(c.rank_share)}%</td>
+        <td>${fmt(c.shared_keywords)}</td>
+      </tr>`;
+    }
+    tbody.innerHTML = rows || '<tr><td colspan="7" class="empty">No competitors tracked.</td></tr>';
+
+    let gapsHtml = '';
+    for (const opp of (data.gaps?.opportunities || []).slice(0, 10)) {
+      gapsHtml += `<div class="opp-row">
+        <strong>${escHtml(opp.keyword)}</strong> — <span class="muted">${escHtml(opp.competitor)}</span> @ rank ${fmt(opp.their_rank)}
+      </div>`;
+    }
+    if (!gapsHtml) gapsHtml = '<div class="empty">No opportunities found.</div>';
+    gapsEl.innerHTML = gapsHtml;
+  }
+
+  // ============================================================
+  // LINK AUDITOR
+  // ============================================================
+  async function loadLinkAuditor() {
+    const data = state.links;
+    const statsEl = document.getElementById('link-stats');
+    const backlinksEl = document.getElementById('link-backlinks');
+    const notesEl = document.getElementById('link-notes');
+    if (!statsEl) return;
+
+    if (!data || data.last_updated === null) {
+      statsEl.innerHTML = '<div class="empty">Run link-auditor to populate this tab.</div>';
+      return;
+    }
+
+    const bl = data.backlinks || {};
+    statsEl.innerHTML = `
+      <div class="stat-card"><div class="stat-label">Pages Crawled</div><div class="stat-value">${fmt(data.pages_crawled)}</div></div>
+      <div class="stat-card"><div class="stat-label">Orphan Pages</div><div class="stat-value">${fmt(data.orphan_pages)}</div></div>
+      <div class="stat-card"><div class="stat-label">Broken External Links</div><div class="stat-value">${fmt(data.broken_external_links)}</div></div>
+      <div class="stat-card"><div class="stat-label">Total Backlinks</div><div class="stat-value">${fmt(bl.total)}</div></div>
+      <div class="stat-card"><div class="stat-label">Referring Domains</div><div class="stat-value">${fmt(bl.referring_domains)}</div></div>
+      <div class="stat-card"><div class="stat-label">Domain Rank</div><div class="stat-value">${escHtml(bl.rank || '—')}</div></div>
+      <div class="stat-card"><div class="stat-label">Broken Backlinks</div><div class="stat-value">${fmt(bl.broken_backlinks)}</div></div>
+    `;
+
+    backlinksEl.innerHTML = `
+      <div class="field"><span class="field-label">Total Backlinks</span><span class="field-value">${fmt(bl.total)}</span></div>
+      <div class="field"><span class="field-label">Referring Domains</span><span class="field-value">${fmt(bl.referring_domains)}</span></div>
+      <div class="field"><span class="field-label">Domain Rank</span><span class="field-value">${escHtml(bl.rank || '—')}</span></div>
+      <div class="field"><span class="field-label">Broken Backlinks</span><span class="field-value">${fmt(bl.broken_backlinks)}</span></div>
+    `;
+
+    notesEl.innerHTML = `
+      <ul>
+        <li><strong>internal-links-{date}.md</strong> — orphan pages, top-linked pages, heavy outbound</li>
+        <li><strong>external-links-{date}.md</strong> — broken external links (action items)</li>
+        <li><strong>backlinks-{date}.md</strong> — full backlink profile, top referring domains, anchor distribution, broken backlinks pointing in</li>
+      </ul>
+      <p class="muted">Saved to <code>~/obsidian/vault/weedistillery-seo/links/</code></p>
+    `;
+  }
+
+  // ============================================================
+  // CONTENT BOT
+  // ============================================================
+  async function loadContentBot() {
+    const data = state.content;
+    const statsEl = document.getElementById('content-stats');
+    const outputsEl = document.getElementById('content-outputs');
+    const topicsEl = document.getElementById('content-topics');
+    if (!statsEl) return;
+
+    if (!data || data.last_updated === null) {
+      statsEl.innerHTML = '<div class="empty">Run content-bot to populate this tab.</div>';
+      return;
+    }
+
+    statsEl.innerHTML = `
+      <div class="stat-card highlight"><div class="stat-label">Drafts Ready</div><div class="stat-value">${fmt(data.drafts_count)}</div></div>
+      <div class="stat-card"><div class="stat-label">Briefs</div><div class="stat-value">${fmt(data.briefs_count)}</div></div>
+      <div class="stat-card"><div class="stat-label">Keyword Research</div><div class="field-value">${fmt(data.keyword_research_count)}</div></div>
+      <div class="stat-card"><div class="stat-label">Topics Registered</div><div class="stat-value">${fmt(data.topics_registered)}</div></div>
+    `;
+
+    outputsEl.innerHTML = `
+      <ul>
+        <li><strong>Keyword research</strong>: <code>~/obsidian/vault/weedistillery-seo/content/keywords/{topic}.md</code></li>
+        <li><strong>Local pack</strong>: <code>~/obsidian/vault/weedistillery-seo/content/local-pack/{city}.md</code></li>
+        <li><strong>Briefs</strong>: <code>~/obsidian/vault/weedistillery-seo/content/briefs/{topic}-{city}.md</code></li>
+        <li><strong>Drafts</strong>: <code>~/obsidian/vault/weedistillery-seo/content/drafts/{topic}-{city}.md</code></li>
+        <li><strong>Calendars</strong>: <code>calendar-this-week.md</code>, <code>calendar-next-week.md</code></li>
+      </ul>
+    `;
+
+    let topicsHtml = '';
+    for (const t of (data.topics_list || [])) {
+      topicsHtml += `<span class="chip">${escHtml(t)}</span> `;
+    }
+    topicsEl.innerHTML = topicsHtml || '<div class="empty">No topics registered.</div>';
+  }
+
+  // ============================================================
+  // OBSIDIAN DRAFTER
+  // ============================================================
+  async function loadObsidianDrafter() {
+    const data = state.bots?.bots?.['obsidian-drafter'];
+    const statsEl = document.getElementById('obsidian-stats');
+    const notesEl = document.getElementById('obsidian-notes');
+    if (!statsEl) return;
+
+    if (!data) {
+      statsEl.innerHTML = '<div class="empty">Obsidian Drafter data not loaded.</div>';
+      return;
+    }
+
+    statsEl.innerHTML = `
+      <div class="stat-card"><div class="stat-label">Status</div><div class="stat-value">${statusTag(data.status || 'unknown')}</div></div>
+      <div class="stat-card"><div class="stat-label">Model</div><div class="stat-value">${escHtml(data.model || '—')}</div></div>
+      <div class="stat-card"><div class="stat-label">Last Run</div><div class="stat-value">${escHtml(data.last_run || '—')}</div></div>
+    `;
+
+    const summary = data.summary || {};
+    notesEl.innerHTML = `
+      <p>Cross-correlates GSC + rank data into draft Obsidian notes.</p>
+      <ul>
+        <li>Opportunities drafted: <strong>${fmt(summary.opportunities_drafted)}</strong></li>
+        <li>Notes created: <strong>${fmt(summary.notes_created)}</strong></li>
+      </ul>
+      <p class="muted">Output location: <code>~/obsidian/vault/weedistillery-seo/opportunities/</code></p>
+    `;
+  }
+
+  // ============================================================
+  // GBP AUDIT
+  // ============================================================
+  async function loadGbpAudit() {
+    const data = state.gbpAudit;
+    const statsEl = document.getElementById('gbp-audit-stats');
+    const profileEl = document.getElementById('gbp-audit-profile');
+    const packEl = document.getElementById('gbp-audit-pack');
+    const issuesEl = document.getElementById('gbp-audit-issues');
+    if (!statsEl) return;
+
+    if (!data || data.last_updated === null) {
+      statsEl.innerHTML = '<div class="empty">Run gbp-audit to populate this tab.</div>';
+      return;
+    }
+
+    const issues = data.issues || {};
+    statsEl.innerHTML = `
+      <div class="stat-card highlight"><div class="stat-label">Critical Issues</div><div class="stat-value">${fmt(issues.critical)}</div></div>
+      <div class="stat-card"><div class="stat-label">High Issues</div><div class="stat-value">${fmt(issues.high)}</div></div>
+      <div class="stat-card"><div class="stat-label">Medium Issues</div><div class="stat-value">${fmt(issues.medium)}</div></div>
+      <div class="stat-card"><div class="stat-label">Low Issues</div><div class="stat-value">${fmt(issues.low)}</div></div>
+      <div class="stat-card"><div class="stat-label">Post Drafts Ready</div><div class="stat-value">${fmt(data.post_drafts_ready)}</div></div>
+    `;
+
+    const profile = data.our_profile || {};
+    profileEl.innerHTML = `
+      <div class="field"><span class="field-label">place_id</span><span class="field-value"><code>${escHtml(profile.place_id || '—')}</code></span></div>
+      <div class="field"><span class="field-label">CID</span><span class="field-value"><code>${escHtml(profile.cid || '—')}</code></span></div>
+      <div class="field"><span class="field-label">Claimed</span><span class="field-value">${profile.claimed ? '✓ Yes' : '✗ No'}</span></div>
+      <div class="field"><span class="field-label">Rating</span><span class="field-value">${fmt(profile.rating, 1)} (${fmt(profile.reviews_count)} reviews)</span></div>
+      <div class="field"><span class="field-label">Photos</span><span class="field-value">${fmt(profile.photos)}</span></div>
+      <div class="field"><span class="field-label">Category</span><span class="field-value">${escHtml(profile.category || '—')}</span></div>
+      <div class="field"><span class="field-label">City</span><span class="field-value">${escHtml(profile.city || '—')}</span></div>
+      <div class="field"><span class="field-label">Region</span><span class="field-value">${escHtml(profile.region || '—')}</span></div>
+    `;
+
+    let packHtml = '<table><thead><tr><th>City</th><th>Status</th><th>Top Competitor</th></tr></thead><tbody>';
+    for (const [city, status] of Object.entries(data.local_pack_status || {})) {
+      packHtml += `<tr><td>${escHtml(city)}</td><td><span class="tag failure">${escHtml(status)}</span></td><td>${escHtml('—')}</td></tr>`;
+    }
+    packHtml += '</tbody></table>';
+    packEl.innerHTML = packHtml;
+
+    issuesEl.innerHTML = `
+      <p><strong>Critical:</strong> ${fmt(issues.critical)} — city + address fields missing (BLOCKS local pack)</p>
+      <p><strong>High:</strong> ${fmt(issues.high)} — region, category, description, reviews, service area, attributes</p>
+      <p><strong>Medium:</strong> ${fmt(issues.medium)} — photos, hours, posts, Q&A</p>
+      <p><strong>Low:</strong> ${fmt(issues.low)} — special hours, polish items</p>
+      <p class="muted">Full audit: <code>~/obsidian/vault/weedistillery-seo/gbp/audit-${escHtml(data.audit_note || 'latest')}</code></p>
+    `;
+  }
+
+  // ============================================================
+  // SEO FIXES
+  // ============================================================
+  async function loadSeoFixes() {
+    const data = state.seoFixes;
+    const statsEl = document.getElementById('seo-fixes-stats');
+    const outputsEl = document.getElementById('seo-fixes-outputs');
+    const statusEl = document.getElementById('seo-fixes-status');
+    if (!statsEl) return;
+
+    if (!data || data.last_updated === null) {
+      statsEl.innerHTML = '<div class="empty">Run homepage-fix to populate this tab.</div>';
+      return;
+    }
+
+    statsEl.innerHTML = `
+      <div class="stat-card"><div class="stat-label">Sitemap URLs</div><div class="stat-value">${fmt(data.sitemap_urls)}</div></div>
+      <div class="stat-card"><div class="stat-label">Schema Files</div><div class="stat-value">${fmt((data.schema_files || []).length)}</div></div>
+      <div class="stat-card"><div class="stat-label">Ready to Apply</div><div class="stat-value">${data.ready_to_apply ? '✓ Yes' : '✗ Pending'}</div></div>
+    `;
+
+    let schemaHtml = '<ul>';
+    for (const f of (data.schema_files || [])) {
+      schemaHtml += `<li><code>${escHtml(f)}</code></li>`;
+    }
+    schemaHtml += '</ul>';
+
+    outputsEl.innerHTML = `
+      <p><strong>Homepage fix note</strong>: <code>${escHtml(data.homepage_fix || 'not yet generated')}</code></p>
+      <p><strong>Schema files</strong>:</p>
+      ${schemaHtml}
+      <p class="muted">Location: <code>~/obsidian/vault/weedistillery-seo/schema/</code></p>
+    `;
+
+    statusEl.innerHTML = `
+      <p><strong>Title tag</strong>: Replace "Weedistillery - You Smoke We Deliver!" with "Weedistillery Weed Delivery | Brampton, Mississauga, GTA" (15 min in WordPress)</p>
+      <p><strong>Meta description</strong>: 360 chars → 143 chars (in AIOSEO)</p>
+      <p><strong>Schema markup</strong>: Add combined schema HTML to <head> (10 min)</p>
+      <p><strong>Sitemap</strong>: Submit to GSC at <code>smilingkunal.github.io/seo-bots-dashboard/sitemap.xml</code> or use existing WordPress sitemap</p>
+      <p><strong>301 redirects</strong>: Add 3 city URL redirects via Redirection plugin (20 min)</p>
+    `;
+  }
+
+  // ============================================================
   // AUDIT
   // ============================================================
   async function loadAuditLog() {
@@ -1915,7 +2401,8 @@ python -m seo_bots.revert --action-id &lt;action-id&gt;</pre>
     }
 
     const t0 = Date.now();
-    const [bots, gsc, ga4, ranks, gbp, opportunities, approvals, audit] = await Promise.all([
+    const [bots, gsc, ga4, ranks, gbp, opportunities, approvals, audit,
+           competitors, links, content, gbpAudit, seoFixes] = await Promise.all([
       fetchJson('bots-status.json'),
       fetchJson('gsc-data.json'),
       fetchJson('ga4-data.json'),
@@ -1924,6 +2411,11 @@ python -m seo_bots.revert --action-id &lt;action-id&gt;</pre>
       fetchJson('opportunities.json'),
       fetchJson('approvals.json'),
       fetchJson('audit-log.json'),
+      fetchJson('competitors-data.json'),
+      fetchJson('links-data.json'),
+      fetchJson('content-data.json'),
+      fetchJson('gbp-data.json'),
+      fetchJson('seo-fixes-data.json'),
     ]);
     state.bots = bots;
     state.gsc = gsc;
@@ -1933,6 +2425,11 @@ python -m seo_bots.revert --action-id &lt;action-id&gt;</pre>
     state.opportunities = opportunities;
     state.approvals = approvals;
     state.audit = audit;
+    state.competitors = competitors;
+    state.links = links;
+    state.content = content;
+    state.gbpAudit = gbpAudit;
+    state.seoFixes = seoFixes;
 
     await Promise.all([
       loadOverview(),
@@ -1941,6 +2438,12 @@ python -m seo_bots.revert --action-id &lt;action-id&gt;</pre>
       loadOpportunities(),
       loadApprovals(),
       loadAuditLog(),
+      loadCompetitorAnalyst(),
+      loadLinkAuditor(),
+      loadContentBot(),
+      loadObsidianDrafter(),
+      loadGbpAudit(),
+      loadSeoFixes(),
     ]);
 
     document.getElementById('overview-time').textContent = new Date().toLocaleTimeString();

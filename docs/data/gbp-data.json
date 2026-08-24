@@ -1,12 +1,31 @@
 {
-  "last_updated": null,
-  "site": "weedistillery.com",
-  "status": "waiting_for_data",
-  "note": "GBP analyzer not yet running. Requires Google Business Profile API quota approval.",
-  "profile": null,
-  "completeness_score": null,
-  "reviews": null,
-  "photos": null,
-  "posts": null,
-  "opportunities": []
+  "last_updated": "2026-08-24T15:06:22.205715Z",
+  "audit_note": "gbp\\audit-2026-08-24.md",
+  "issues": {
+    "critical": 3,
+    "high": 6,
+    "medium": 5,
+    "low": 1
+  },
+  "local_pack_status": {
+    "brampton": "MISSING",
+    "mississauga": "MISSING",
+    "burlington": "MISSING",
+    "oakville": "MISSING",
+    "milton": "MISSING",
+    "halton_hills": "MISSING"
+  },
+  "our_profile": {
+    "place_id": "ChIJbyxxzmgXK4gRgyJQIi4eaT4",
+    "cid": "4497158886399156867",
+    "claimed": true,
+    "rating": 5.0,
+    "reviews_count": 75,
+    "photos": 19,
+    "category": "Cannabis club (should be 'Cannabis store')",
+    "city": "MISSING (null in profile)",
+    "region": "MISSING (null in profile)"
+  },
+  "post_drafts_ready": 8,
+  "reply_templates_ready": 8
 }

@@ -1,0 +1,316 @@
+{
+  "last_updated": "2026-08-24T15:06:22.196642Z",
+  "site": "weedistillery.com",
+  "our_profile": {
+    "total_backlinks": 538,
+    "referring_domains": 213,
+    "rank": 179
+  },
+  "competitors": [
+    {
+      "domain": "www.leafly.ca",
+      "total_backlinks": 96343,
+      "referring_domains": 2545,
+      "rank": 373,
+      "avg_rank": 17.2,
+      "rank_share": 61.9,
+      "shared_keywords": 13,
+      "top_anchors": [
+        {
+          "anchor": "Check out more information on edibles here!",
+          "backlinks": 167,
+          "referring_domains": 2
+        },
+        {
+          "anchor": "here!",
+          "backlinks": 533,
+          "referring_domains": 5
+        },
+        {
+          "anchor": "Leafly",
+          "backlinks": 671,
+          "referring_domains": 172
+        },
+        {
+          "anchor": "full-spectrum whole-plant extract",
+          "backlinks": 178,
+          "referring_domains": 3
+        },
+        {
+          "anchor": null,
+          "backlinks": 1071,
+          "referring_domains": 240
+        }
+      ]
+    },
+    {
+      "domain": "shopkindling.ca",
+      "total_backlinks": 14369,
+      "referring_domains": 524,
+      "rank": 209,
+      "avg_rank": 14.2,
+      "rank_share": 47.6,
+      "shared_keywords": 10,
+      "top_anchors": [
+        {
+          "anchor": "Website",
+          "backlinks": 526,
+          "referring_domains": 5
+        },
+        {
+          "anchor": "Store Website",
+          "backlinks": 30,
+          "referring_domains": 1
+        },
+        {
+          "anchor": "shopkindling.ca",
+          "backlinks": 33,
+          "referring_domains": 28
+        },
+        {
+          "anchor": "Kindling",
+          "backlinks": 118,
+          "referring_domains": 7
+        },
+        {
+          "anchor": null,
+          "backlinks": 63,
+          "referring_domains": 10
+        }
+      ]
+    },
+    {
+      "domain": "thehunnypot.com",
+      "total_backlinks": 20766,
+      "referring_domains": 562,
+      "rank": 284,
+      "avg_rank": 17.6,
+      "rank_share": 42.9,
+      "shared_keywords": 9,
+      "top_anchors": [
+        {
+          "anchor": null,
+          "backlinks": 1294,
+          "referring_domains": 21
+        },
+        {
+          "anchor": "thehunnypot.com",
+          "backlinks": 171,
+          "referring_domains": 87
+        },
+        {
+          "anchor": "Store Website",
+          "backlinks": 158,
+          "referring_domains": 1
+        },
+        {
+          "anchor": "https://thehunnypot.com/",
+          "backlinks": 13,
+          "referring_domains": 7
+        },
+        {
+          "anchor": "Visit Website",
+          "backlinks": 51,
+          "referring_domains": 8
+        }
+      ]
+    },
+    {
+      "domain": "thewoodscannabis.ca",
+      "total_backlinks": 13533,
+      "referring_domains": 678,
+      "rank": 351,
+      "avg_rank": 14.2,
+      "rank_share": 38.1,
+      "shared_keywords": 8,
+      "top_anchors": [
+        {
+          "anchor": "The Woods Cannabis - Mississauga (Dundas)",
+          "backlinks": 696,
+          "referring_domains": 60
+        },
+        {
+          "anchor": "https://thewoodscannabis.ca/locations/aurora-newmarket",
+          "backlinks": 677,
+          "referring_domains": 57
+        },
+        {
+          "anchor": "The Woods Cannabis - Mississauga Location",
+          "backlinks": 639,
+          "referring_domains": 22
+        },
+        {
+          "anchor": "https://www.thewoodscannabis.ca/",
+          "backlinks": 514,
+          "referring_domains": 28
+        },
+        {
+          "anchor": "https://thewoodscannabis.ca/product-category/vaporizers/",
+          "backlinks": 305,
+          "referring_domains": 3
+        }
+      ]
+    },
+    {
+      "domain": "farmerslink.ca",
+      "total_backlinks": 1835,
+      "referring_domains": 545,
+      "rank": 221,
+      "avg_rank": 16.6,
+      "rank_share": 38.1,
+      "shared_keywords": 8,
+      "top_anchors": [
+        {
+          "anchor": null,
+          "backlinks": 52,
+          "referring_domains": 14
+        },
+        {
+          "anchor": "Cannabis delivery services",
+          "backlinks": 3,
+          "referring_domains": 2
+        },
+        {
+          "anchor": "Toronto Weed Delivery",
+          "backlinks": 6,
+          "referring_domains": 1
+        },
+        {
+          "anchor": "Cannabis Delivery Toronto",
+          "backlinks": 5,
+          "referring_domains": 2
+        },
+        {
+          "anchor": "Farmers Link",
+          "backlinks": 2,
+          "referring_domains": 2
+        }
+      ]
+    },
+    {
+      "domain": "weedmaps.com",
+      "total_backlinks": 1032162,
+      "referring_domains": 18636,
+      "rank": 502,
+      "avg_rank": 21.2,
+      "rank_share": 38.1,
+      "shared_keywords": 7,
+      "top_anchors": [
+        {
+          "anchor": "open this link in your browser.",
+          "backlinks": 490,
+          "referring_domains": 1
+        },
+        {
+          "anchor": null,
+          "backlinks": 165353,
+          "referring_domains": 4926
+        },
+        {
+          "anchor": "Weedmaps-Sponsored",
+          "backlinks": 153929,
+          "referring_domains": 5
+        },
+        {
+          "anchor": "Weedmaps",
+          "backlinks": 95917,
+          "referring_domains": 1767
+        },
+        {
+          "anchor": "cropped-wmtechnology_logo_2x-svg",
+          "backlinks": 4453,
+          "referring_domains": 1
+        }
+      ]
+    },
+    {
+      "domain": "canna-express.co",
+      "total_backlinks": 396,
+      "referring_domains": 348,
+      "rank": 175,
+      "avg_rank": 16.3,
+      "rank_share": 28.6,
+      "shared_keywords": 6,
+      "top_anchors": [
+        {
+          "anchor": "dispensary in Mississauga, ON",
+          "backlinks": 13,
+          "referring_domains": 12
+        },
+        {
+          "anchor": "cannabis delivery in Mississauga, ON",
+          "backlinks": 3,
+          "referring_domains": 3
+        },
+        {
+          "anchor": "cannabis delivery Mississauga, ON",
+          "backlinks": 3,
+          "referring_domains": 3
+        },
+        {
+          "anchor": "cannabis delivery in Mississauga",
+          "backlinks": 2,
+          "referring_domains": 2
+        },
+        {
+          "anchor": "cannabis drinks can be even more potent and efficient",
+          "backlinks": 2,
+          "referring_domains": 1
+        }
+      ]
+    },
+    {
+      "domain": "thecrownleaf.ca",
+      "total_backlinks": 9748,
+      "referring_domains": 243,
+      "rank": 195,
+      "avg_rank": 19.3,
+      "rank_share": 28.6,
+      "shared_keywords": 5,
+      "top_anchors": [
+        {
+          "anchor": "Website",
+          "backlinks": 311,
+          "referring_domains": 2
+        },
+        {
+          "anchor": "thecrownleaf.ca",
+          "backlinks": 25,
+          "referring_domains": 12
+        },
+        {
+          "anchor": "Store Website",
+          "backlinks": 30,
+          "referring_domains": 1
+        },
+        {
+          "anchor": "The Crown Leaf Cannabis",
+          "backlinks": 21,
+          "referring_domains": 2
+        },
+        {
+          "anchor": "Visit Store Website",
+          "backlinks": 17,
+          "referring_domains": 1
+        }
+      ]
+    }
+  ],
+  "gaps": {
+    "keywords_we_win": 78,
+    "keywords_we_lose": 2,
+    "opportunities_count": 1,
+    "opportunities": [
+      {
+        "keyword": "cannabis dispensary",
+        "competitor": "weedmaps.com",
+        "their_rank": 4
+      }
+    ]
+  },
+  "summary": {
+    "competitors_tracked": 8,
+    "shared_keywords_total": 66,
+    "opportunity_keywords": 1
+  }
+}

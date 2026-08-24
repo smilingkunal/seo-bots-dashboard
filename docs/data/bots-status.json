@@ -1,62 +1,158 @@
 {
-  "last_updated": "2026-08-19T03:56:46+05:30",
+  "last_updated": "2026-08-24T15:06:22.111109Z",
   "site": {
     "domain": "weedistillery.com",
-    "site_url": "https://weedistillery.com/",
-    "ga4_property_id": "546660625",
-    "gbp_location_id": null
+    "site_url": "https://weedistillery.com/"
   },
   "bots": {
     "seo-tracker": {
       "status": "live",
-      "last_run": "2026-08-19T03:56:46+05:30",
+      "category": "data-collection",
+      "risk": "read-only",
+      "model": "haiku-4.5",
       "summary": {
-        "keywords_tracked": 2,
-        "your_best_rank": 1
-      }
+        "ranks_tracked": 21,
+        "competitors_tracked": 8
+      },
+      "last_run": "2026-08-24"
     },
     "gsc-reader": {
       "status": "live",
-      "last_run": "2026-08-19T03:51:16+05:30",
+      "category": "data-collection",
+      "risk": "read-only",
+      "model": "haiku-4.5",
       "summary": {
-        "queries_total": 25,
-        "avg_position": 12.4
-      }
+        "queries_tracked": 25,
+        "pages_tracked": 25
+      },
+      "last_run": "2026-08-24"
     },
     "ga4-reader": {
       "status": "pending",
-      "last_run": null,
-      "model": "haiku",
+      "category": "data-collection",
       "risk": "read-only",
-      "summary": null
+      "model": "haiku-4.5",
+      "summary": {
+        "pending": "API enablement"
+      },
+      "last_run": null
     },
     "seo-analyst": {
-      "status": "waiting",
-      "last_run": null,
-      "model": "sonnet",
+      "status": "live",
+      "category": "analysis",
       "risk": "analysis-only",
-      "summary": null
+      "model": "sonnet-4.5",
+      "summary": {
+        "opportunities": 18,
+        "drafts_created": 0
+      },
+      "last_run": "2026-08-24"
     },
     "gbp-analyzer": {
-      "status": "pending",
-      "last_run": null,
-      "model": "haiku",
+      "status": "waiting_for_quota",
+      "category": "data-collection",
       "risk": "read-only",
-      "summary": null
+      "model": "haiku-4.5",
+      "summary": {
+        "blocked_on": "Google Cloud quota request"
+      },
+      "last_run": null
     },
     "gbp-improver": {
-      "status": "pending",
-      "last_run": null,
-      "model": "sonnet",
+      "status": "waiting_for_quota",
+      "category": "approval-gated",
       "risk": "approval-gated",
-      "summary": null
+      "model": "sonnet-4.5",
+      "summary": {
+        "drafts_ready": 8,
+        "reply_templates": 8
+      },
+      "last_run": null
+    },
+    "obsidian-drafter": {
+      "status": "live",
+      "category": "drafting",
+      "risk": "read-only",
+      "model": "haiku-4.5",
+      "summary": {
+        "opportunities_drafted": 18,
+        "notes_created": 18
+      },
+      "last_run": "2026-08-24"
+    },
+    "link-auditor": {
+      "status": "live",
+      "category": "audit",
+      "risk": "read-only",
+      "model": "haiku-4.5",
+      "summary": {
+        "backlinks_checked": true,
+        "internal_crawl": true
+      },
+      "last_run": "2026-08-24"
+    },
+    "competitor-analyst": {
+      "status": "live",
+      "category": "analysis",
+      "risk": "read-only",
+      "model": "sonnet-4.5",
+      "summary": {
+        "competitors_tracked": 25,
+        "keyword_gaps": 1
+      },
+      "last_run": "2026-08-24"
+    },
+    "content-bot": {
+      "status": "live",
+      "category": "drafting",
+      "risk": "draft-only",
+      "model": "sonnet-4.5",
+      "summary": {
+        "briefs": 30,
+        "drafts": 30,
+        "topics": 9
+      },
+      "last_run": "2026-08-24"
+    },
+    "homepage-fix": {
+      "status": "ready",
+      "category": "technical",
+      "risk": "read-only",
+      "model": "n/a",
+      "summary": {
+        "title_fix": "ready",
+        "schema_files": 4,
+        "sitemap_urls": 59
+      },
+      "last_run": "2026-08-24"
+    },
+    "gbp-audit": {
+      "status": "live",
+      "category": "audit",
+      "risk": "read-only",
+      "model": "haiku-4.5",
+      "summary": {
+        "critical_issues": 2,
+        "high_issues": 6
+      },
+      "last_run": "2026-08-24"
     },
     "dashboard": {
-      "status": "waiting",
-      "last_run": null,
-      "model": "sonnet",
-      "risk": "approval-gated",
-      "summary": null
+      "status": "live",
+      "category": "reporting",
+      "risk": "read-only",
+      "model": "sonnet-4.5",
+      "summary": {
+        "weekly_report": true,
+        "data_publish": true
+      },
+      "last_run": "2026-08-24"
     }
+  },
+  "summary": {
+    "total_bots": 12,
+    "live_bots": 8,
+    "pending_bots": 2,
+    "waiting_bots": 2
   }
 }

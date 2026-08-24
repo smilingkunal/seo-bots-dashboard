@@ -1,8 +1,8 @@
 # SEO Bot Dashboard
 
-Live dashboard for the 7 SEO bots monitoring **weedistillery.com**.
+Live dashboard for the 12 SEO bots monitoring **weedistillery.com**.
 
-🌐 **Live URL:** https://kunalprime.github.io/seo-bots-dashboard/ *(after GitHub Pages is enabled)*
+🌐 **Live URL:** https://smilingkunal.github.io/seo-bots-dashboard/
 
 ## What This Is
 
