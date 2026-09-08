@@ -1,12 +1,36 @@
 {
-  "last_updated": "2026-09-07T16:34:24.742897Z",
-  "total_actions": 81,
+  "last_updated": "2026-09-08T11:04:33.132253Z",
+  "total_actions": 82,
   "actions": [
+    {
+      "ts": 1788798868,
+      "action": "publish_complete",
+      "bot": "dashboard-publish",
+      "action_id": "dashboard-publish-1788798868-61",
+      "result": "pending",
+      "details": {
+        "files_changed": 10,
+        "files": [
+          "bots-status.json",
+          "gsc-data.json",
+          "ranks-data.json",
+          "competitors-data.json",
+          "links-data.json",
+          "gbp-data.json",
+          "content-data.json",
+          "seo-fixes-data.json",
+          "opportunities.json",
+          "audit-log.json"
+        ],
+        "deployed": true
+      },
+      "_source_log": "dashboard-publish-audit.jsonl"
+    },
     {
       "ts": 1788798841,
       "action": "drafts_complete",
       "bot": "gbp-drafts",
-      "action_id": "gbp-drafts-1788798841-64",
+      "action_id": "gbp-drafts-1788798841-65",
       "result": "pending",
       "details": {
         "date": "2026-09-07",
@@ -18,7 +42,7 @@
       "ts": 1788798839,
       "action": "audit_complete",
       "bot": "gbp-audit",
-      "action_id": "gbp-audit-1788798839-62",
+      "action_id": "gbp-audit-1788798839-63",
       "result": "pending",
       "details": {
         "date": "2026-09-07",
@@ -177,7 +201,7 @@
       "ts": 1788798354,
       "action": "audit_complete",
       "bot": "link-auditor",
-      "action_id": "link-auditor-1788798354-76",
+      "action_id": "link-auditor-1788798354-77",
       "result": "pending",
       "details": {
         "date": "2026-09-07",
@@ -193,7 +217,7 @@
       "ts": 1788798280,
       "action": "audit_start",
       "bot": "link-auditor",
-      "action_id": "link-auditor-1788798280-75",
+      "action_id": "link-auditor-1788798280-76",
       "result": "pending",
       "details": {
         "date": "2026-09-07",
@@ -446,7 +470,7 @@
       "ts": 1787583022,
       "action": "fix_generated",
       "bot": "homepage-fix",
-      "action_id": "homepage-fix-1787583022-66",
+      "action_id": "homepage-fix-1787583022-67",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -461,7 +485,7 @@
       "ts": 1787582854,
       "action": "fix_generated",
       "bot": "homepage-fix",
-      "action_id": "homepage-fix-1787582854-65",
+      "action_id": "homepage-fix-1787582854-66",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -874,7 +898,7 @@
       "ts": 1787580878,
       "action": "drafts_complete",
       "bot": "gbp-drafts",
-      "action_id": "gbp-drafts-1787580878-63",
+      "action_id": "gbp-drafts-1787580878-64",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -886,7 +910,7 @@
       "ts": 1787580831,
       "action": "audit_complete",
       "bot": "gbp-audit",
-      "action_id": "gbp-audit-1787580831-61",
+      "action_id": "gbp-audit-1787580831-62",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1289,7 +1313,7 @@
       "ts": 1787576756,
       "action": "audit_complete",
       "bot": "link-auditor",
-      "action_id": "link-auditor-1787576756-74",
+      "action_id": "link-auditor-1787576756-75",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1305,7 +1329,7 @@
       "ts": 1787576681,
       "action": "audit_start",
       "bot": "link-auditor",
-      "action_id": "link-auditor-1787576681-73",
+      "action_id": "link-auditor-1787576681-74",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1318,7 +1342,7 @@
       "ts": 1787576640,
       "action": "audit_complete",
       "bot": "link-auditor",
-      "action_id": "link-auditor-1787576640-72",
+      "action_id": "link-auditor-1787576640-73",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1334,7 +1358,7 @@
       "ts": 1787576578,
       "action": "audit_start",
       "bot": "link-auditor",
-      "action_id": "link-auditor-1787576578-71",
+      "action_id": "link-auditor-1787576578-72",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1347,7 +1371,7 @@
       "ts": 1787576511,
       "action": "audit_complete",
       "bot": "link-auditor",
-      "action_id": "link-auditor-1787576511-70",
+      "action_id": "link-auditor-1787576511-71",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1363,7 +1387,7 @@
       "ts": 1787576462,
       "action": "audit_start",
       "bot": "link-auditor",
-      "action_id": "link-auditor-1787576462-69",
+      "action_id": "link-auditor-1787576462-70",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1376,7 +1400,7 @@
       "ts": 1787576425,
       "action": "audit_complete",
       "bot": "link-auditor",
-      "action_id": "link-auditor-1787576425-68",
+      "action_id": "link-auditor-1787576425-69",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1392,7 +1416,7 @@
       "ts": 1787576364,
       "action": "audit_start",
       "bot": "link-auditor",
-      "action_id": "link-auditor-1787576364-67",
+      "action_id": "link-auditor-1787576364-68",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1405,7 +1429,7 @@
       "ts": 1787575523,
       "action": "draft_start",
       "bot": "obsidian-drafter",
-      "action_id": "obsidian-drafter-1787575523-79",
+      "action_id": "obsidian-drafter-1787575523-80",
       "result": "pending",
       "details": {
         "date": "2026-08-24"
@@ -1416,7 +1440,7 @@
       "ts": 1787575523,
       "action": "draft_complete",
       "bot": "obsidian-drafter",
-      "action_id": "obsidian-drafter-1787575523-80",
+      "action_id": "obsidian-drafter-1787575523-81",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1428,7 +1452,7 @@
       "ts": 1787574900,
       "action": "draft_start",
       "bot": "obsidian-drafter",
-      "action_id": "obsidian-drafter-1787574900-77",
+      "action_id": "obsidian-drafter-1787574900-78",
       "result": "pending",
       "details": {
         "date": "2026-08-24"
@@ -1439,7 +1463,7 @@
       "ts": 1787574900,
       "action": "draft_complete",
       "bot": "obsidian-drafter",
-      "action_id": "obsidian-drafter-1787574900-78",
+      "action_id": "obsidian-drafter-1787574900-79",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
