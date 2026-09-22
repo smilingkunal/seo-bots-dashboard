@@ -1,20 +1,20 @@
 {
-  "last_updated": "2026-09-21T17:04:18.061045Z",
+  "last_updated": "2026-09-22T13:56:28.568338Z",
   "site": "weedistillery.com",
   "our_profile": {
-    "total_backlinks": 379,
-    "referring_domains": 217,
+    "total_backlinks": 386,
+    "referring_domains": 224,
     "rank": 168
   },
   "competitors": [
     {
       "domain": "www.leafly.ca",
-      "total_backlinks": 96263,
-      "referring_domains": 2455,
+      "total_backlinks": 96334,
+      "referring_domains": 2464,
       "rank": 372,
-      "avg_rank": 15.1,
-      "rank_share": 47.6,
-      "shared_keywords": 8,
+      "avg_rank": 13.4,
+      "rank_share": 42.9,
+      "shared_keywords": 6,
       "top_anchors": [
         {
           "anchor": "Check out more information on edibles here!",
@@ -29,11 +29,11 @@
         {
           "anchor": "Leafly",
           "backlinks": 669,
-          "referring_domains": 164
+          "referring_domains": 165
         },
         {
           "anchor": null,
-          "backlinks": 1012,
+          "backlinks": 1018,
           "referring_domains": 221
         },
         {
@@ -44,85 +44,49 @@
       ]
     },
     {
-      "domain": "thewoodscannabis.ca",
-      "total_backlinks": 14868,
-      "referring_domains": 702,
-      "rank": 363,
-      "avg_rank": 17.0,
-      "rank_share": 42.9,
-      "shared_keywords": 7,
+      "domain": "thehunnypot.com",
+      "total_backlinks": 21095,
+      "referring_domains": 579,
+      "rank": 286,
+      "avg_rank": 14.4,
+      "rank_share": 33.3,
+      "shared_keywords": 5,
       "top_anchors": [
-        {
-          "anchor": "The Woods Cannabis - Mississauga (Dundas)",
-          "backlinks": 1638,
-          "referring_domains": 102
-        },
-        {
-          "anchor": "https://thewoodscannabis.ca/locations/aurora-newmarket",
-          "backlinks": 658,
-          "referring_domains": 41
-        },
-        {
-          "anchor": "The Woods Cannabis - Mississauga Location",
-          "backlinks": 730,
-          "referring_domains": 28
-        },
-        {
-          "anchor": "https://thewoodscannabis.ca/product-category/vaporizers/",
-          "backlinks": 358,
-          "referring_domains": 6
-        },
-        {
-          "anchor": "Weed Delivery Brampton | The Woods Cannabis",
-          "backlinks": 56,
-          "referring_domains": 13
-        }
-      ]
-    },
-    {
-      "domain": "www.leafythings.com",
-      "total_backlinks": 18079,
-      "referring_domains": 599,
-      "rank": 352,
-      "avg_rank": 18.7,
-      "rank_share": 42.9,
-      "shared_keywords": 7,
-      "top_anchors": [
-        {
-          "anchor": "publicWebsite",
-          "backlinks": 1,
-          "referring_domains": 1
-        },
-        {
-          "anchor": "shieldPrivacy Policy",
-          "backlinks": 1,
-          "referring_domains": 1
-        },
         {
           "anchor": null,
-          "backlinks": 761,
-          "referring_domains": 28
+          "backlinks": 1350,
+          "referring_domains": 20
         },
         {
-          "anchor": "Leafythings",
-          "backlinks": 3154,
-          "referring_domains": 26
+          "anchor": "thehunnypot.com",
+          "backlinks": 171,
+          "referring_domains": 88
         },
         {
-          "anchor": "David&TheWeedLeafyThings",
-          "backlinks": 2,
-          "referring_domains": 1
+          "anchor": "Store Website",
+          "backlinks": 240,
+          "referring_domains": 2
+        },
+        {
+          "anchor": "https://thehunnypot.com/",
+          "backlinks": 11,
+          "referring_domains": 5
+        },
+        {
+          "anchor": "Visit Website",
+          "backlinks": 51,
+          "referring_domains": 8
         }
       ]
     },
     {
       "domain": "shopkindling.ca",
-      "total_backlinks": 14470,
-      "referring_domains": 529,
-      "rank": 209,
-      "avg_rank": 10.2,
-      "rank_share": 42.9,
-      "shared_keywords": 6,
+      "total_backlinks": 14491,
+      "referring_domains": 532,
+      "rank": 210,
+      "avg_rank": 7.1,
+      "rank_share": 33.3,
+      "shared_keywords": 4,
       "top_anchors": [
         {
           "anchor": "Website",
@@ -131,7 +95,7 @@
         },
         {
           "anchor": "Store Website",
-          "backlinks": 30,
+          "backlinks": 44,
           "referring_domains": 2
         },
         {
@@ -152,156 +116,48 @@
       ]
     },
     {
-      "domain": "thehunnypot.com",
-      "total_backlinks": 20989,
-      "referring_domains": 566,
-      "rank": 285,
-      "avg_rank": 18.0,
-      "rank_share": 47.6,
-      "shared_keywords": 6,
-      "top_anchors": [
-        {
-          "anchor": null,
-          "backlinks": 1339,
-          "referring_domains": 20
-        },
-        {
-          "anchor": "thehunnypot.com",
-          "backlinks": 170,
-          "referring_domains": 87
-        },
-        {
-          "anchor": "Store Website",
-          "backlinks": 162,
-          "referring_domains": 2
-        },
-        {
-          "anchor": "https://thehunnypot.com/",
-          "backlinks": 11,
-          "referring_domains": 5
-        },
-        {
-          "anchor": "Visit Website",
-          "backlinks": 51,
-          "referring_domains": 8
-        }
-      ]
-    },
-    {
-      "domain": "www.yelp.ca",
-      "total_backlinks": 2332769,
-      "referring_domains": 22844,
-      "rank": 538,
-      "avg_rank": 16.7,
+      "domain": "thewoodscannabis.ca",
+      "total_backlinks": 14910,
+      "referring_domains": 716,
+      "rank": 363,
+      "avg_rank": 12.3,
       "rank_share": 28.6,
-      "shared_keywords": 6,
+      "shared_keywords": 4,
       "top_anchors": [
         {
-          "anchor": null,
-          "backlinks": 1308420,
-          "referring_domains": 4733
+          "anchor": "The Woods Cannabis - Mississauga (Dundas)",
+          "backlinks": 1658,
+          "referring_domains": 112
         },
         {
-          "anchor": "Yelp",
-          "backlinks": 396272,
-          "referring_domains": 2842
+          "anchor": "https://thewoodscannabis.ca/locations/aurora-newmarket",
+          "backlinks": 660,
+          "referring_domains": 42
         },
         {
-          "anchor": "Linkedin link",
-          "backlinks": 21356,
-          "referring_domains": 1
+          "anchor": "The Woods Cannabis - Mississauga Location",
+          "backlinks": 733,
+          "referring_domains": 29
         },
         {
-          "anchor": "Leave Review",
-          "backlinks": 3648,
-          "referring_domains": 1
+          "anchor": "https://thewoodscannabis.ca/product-category/vaporizers/",
+          "backlinks": 359,
+          "referring_domains": 6
         },
         {
-          "anchor": "Leave us a review on YELP!",
-          "backlinks": 7557,
-          "referring_domains": 1
-        }
-      ]
-    },
-    {
-      "domain": "canna-express.co",
-      "total_backlinks": 392,
-      "referring_domains": 348,
-      "rank": 175,
-      "avg_rank": 13.7,
-      "rank_share": 33.3,
-      "shared_keywords": 5,
-      "top_anchors": [
-        {
-          "anchor": "dispensary in Mississauga, ON",
-          "backlinks": 13,
-          "referring_domains": 12
-        },
-        {
-          "anchor": "cannabis delivery in Mississauga, ON",
-          "backlinks": 3,
-          "referring_domains": 3
-        },
-        {
-          "anchor": "cannabis delivery Mississauga, ON",
-          "backlinks": 3,
-          "referring_domains": 3
-        },
-        {
-          "anchor": "cannabis delivery in Mississauga",
-          "backlinks": 2,
-          "referring_domains": 2
-        },
-        {
-          "anchor": "cannabis drinks can be even more potent and efficient",
-          "backlinks": 2,
-          "referring_domains": 1
-        }
-      ]
-    },
-    {
-      "domain": "chillincheetah.ca",
-      "total_backlinks": 1069,
-      "referring_domains": 343,
-      "rank": 57,
-      "avg_rank": 15.9,
-      "rank_share": 38.1,
-      "shared_keywords": 5,
-      "top_anchors": [
-        {
-          "anchor": null,
-          "backlinks": 29,
-          "referring_domains": 5
-        },
-        {
-          "anchor": "Buudabomb Mango Gummies 100mg THC Buy Online Chillin Cheetah",
-          "backlinks": 1,
-          "referring_domains": 1
-        },
-        {
-          "anchor": "1-Hour Weed Delivery Brampton @ Chillin Cheetah",
-          "backlinks": 1,
-          "referring_domains": 1
-        },
-        {
-          "anchor": "Black Diamond AAAA | Chillin Cheetah",
-          "backlinks": 1,
-          "referring_domains": 1
-        },
-        {
-          "anchor": "Buudabomb Blue Raspberry 100mg | Chillin Cheetah",
-          "backlinks": 1,
-          "referring_domains": 1
+          "anchor": "Weed Delivery Brampton | The Woods Cannabis",
+          "backlinks": 56,
+          "referring_domains": 13
         }
       ]
     },
     {
       "domain": "farmerslink.ca",
       "total_backlinks": 1791,
-      "referring_domains": 542,
-      "rank": 220,
-      "avg_rank": 20.0,
-      "rank_share": 33.3,
+      "referring_domains": 543,
+      "rank": 219,
+      "avg_rank": 23.8,
+      "rank_share": 19.0,
       "shared_keywords": 4,
       "top_anchors": [
         {
@@ -332,12 +188,48 @@
       ]
     },
     {
+      "domain": "canna-express.co",
+      "total_backlinks": 394,
+      "referring_domains": 350,
+      "rank": 175,
+      "avg_rank": 11.4,
+      "rank_share": 23.8,
+      "shared_keywords": 4,
+      "top_anchors": [
+        {
+          "anchor": "dispensary in Mississauga, ON",
+          "backlinks": 13,
+          "referring_domains": 12
+        },
+        {
+          "anchor": "cannabis delivery in Mississauga, ON",
+          "backlinks": 3,
+          "referring_domains": 3
+        },
+        {
+          "anchor": "cannabis delivery Mississauga, ON",
+          "backlinks": 3,
+          "referring_domains": 3
+        },
+        {
+          "anchor": "cannabis delivery in Mississauga",
+          "backlinks": 2,
+          "referring_domains": 2
+        },
+        {
+          "anchor": "cannabis drinks can be even more potent and efficient",
+          "backlinks": 2,
+          "referring_domains": 1
+        }
+      ]
+    },
+    {
       "domain": "weedmaps.com",
-      "total_backlinks": 990752,
-      "referring_domains": 17768,
-      "rank": 500,
-      "avg_rank": 22.0,
-      "rank_share": 33.3,
+      "total_backlinks": 987869,
+      "referring_domains": 17785,
+      "rank": 502,
+      "avg_rank": 14.4,
+      "rank_share": 23.8,
       "shared_keywords": 4,
       "top_anchors": [
         {
@@ -347,18 +239,18 @@
         },
         {
           "anchor": null,
-          "backlinks": 160629,
-          "referring_domains": 4505
+          "backlinks": 159664,
+          "referring_domains": 4506
         },
         {
           "anchor": "Weedmaps-Sponsored",
-          "backlinks": 143537,
+          "backlinks": 136681,
           "referring_domains": 5
         },
         {
           "anchor": "Weedmaps",
-          "backlinks": 94582,
-          "referring_domains": 1716
+          "backlinks": 95113,
+          "referring_domains": 1715
         },
         {
           "anchor": "cropped-wmtechnology_logo_2x-svg",
@@ -368,135 +260,53 @@
       ]
     },
     {
-      "domain": "greenhousegta.com",
-      "total_backlinks": 687,
-      "referring_domains": 250,
-      "rank": 223,
-      "avg_rank": 18.6,
+      "domain": "www.leafythings.com",
+      "total_backlinks": 18114,
+      "referring_domains": 601,
+      "rank": 353,
+      "avg_rank": 14.8,
       "rank_share": 23.8,
       "shared_keywords": 4,
       "top_anchors": [
+        {
+          "anchor": "shieldPrivacy Policy",
+          "backlinks": 1,
+          "referring_domains": 1
+        },
+        {
+          "anchor": "publicWebsite",
+          "backlinks": 1,
+          "referring_domains": 1
+        },
         {
           "anchor": null,
-          "backlinks": 147,
-          "referring_domains": 5
+          "backlinks": 767,
+          "referring_domains": 27
         },
         {
-          "anchor": "https://www.greenhousegta.com/",
-          "backlinks": 11,
-          "referring_domains": 4
+          "anchor": "Leafythings",
+          "backlinks": 3164,
+          "referring_domains": 26
         },
         {
-          "anchor": "https://greenhousegta.com/",
-          "backlinks": 1,
-          "referring_domains": 1
-        },
-        {
-          "anchor": "weed delivery toronto",
+          "anchor": "David&TheWeedLeafyThings",
           "backlinks": 2,
-          "referring_domains": 1
-        },
-        {
-          "anchor": "greenhousegta.com SEO Backlink Experts for Powerful Ranking Improvement",
-          "backlinks": 1,
-          "referring_domains": 1
-        }
-      ]
-    },
-    {
-      "domain": "www.bloudsdispensary.ca",
-      "total_backlinks": null,
-      "referring_domains": null,
-      "rank": null,
-      "avg_rank": 10.0,
-      "rank_share": 19.0,
-      "shared_keywords": 4,
-      "top_anchors": []
-    },
-    {
-      "domain": "thecrownleaf.ca",
-      "total_backlinks": 9784,
-      "referring_domains": 250,
-      "rank": 195,
-      "avg_rank": 17.6,
-      "rank_share": 23.8,
-      "shared_keywords": 3,
-      "top_anchors": [
-        {
-          "anchor": "Website",
-          "backlinks": 311,
-          "referring_domains": 2
-        },
-        {
-          "anchor": "thecrownleaf.ca",
-          "backlinks": 26,
-          "referring_domains": 13
-        },
-        {
-          "anchor": "Store Website",
-          "backlinks": 30,
-          "referring_domains": 2
-        },
-        {
-          "anchor": "The Crown Leaf Cannabis",
-          "backlinks": 21,
-          "referring_domains": 2
-        },
-        {
-          "anchor": "Visit Store Website",
-          "backlinks": 17,
-          "referring_domains": 1
-        }
-      ]
-    },
-    {
-      "domain": "popscannabis.ca",
-      "total_backlinks": 6774,
-      "referring_domains": 465,
-      "rank": 222,
-      "avg_rank": 15.2,
-      "rank_share": 19.0,
-      "shared_keywords": 3,
-      "top_anchors": [
-        {
-          "anchor": "Store Website",
-          "backlinks": 224,
-          "referring_domains": 2
-        },
-        {
-          "anchor": "popscannabis.ca",
-          "backlinks": 69,
-          "referring_domains": 28
-        },
-        {
-          "anchor": "Website",
-          "backlinks": 196,
-          "referring_domains": 9
-        },
-        {
-          "anchor": "Visit Website",
-          "backlinks": 35,
-          "referring_domains": 10
-        },
-        {
-          "anchor": "Go to store",
-          "backlinks": 40,
           "referring_domains": 1
         }
       ]
     },
     {
       "domain": "twdshop.co",
-      "total_backlinks": 5150,
+      "total_backlinks": 5148,
       "referring_domains": 1006,
       "rank": 361,
-      "avg_rank": 19.8,
+      "avg_rank": 18.2,
       "rank_share": 19.0,
-      "shared_keywords": 2,
+      "shared_keywords": 4,
       "top_anchors": [
         {
           "anchor": null,
-          "backlinks": 232,
+          "backlinks": 233,
           "referring_domains": 7
         },
         {
@@ -522,85 +332,121 @@
       ]
     },
     {
-      "domain": "duenorthcannabis.com",
-      "total_backlinks": 1887,
-      "referring_domains": 273,
-      "rank": 176,
-      "avg_rank": 15.0,
-      "rank_share": 9.5,
-      "shared_keywords": 2,
+      "domain": "www.yelp.ca",
+      "total_backlinks": 2332651,
+      "referring_domains": 22906,
+      "rank": 538,
+      "avg_rank": 13.2,
+      "rank_share": 19.0,
+      "shared_keywords": 3,
       "top_anchors": [
         {
-          "anchor": "Website",
-          "backlinks": 164,
-          "referring_domains": 2
+          "anchor": null,
+          "backlinks": 1306397,
+          "referring_domains": 4737
         },
         {
-          "anchor": "duenorthcannabis.com",
-          "backlinks": 35,
-          "referring_domains": 26
+          "anchor": "Yelp",
+          "backlinks": 396849,
+          "referring_domains": 2853
         },
         {
-          "anchor": "LEARN MORE",
-          "backlinks": 11,
+          "anchor": "Linkedin link",
+          "backlinks": 21356,
           "referring_domains": 1
         },
         {
-          "anchor": "Store Website",
-          "backlinks": 14,
-          "referring_domains": 2
+          "anchor": "Leave Review",
+          "backlinks": 3648,
+          "referring_domains": 1
         },
         {
-          "anchor": "Visit",
+          "anchor": "Leave us a review on YELP!",
+          "backlinks": 7557,
+          "referring_domains": 1
+        }
+      ]
+    },
+    {
+      "domain": "chillincheetah.ca",
+      "total_backlinks": 1069,
+      "referring_domains": 345,
+      "rank": 57,
+      "avg_rank": 10.2,
+      "rank_share": 28.6,
+      "shared_keywords": 3,
+      "top_anchors": [
+        {
+          "anchor": null,
+          "backlinks": 29,
+          "referring_domains": 5
+        },
+        {
+          "anchor": "Reliable PBN Backlinks for chillincheetah.ca for Higher DA and DR Scores. Outrank Your Competitors, for Long Term SEO Results.",
+          "backlinks": 1,
+          "referring_domains": 1
+        },
+        {
+          "anchor": "1-Hour Weed Delivery Brampton @ Chillin Cheetah",
+          "backlinks": 1,
+          "referring_domains": 1
+        },
+        {
+          "anchor": "Black Diamond AAAA | Chillin Cheetah",
+          "backlinks": 1,
+          "referring_domains": 1
+        },
+        {
+          "anchor": "Buudabomb Mango Gummies 100mg THC Buy Online Chillin Cheetah",
           "backlinks": 1,
           "referring_domains": 1
         }
       ]
     },
     {
-      "domain": "ganjika-house.com",
-      "total_backlinks": 829,
-      "referring_domains": 268,
-      "rank": 151,
-      "avg_rank": 16.5,
-      "rank_share": 9.5,
-      "shared_keywords": 2,
+      "domain": "greenhousegta.com",
+      "total_backlinks": 688,
+      "referring_domains": 251,
+      "rank": 223,
+      "avg_rank": 13.7,
+      "rank_share": 14.3,
+      "shared_keywords": 3,
       "top_anchors": [
         {
-          "anchor": "Website",
-          "backlinks": 18,
+          "anchor": null,
+          "backlinks": 147,
           "referring_domains": 5
         },
         {
-          "anchor": "https://www.ganjika-house.com",
-          "backlinks": 5,
-          "referring_domains": 5
+          "anchor": "https://www.greenhousegta.com/",
+          "backlinks": 11,
+          "referring_domains": 4
         },
         {
-          "anchor": "ganjika-house.com",
-          "backlinks": 36,
-          "referring_domains": 28
+          "anchor": "https://greenhousegta.com/",
+          "backlinks": 1,
+          "referring_domains": 1
         },
         {
-          "anchor": "Visit Website",
-          "backlinks": 6,
-          "referring_domains": 2
+          "anchor": "weed delivery toronto",
+          "backlinks": 2,
+          "referring_domains": 1
         },
         {
-          "anchor": "Store Website",
-          "backlinks": 18,
+          "anchor": "greenhousegta.com SEO Backlink Experts for Powerful Ranking Improvement",
+          "backlinks": 2,
           "referring_domains": 2
         }
       ]
     },
     {
       "domain": "the620.ca",
-      "total_backlinks": 2909,
-      "referring_domains": 109,
-      "rank": 233,
-      "avg_rank": 18.0,
-      "rank_share": 4.8,
-      "shared_keywords": 1,
+      "total_backlinks": 2738,
+      "referring_domains": 110,
+      "rank": 231,
+      "avg_rank": 27.5,
+      "rank_share": 9.5,
+      "shared_keywords": 2,
       "top_anchors": [
         {
           "anchor": "Vape Pen Here",
@@ -609,12 +455,12 @@
         },
         {
           "anchor": "return policy.",
-          "backlinks": 9,
-          "referring_domains": 4
+          "backlinks": 8,
+          "referring_domains": 3
         },
         {
           "anchor": "North York",
-          "backlinks": 2400,
+          "backlinks": 2230,
           "referring_domains": 3
         },
         {
@@ -630,183 +476,193 @@
       ]
     },
     {
-      "domain": "inspiredcannabis.ca",
-      "total_backlinks": 10283,
-      "referring_domains": 705,
-      "rank": 266,
-      "avg_rank": 33.0,
-      "rank_share": 4.8,
-      "shared_keywords": 1,
+      "domain": "popscannabis.ca",
+      "total_backlinks": 6888,
+      "referring_domains": 466,
+      "rank": 228,
+      "avg_rank": 12.3,
+      "rank_share": 14.3,
+      "shared_keywords": 2,
       "top_anchors": [
         {
-          "anchor": "https://inspiredcannabis.ca/cannabis-dispensary-delta/",
-          "backlinks": 204,
-          "referring_domains": 95
+          "anchor": "Store Website",
+          "backlinks": 332,
+          "referring_domains": 2
         },
         {
-          "anchor": "https://inspiredcannabis.ca/cannabis-dispensary-kitsilano",
-          "backlinks": 161,
-          "referring_domains": 93
+          "anchor": "popscannabis.ca",
+          "backlinks": 69,
+          "referring_domains": 28
         },
         {
-          "anchor": "https://inspiredcannabis.ca/cannabis-dispensary-st-catharines/",
-          "backlinks": 90,
-          "referring_domains": 81
+          "anchor": "Website",
+          "backlinks": 196,
+          "referring_domains": 9
         },
         {
-          "anchor": "https://inspiredcannabis.ca/cannabis-dispensary-kitsilano/",
-          "backlinks": 89,
-          "referring_domains": 88
+          "anchor": "Visit Website",
+          "backlinks": 35,
+          "referring_domains": 10
         },
         {
-          "anchor": "https://inspiredcannabis.ca/cannabis-dispensary-downtown-vancouver/",
-          "backlinks": 77,
-          "referring_domains": 74
+          "anchor": "Go to store",
+          "backlinks": 40,
+          "referring_domains": 1
         }
       ]
     },
     {
-      "domain": "kingstoncannabisinc.ca",
-      "total_backlinks": 591,
-      "referring_domains": 238,
-      "rank": 112,
-      "avg_rank": 18.0,
+      "domain": "www.bloudsdispensary.ca",
+      "total_backlinks": null,
+      "referring_domains": null,
+      "rank": null,
+      "avg_rank": 8.0,
       "rank_share": 9.5,
+      "shared_keywords": 2,
+      "top_anchors": []
+    },
+    {
+      "domain": "duenorthcannabis.com",
+      "total_backlinks": 1908,
+      "referring_domains": 278,
+      "rank": 180,
+      "avg_rank": 9.0,
+      "rank_share": 4.8,
       "shared_keywords": 1,
       "top_anchors": [
         {
           "anchor": "Website",
-          "backlinks": 43,
+          "backlinks": 164,
           "referring_domains": 2
         },
         {
-          "anchor": "Visit website",
-          "backlinks": 2,
+          "anchor": "duenorthcannabis.com",
+          "backlinks": 36,
+          "referring_domains": 27
+        },
+        {
+          "anchor": "LEARN MORE",
+          "backlinks": 18,
           "referring_domains": 1
         },
         {
           "anchor": "Store Website",
-          "backlinks": 4,
+          "backlinks": 20,
           "referring_domains": 2
         },
         {
-          "anchor": "Vendor Website",
-          "backlinks": 1,
-          "referring_domains": 1
-        },
-        {
-          "anchor": "Cannabis Dispensary Kingston Ontario | Kingston Cannabis Inc.",
+          "anchor": "Visit",
           "backlinks": 1,
           "referring_domains": 1
         }
       ]
     },
     {
-      "domain": "puffshop.ca",
-      "total_backlinks": 99,
-      "referring_domains": 54,
-      "rank": 107,
-      "avg_rank": 10.0,
+      "domain": "ganjika-house.com",
+      "total_backlinks": 845,
+      "referring_domains": 271,
+      "rank": 153,
+      "avg_rank": 2.0,
       "rank_share": 4.8,
       "shared_keywords": 1,
       "top_anchors": [
         {
           "anchor": "Website",
-          "backlinks": 38,
-          "referring_domains": 2
-        },
-        {
-          "anchor": "Visit website",
-          "backlinks": 1,
-          "referring_domains": 1
+          "backlinks": 18,
+          "referring_domains": 5
         },
         {
           "anchor": "Store Website",
-          "backlinks": 4,
+          "backlinks": 26,
           "referring_domains": 2
         },
         {
-          "anchor": "puffshop.ca",
-          "backlinks": 18,
-          "referring_domains": 16
+          "anchor": "https://www.ganjika-house.com",
+          "backlinks": 5,
+          "referring_domains": 5
         },
         {
-          "anchor": "Primary source",
-          "backlinks": 1,
-          "referring_domains": 1
+          "anchor": "Visit Website",
+          "backlinks": 6,
+          "referring_domains": 2
+        },
+        {
+          "anchor": "ganjika-house.com",
+          "backlinks": 36,
+          "referring_domains": 28
         }
       ]
     }
   ],
   "gaps": {
-    "keywords_we_win": 318,
-    "keywords_we_lose": 34,
+    "keywords_we_win": 319,
+    "keywords_we_lose": 21,
     "opportunities_count": 17,
     "opportunities": [
       {
         "keyword": "weed delivery mississauga",
         "competitor": "shopkindling.ca",
-        "their_rank": 5
+        "their_rank": 6
       },
       {
         "keyword": "weed delivery burlington",
         "competitor": "shopkindling.ca",
-        "their_rank": 5
+        "their_rank": 6
       },
       {
-        "keyword": "weed delivery oakville",
+        "keyword": "weed delivery milton",
         "competitor": "shopkindling.ca",
-        "their_rank": 5
+        "their_rank": 1
       },
       {
-        "keyword": "weed delivery oakville",
+        "keyword": "weed delivery milton",
         "competitor": "thewoodscannabis.ca",
-        "their_rank": 4
+        "their_rank": 9
       },
       {
         "keyword": "weed delivery mississauga",
         "competitor": "thehunnypot.com",
-        "their_rank": 6
-      },
-      {
-        "keyword": "weed delivery oakville",
-        "competitor": "thehunnypot.com",
-        "their_rank": 6
-      },
-      {
-        "keyword": "cannabis dispensary",
-        "competitor": "thecrownleaf.ca",
         "their_rank": 5
       },
       {
-        "keyword": "weed delivery mississauga",
-        "competitor": "canna-express.co",
-        "their_rank": 7
+        "keyword": "weed delivery milton",
+        "competitor": "thehunnypot.com",
+        "their_rank": 2
       },
       {
-        "keyword": "weed delivery oakville",
+        "keyword": "weed delivery mississauga",
         "competitor": "canna-express.co",
-        "their_rank": 3
+        "their_rank": 8
       },
       {
         "keyword": "weed delivery burlington",
         "competitor": "www.leafly.ca",
-        "their_rank": 10
+        "their_rank": 9
       },
       {
-        "keyword": "cannabis dispensary",
-        "competitor": "weedmaps.com",
+        "keyword": "weed delivery milton",
+        "competitor": "www.leafly.ca",
         "their_rank": 8
       },
       {
         "keyword": "cannabis dispensary",
-        "competitor": "popscannabis.ca",
+        "competitor": "weedmaps.com",
+        "their_rank": 7
+      },
+      {
+        "keyword": "weed delivery halton hills",
+        "competitor": "www.yelp.ca",
         "their_rank": 10
       },
       {
         "keyword": "cannabis dispensary",
+        "competitor": "popscannabis.ca",
+        "their_rank": 2
+      },
+      {
+        "keyword": "cannabis dispensary",
         "competitor": "budbardispensary.ca",
-        "their_rank": 9
+        "their_rank": 6
       },
       {
         "keyword": "cannabis dispensary",
@@ -816,7 +672,7 @@
       {
         "keyword": "weed delivery mississauga",
         "competitor": "chillincheetah.ca",
-        "their_rank": 9
+        "their_rank": 10
       },
       {
         "keyword": "weed delivery burlington",
@@ -824,15 +680,15 @@
         "their_rank": 8
       },
       {
-        "keyword": "weed delivery oakville",
+        "keyword": "weed delivery milton",
         "competitor": "chillincheetah.ca",
-        "their_rank": 8
+        "their_rank": 7
       }
     ]
   },
   "summary": {
-    "competitors_tracked": 21,
-    "shared_keywords_total": 82,
+    "competitors_tracked": 17,
+    "shared_keywords_total": 56,
     "opportunity_keywords": 17
   }
 }
