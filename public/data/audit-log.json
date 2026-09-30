@@ -1,12 +1,116 @@
 {
-  "last_updated": "2026-09-28T14:14:22.399256Z",
-  "total_actions": 109,
+  "last_updated": "2026-09-30T03:00:14.619578Z",
+  "total_actions": 114,
   "actions": [
+    {
+      "ts": 1790605349,
+      "action": "run_complete",
+      "bot": "content-bot",
+      "action_id": "content-bot-1790605349-63",
+      "result": "pending",
+      "details": {
+        "date": "2026-09-28",
+        "topics": 9,
+        "cities": 6,
+        "briefs": 54,
+        "drafts": 54
+      },
+      "_source_log": "content-bot-audit.jsonl"
+    },
+    {
+      "ts": 1790605206,
+      "action": "run_start",
+      "bot": "content-bot",
+      "action_id": "content-bot-1790605206-62",
+      "result": "pending",
+      "details": {
+        "date": "2026-09-28",
+        "topics": [
+          "best-sativa-strains",
+          "weed-delivery-guide",
+          "cannabis-edibles-guide",
+          "first-time-buyer",
+          "best-edibles",
+          "best-indica-strains",
+          "pink-chapo-strain",
+          "24-hour-delivery",
+          "edibles-dosage"
+        ],
+        "cities": [
+          "Brampton",
+          "Mississauga",
+          "Burlington",
+          "Oakville",
+          "Milton",
+          "Halton Hills"
+        ]
+      },
+      "_source_log": "content-bot-audit.jsonl"
+    },
+    {
+      "ts": 1790604951,
+      "action": "audit_complete",
+      "bot": "link-auditor",
+      "action_id": "link-auditor-1790604951-109",
+      "result": "pending",
+      "details": {
+        "date": "2026-09-28",
+        "crawled_pages": 1,
+        "orphan_count": 0,
+        "broken_external": 0,
+        "total_backlinks": null,
+        "obsidian_notes": 4
+      },
+      "_source_log": "link-auditor-audit.jsonl"
+    },
+    {
+      "ts": 1790604926,
+      "action": "audit_start",
+      "bot": "link-auditor",
+      "action_id": "link-auditor-1790604926-108",
+      "result": "pending",
+      "details": {
+        "date": "2026-09-28",
+        "site": "https://weedistillery.com",
+        "max_pages": 30
+      },
+      "_source_log": "link-auditor-audit.jsonl"
+    },
+    {
+      "ts": 1790604864,
+      "action": "run_start",
+      "bot": "content-bot",
+      "action_id": "content-bot-1790604864-61",
+      "result": "pending",
+      "details": {
+        "date": "2026-09-28",
+        "topics": [
+          "best-sativa-strains",
+          "weed-delivery-guide",
+          "cannabis-edibles-guide",
+          "first-time-buyer",
+          "best-edibles",
+          "best-indica-strains",
+          "pink-chapo-strain",
+          "24-hour-delivery",
+          "edibles-dosage"
+        ],
+        "cities": [
+          "Brampton",
+          "Mississauga",
+          "Burlington",
+          "Oakville",
+          "Milton",
+          "Halton Hills"
+        ]
+      },
+      "_source_log": "content-bot-audit.jsonl"
+    },
     {
       "ts": 1790085393,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1790085393-80",
+      "action_id": "dashboard-publish-1790085393-83",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -45,7 +149,7 @@
       "ts": 1790010403,
       "action": "drafts_complete",
       "bot": "gbp-drafts",
-      "action_id": "gbp-drafts-1790010403-88",
+      "action_id": "gbp-drafts-1790010403-91",
       "result": "pending",
       "details": {
         "date": "2026-09-21",
@@ -57,7 +161,7 @@
       "ts": 1790010402,
       "action": "audit_complete",
       "bot": "gbp-audit",
-      "action_id": "gbp-audit-1790010402-84",
+      "action_id": "gbp-audit-1790010402-87",
       "result": "pending",
       "details": {
         "date": "2026-09-21",
@@ -86,7 +190,7 @@
       "ts": 1790010339,
       "action": "audit_complete",
       "bot": "link-auditor",
-      "action_id": "link-auditor-1790010339-104",
+      "action_id": "link-auditor-1790010339-107",
       "result": "pending",
       "details": {
         "date": "2026-09-21",
@@ -142,7 +246,7 @@
       "ts": 1790010264,
       "action": "audit_start",
       "bot": "link-auditor",
-      "action_id": "link-auditor-1790010264-103",
+      "action_id": "link-auditor-1790010264-106",
       "result": "pending",
       "details": {
         "date": "2026-09-21",
@@ -185,7 +289,7 @@
       "ts": 1790010262,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1790010262-79",
+      "action_id": "dashboard-publish-1790010262-82",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -209,7 +313,7 @@
       "ts": 1789425021,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1789425021-78",
+      "action_id": "dashboard-publish-1789425021-81",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -248,7 +352,7 @@
       "ts": 1789388398,
       "action": "audit_complete",
       "bot": "gbp-audit",
-      "action_id": "gbp-audit-1789388398-83",
+      "action_id": "gbp-audit-1789388398-86",
       "result": "pending",
       "details": {
         "date": "2026-09-14",
@@ -277,7 +381,7 @@
       "ts": 1789388079,
       "action": "drafts_complete",
       "bot": "gbp-drafts",
-      "action_id": "gbp-drafts-1789388079-87",
+      "action_id": "gbp-drafts-1789388079-90",
       "result": "pending",
       "details": {
         "date": "2026-09-14",
@@ -334,7 +438,7 @@
       "ts": 1789388069,
       "action": "audit_complete",
       "bot": "link-auditor",
-      "action_id": "link-auditor-1789388069-102",
+      "action_id": "link-auditor-1789388069-105",
       "result": "pending",
       "details": {
         "date": "2026-09-14",
@@ -350,7 +454,7 @@
       "ts": 1789388038,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1789388038-77",
+      "action_id": "dashboard-publish-1789388038-80",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -414,7 +518,7 @@
       "ts": 1789387988,
       "action": "audit_start",
       "bot": "link-auditor",
-      "action_id": "link-auditor-1789387988-101",
+      "action_id": "link-auditor-1789387988-104",
       "result": "pending",
       "details": {
         "date": "2026-09-14",
@@ -457,7 +561,7 @@
       "ts": 1789285166,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1789285166-76",
+      "action_id": "dashboard-publish-1789285166-79",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -481,7 +585,7 @@
       "ts": 1789235216,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1789235216-75",
+      "action_id": "dashboard-publish-1789235216-78",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -505,7 +609,7 @@
       "ts": 1789038215,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1789038215-74",
+      "action_id": "dashboard-publish-1789038215-77",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -529,7 +633,7 @@
       "ts": 1788957843,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1788957843-73",
+      "action_id": "dashboard-publish-1788957843-76",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -553,7 +657,7 @@
       "ts": 1788865476,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1788865476-72",
+      "action_id": "dashboard-publish-1788865476-75",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -577,7 +681,7 @@
       "ts": 1788798868,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1788798868-71",
+      "action_id": "dashboard-publish-1788798868-74",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -601,7 +705,7 @@
       "ts": 1788798841,
       "action": "drafts_complete",
       "bot": "gbp-drafts",
-      "action_id": "gbp-drafts-1788798841-86",
+      "action_id": "gbp-drafts-1788798841-89",
       "result": "pending",
       "details": {
         "date": "2026-09-07",
@@ -613,7 +717,7 @@
       "ts": 1788798839,
       "action": "audit_complete",
       "bot": "gbp-audit",
-      "action_id": "gbp-audit-1788798839-82",
+      "action_id": "gbp-audit-1788798839-85",
       "result": "pending",
       "details": {
         "date": "2026-09-07",
@@ -772,7 +876,7 @@
       "ts": 1788798354,
       "action": "audit_complete",
       "bot": "link-auditor",
-      "action_id": "link-auditor-1788798354-100",
+      "action_id": "link-auditor-1788798354-103",
       "result": "pending",
       "details": {
         "date": "2026-09-07",
@@ -788,7 +892,7 @@
       "ts": 1788798280,
       "action": "audit_start",
       "bot": "link-auditor",
-      "action_id": "link-auditor-1788798280-99",
+      "action_id": "link-auditor-1788798280-102",
       "result": "pending",
       "details": {
         "date": "2026-09-07",
@@ -801,7 +905,7 @@
       "ts": 1788704213,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1788704213-70",
+      "action_id": "dashboard-publish-1788704213-73",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -825,7 +929,7 @@
       "ts": 1788643102,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1788643102-69",
+      "action_id": "dashboard-publish-1788643102-72",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -849,7 +953,7 @@
       "ts": 1788474619,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1788474619-68",
+      "action_id": "dashboard-publish-1788474619-71",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -873,7 +977,7 @@
       "ts": 1788388271,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1788388271-67",
+      "action_id": "dashboard-publish-1788388271-70",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -897,7 +1001,7 @@
       "ts": 1788329805,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1788329805-66",
+      "action_id": "dashboard-publish-1788329805-69",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -921,7 +1025,7 @@
       "ts": 1787789440,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1787789440-65",
+      "action_id": "dashboard-publish-1787789440-68",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -945,7 +1049,7 @@
       "ts": 1787697045,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1787697045-64",
+      "action_id": "dashboard-publish-1787697045-67",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -969,7 +1073,7 @@
       "ts": 1787643102,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1787643102-63",
+      "action_id": "dashboard-publish-1787643102-66",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -993,7 +1097,7 @@
       "ts": 1787587498,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1787587498-62",
+      "action_id": "dashboard-publish-1787587498-65",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -1017,7 +1121,7 @@
       "ts": 1787583982,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1787583982-61",
+      "action_id": "dashboard-publish-1787583982-64",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -1041,7 +1145,7 @@
       "ts": 1787583022,
       "action": "fix_generated",
       "bot": "homepage-fix",
-      "action_id": "homepage-fix-1787583022-90",
+      "action_id": "homepage-fix-1787583022-93",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1056,7 +1160,7 @@
       "ts": 1787582854,
       "action": "fix_generated",
       "bot": "homepage-fix",
-      "action_id": "homepage-fix-1787582854-89",
+      "action_id": "homepage-fix-1787582854-92",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1469,7 +1573,7 @@
       "ts": 1787580878,
       "action": "drafts_complete",
       "bot": "gbp-drafts",
-      "action_id": "gbp-drafts-1787580878-85",
+      "action_id": "gbp-drafts-1787580878-88",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1481,7 +1585,7 @@
       "ts": 1787580831,
       "action": "audit_complete",
       "bot": "gbp-audit",
-      "action_id": "gbp-audit-1787580831-81",
+      "action_id": "gbp-audit-1787580831-84",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1841,89 +1945,6 @@
         "keywords_only": true
       },
       "_source_log": "competitor-analyst-audit.jsonl"
-    },
-    {
-      "ts": 1787577106,
-      "action": "audit_complete",
-      "bot": "competitor-analyst",
-      "action_id": "competitor-analyst-1787577106-1",
-      "result": "pending",
-      "details": {
-        "date": "2026-08-24",
-        "competitors": 8,
-        "keywords": 5,
-        "opportunities": 0,
-        "obsidian_notes": 10
-      },
-      "_source_log": "competitor-analyst-audit.jsonl"
-    },
-    {
-      "ts": 1787577029,
-      "action": "audit_start",
-      "bot": "competitor-analyst",
-      "action_id": "competitor-analyst-1787577029",
-      "result": "pending",
-      "details": {
-        "date": "2026-08-24",
-        "competitors": [
-          "shopkindling.ca",
-          "thewoodscannabis.ca",
-          "farmerslink.ca",
-          "thehunnypot.com",
-          "thecrownleaf.ca",
-          "canna-express.co",
-          "www.leafly.ca",
-          "weedmaps.com"
-        ],
-        "keywords_count": 5,
-        "keywords_only": true
-      },
-      "_source_log": "competitor-analyst-audit.jsonl"
-    },
-    {
-      "ts": 1787576756,
-      "action": "audit_complete",
-      "bot": "link-auditor",
-      "action_id": "link-auditor-1787576756-98",
-      "result": "pending",
-      "details": {
-        "date": "2026-08-24",
-        "crawled_pages": 20,
-        "orphan_count": 1,
-        "broken_external": 4,
-        "total_backlinks": 538,
-        "obsidian_notes": 4
-      },
-      "_source_log": "link-auditor-audit.jsonl"
-    },
-    {
-      "ts": 1787576681,
-      "action": "audit_start",
-      "bot": "link-auditor",
-      "action_id": "link-auditor-1787576681-97",
-      "result": "pending",
-      "details": {
-        "date": "2026-08-24",
-        "site": "https://weedistillery.com",
-        "max_pages": 20
-      },
-      "_source_log": "link-auditor-audit.jsonl"
-    },
-    {
-      "ts": 1787576640,
-      "action": "audit_complete",
-      "bot": "link-auditor",
-      "action_id": "link-auditor-1787576640-96",
-      "result": "pending",
-      "details": {
-        "date": "2026-08-24",
-        "crawled_pages": 5,
-        "orphan_count": 1,
-        "broken_external": 3,
-        "total_backlinks": 538,
-        "obsidian_notes": 4
-      },
-      "_source_log": "link-auditor-audit.jsonl"
     }
   ]
 }
