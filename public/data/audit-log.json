@@ -1,7 +1,31 @@
 {
-  "last_updated": "2026-09-30T03:00:14.619578Z",
-  "total_actions": 114,
+  "last_updated": "2026-10-01T07:45:16.258939Z",
+  "total_actions": 115,
   "actions": [
+    {
+      "ts": 1790737218,
+      "action": "publish_complete",
+      "bot": "dashboard-publish",
+      "action_id": "dashboard-publish-1790737218-84",
+      "result": "pending",
+      "details": {
+        "files_changed": 10,
+        "files": [
+          "bots-status.json",
+          "gsc-data.json",
+          "ranks-data.json",
+          "competitors-data.json",
+          "links-data.json",
+          "gbp-data.json",
+          "content-data.json",
+          "seo-fixes-data.json",
+          "opportunities.json",
+          "audit-log.json"
+        ],
+        "deployed": true
+      },
+      "_source_log": "dashboard-publish-audit.jsonl"
+    },
     {
       "ts": 1790605349,
       "action": "run_complete",
@@ -51,7 +75,7 @@
       "ts": 1790604951,
       "action": "audit_complete",
       "bot": "link-auditor",
-      "action_id": "link-auditor-1790604951-109",
+      "action_id": "link-auditor-1790604951-110",
       "result": "pending",
       "details": {
         "date": "2026-09-28",
@@ -67,7 +91,7 @@
       "ts": 1790604926,
       "action": "audit_start",
       "bot": "link-auditor",
-      "action_id": "link-auditor-1790604926-108",
+      "action_id": "link-auditor-1790604926-109",
       "result": "pending",
       "details": {
         "date": "2026-09-28",
@@ -149,7 +173,7 @@
       "ts": 1790010403,
       "action": "drafts_complete",
       "bot": "gbp-drafts",
-      "action_id": "gbp-drafts-1790010403-91",
+      "action_id": "gbp-drafts-1790010403-92",
       "result": "pending",
       "details": {
         "date": "2026-09-21",
@@ -161,7 +185,7 @@
       "ts": 1790010402,
       "action": "audit_complete",
       "bot": "gbp-audit",
-      "action_id": "gbp-audit-1790010402-87",
+      "action_id": "gbp-audit-1790010402-88",
       "result": "pending",
       "details": {
         "date": "2026-09-21",
@@ -190,7 +214,7 @@
       "ts": 1790010339,
       "action": "audit_complete",
       "bot": "link-auditor",
-      "action_id": "link-auditor-1790010339-107",
+      "action_id": "link-auditor-1790010339-108",
       "result": "pending",
       "details": {
         "date": "2026-09-21",
@@ -246,7 +270,7 @@
       "ts": 1790010264,
       "action": "audit_start",
       "bot": "link-auditor",
-      "action_id": "link-auditor-1790010264-106",
+      "action_id": "link-auditor-1790010264-107",
       "result": "pending",
       "details": {
         "date": "2026-09-21",
@@ -352,7 +376,7 @@
       "ts": 1789388398,
       "action": "audit_complete",
       "bot": "gbp-audit",
-      "action_id": "gbp-audit-1789388398-86",
+      "action_id": "gbp-audit-1789388398-87",
       "result": "pending",
       "details": {
         "date": "2026-09-14",
@@ -381,7 +405,7 @@
       "ts": 1789388079,
       "action": "drafts_complete",
       "bot": "gbp-drafts",
-      "action_id": "gbp-drafts-1789388079-90",
+      "action_id": "gbp-drafts-1789388079-91",
       "result": "pending",
       "details": {
         "date": "2026-09-14",
@@ -438,7 +462,7 @@
       "ts": 1789388069,
       "action": "audit_complete",
       "bot": "link-auditor",
-      "action_id": "link-auditor-1789388069-105",
+      "action_id": "link-auditor-1789388069-106",
       "result": "pending",
       "details": {
         "date": "2026-09-14",
@@ -518,7 +542,7 @@
       "ts": 1789387988,
       "action": "audit_start",
       "bot": "link-auditor",
-      "action_id": "link-auditor-1789387988-104",
+      "action_id": "link-auditor-1789387988-105",
       "result": "pending",
       "details": {
         "date": "2026-09-14",
@@ -705,7 +729,7 @@
       "ts": 1788798841,
       "action": "drafts_complete",
       "bot": "gbp-drafts",
-      "action_id": "gbp-drafts-1788798841-89",
+      "action_id": "gbp-drafts-1788798841-90",
       "result": "pending",
       "details": {
         "date": "2026-09-07",
@@ -717,7 +741,7 @@
       "ts": 1788798839,
       "action": "audit_complete",
       "bot": "gbp-audit",
-      "action_id": "gbp-audit-1788798839-85",
+      "action_id": "gbp-audit-1788798839-86",
       "result": "pending",
       "details": {
         "date": "2026-09-07",
@@ -876,7 +900,7 @@
       "ts": 1788798354,
       "action": "audit_complete",
       "bot": "link-auditor",
-      "action_id": "link-auditor-1788798354-103",
+      "action_id": "link-auditor-1788798354-104",
       "result": "pending",
       "details": {
         "date": "2026-09-07",
@@ -892,7 +916,7 @@
       "ts": 1788798280,
       "action": "audit_start",
       "bot": "link-auditor",
-      "action_id": "link-auditor-1788798280-102",
+      "action_id": "link-auditor-1788798280-103",
       "result": "pending",
       "details": {
         "date": "2026-09-07",
@@ -1145,7 +1169,7 @@
       "ts": 1787583022,
       "action": "fix_generated",
       "bot": "homepage-fix",
-      "action_id": "homepage-fix-1787583022-93",
+      "action_id": "homepage-fix-1787583022-94",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1160,7 +1184,7 @@
       "ts": 1787582854,
       "action": "fix_generated",
       "bot": "homepage-fix",
-      "action_id": "homepage-fix-1787582854-92",
+      "action_id": "homepage-fix-1787582854-93",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1573,7 +1597,7 @@
       "ts": 1787580878,
       "action": "drafts_complete",
       "bot": "gbp-drafts",
-      "action_id": "gbp-drafts-1787580878-88",
+      "action_id": "gbp-drafts-1787580878-89",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1585,7 +1609,7 @@
       "ts": 1787580831,
       "action": "audit_complete",
       "bot": "gbp-audit",
-      "action_id": "gbp-audit-1787580831-84",
+      "action_id": "gbp-audit-1787580831-85",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1920,29 +1944,6 @@
         "keywords": 5,
         "opportunities": 0,
         "obsidian_notes": 10
-      },
-      "_source_log": "competitor-analyst-audit.jsonl"
-    },
-    {
-      "ts": 1787577257,
-      "action": "audit_start",
-      "bot": "competitor-analyst",
-      "action_id": "competitor-analyst-1787577257-2",
-      "result": "pending",
-      "details": {
-        "date": "2026-08-24",
-        "competitors": [
-          "shopkindling.ca",
-          "thewoodscannabis.ca",
-          "farmerslink.ca",
-          "thehunnypot.com",
-          "thecrownleaf.ca",
-          "canna-express.co",
-          "www.leafly.ca",
-          "weedmaps.com"
-        ],
-        "keywords_count": 5,
-        "keywords_only": true
       },
       "_source_log": "competitor-analyst-audit.jsonl"
     }
