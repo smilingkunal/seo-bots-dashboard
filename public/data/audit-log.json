@@ -1,12 +1,231 @@
 {
-  "last_updated": "2026-10-05T15:26:22.402812Z",
-  "total_actions": 117,
+  "last_updated": "2026-10-08T07:06:02.903318Z",
+  "total_actions": 127,
   "actions": [
+    {
+      "ts": 1791214621,
+      "action": "audit_complete",
+      "bot": "competitor-analyst",
+      "action_id": "competitor-analyst-1791214621-22",
+      "result": "pending",
+      "details": {
+        "date": "2026-10-05",
+        "competitors": 25,
+        "keywords": 21,
+        "opportunities": 10,
+        "obsidian_notes": 27
+      },
+      "_source_log": "competitor-analyst-audit.jsonl"
+    },
+    {
+      "ts": 1791214289,
+      "action": "audit_start",
+      "bot": "competitor-analyst",
+      "action_id": "competitor-analyst-1791214289-21",
+      "result": "pending",
+      "details": {
+        "date": "2026-10-05",
+        "competitors": [
+          "shopkindling.ca",
+          "thewoodscannabis.ca",
+          "farmerslink.ca",
+          "thehunnypot.com",
+          "thecrownleaf.ca",
+          "canna-express.co",
+          "www.leafly.ca",
+          "weedmaps.com",
+          "www.leafythings.com",
+          "www.yelp.ca",
+          "squamishcannabisco.com",
+          "the620.ca",
+          "twdshop.co",
+          "popscannabis.ca",
+          "inspiredcannabis.ca",
+          "budbardispensary.ca",
+          "kingstoncannabisinc.ca",
+          "duenorthcannabis.com",
+          "delta9.ca",
+          "dacanna.ca",
+          "ganjika-house.com",
+          "chillincheetah.ca",
+          "puffshop.ca",
+          "greenhousegta.com",
+          "www.bloudsdispensary.ca"
+        ],
+        "keywords_count": 21,
+        "keywords_only": false
+      },
+      "_source_log": "competitor-analyst-audit.jsonl"
+    },
+    {
+      "ts": 1791214248,
+      "action": "run_complete",
+      "bot": "content-bot",
+      "action_id": "content-bot-1791214248-68",
+      "result": "pending",
+      "details": {
+        "date": "2026-10-05",
+        "topics": 9,
+        "cities": 6,
+        "briefs": 54,
+        "drafts": 54
+      },
+      "_source_log": "content-bot-audit.jsonl"
+    },
+    {
+      "ts": 1791214210,
+      "action": "audit_complete",
+      "bot": "link-auditor",
+      "action_id": "link-auditor-1791214210-122",
+      "result": "pending",
+      "details": {
+        "date": "2026-10-05",
+        "crawled_pages": 30,
+        "orphan_count": 1,
+        "broken_external": 3,
+        "total_backlinks": 800,
+        "obsidian_notes": 4
+      },
+      "_source_log": "link-auditor-audit.jsonl"
+    },
+    {
+      "ts": 1791214200,
+      "action": "drafts_complete",
+      "bot": "gbp-drafts",
+      "action_id": "gbp-drafts-1791214200-102",
+      "result": "pending",
+      "details": {
+        "date": "2026-10-05",
+        "count": 9
+      },
+      "_source_log": "gbp-drafts-audit.jsonl"
+    },
+    {
+      "ts": 1791214190,
+      "action": "audit_complete",
+      "bot": "gbp-audit",
+      "action_id": "gbp-audit-1791214190-97",
+      "result": "pending",
+      "details": {
+        "date": "2026-10-05",
+        "profile_found": true,
+        "cities_analyzed": 6,
+        "critical_issues": 2
+      },
+      "_source_log": "gbp-audit-audit.jsonl"
+    },
+    {
+      "ts": 1791214071,
+      "action": "run_start",
+      "bot": "content-bot",
+      "action_id": "content-bot-1791214071-67",
+      "result": "pending",
+      "details": {
+        "date": "2026-10-05",
+        "topics": [
+          "best-sativa-strains",
+          "weed-delivery-guide",
+          "cannabis-edibles-guide",
+          "first-time-buyer",
+          "best-edibles",
+          "best-indica-strains",
+          "pink-chapo-strain",
+          "24-hour-delivery",
+          "edibles-dosage"
+        ],
+        "cities": [
+          "Brampton",
+          "Mississauga",
+          "Burlington",
+          "Oakville",
+          "Milton",
+          "Halton Hills"
+        ]
+      },
+      "_source_log": "content-bot-audit.jsonl"
+    },
+    {
+      "ts": 1791214051,
+      "action": "audit_start",
+      "bot": "link-auditor",
+      "action_id": "link-auditor-1791214051-121",
+      "result": "pending",
+      "details": {
+        "date": "2026-10-05",
+        "site": "https://weedistillery.com",
+        "max_pages": 30
+      },
+      "_source_log": "link-auditor-audit.jsonl"
+    },
+    {
+      "ts": 1791214009,
+      "action": "publish_complete",
+      "bot": "dashboard-publish",
+      "action_id": "dashboard-publish-1791214009-92",
+      "result": "pending",
+      "details": {
+        "files_changed": 10,
+        "files": [
+          "bots-status.json",
+          "gsc-data.json",
+          "ranks-data.json",
+          "competitors-data.json",
+          "links-data.json",
+          "gbp-data.json",
+          "content-data.json",
+          "seo-fixes-data.json",
+          "opportunities.json",
+          "audit-log.json"
+        ],
+        "deployed": true
+      },
+      "_source_log": "dashboard-publish-audit.jsonl"
+    },
+    {
+      "ts": 1791213982,
+      "action": "audit_start",
+      "bot": "competitor-analyst",
+      "action_id": "competitor-analyst-1791213982-20",
+      "result": "pending",
+      "details": {
+        "date": "2026-10-05",
+        "competitors": [
+          "shopkindling.ca",
+          "thewoodscannabis.ca",
+          "farmerslink.ca",
+          "thehunnypot.com",
+          "thecrownleaf.ca",
+          "canna-express.co",
+          "www.leafly.ca",
+          "weedmaps.com",
+          "www.leafythings.com",
+          "www.yelp.ca",
+          "squamishcannabisco.com",
+          "the620.ca",
+          "twdshop.co",
+          "popscannabis.ca",
+          "inspiredcannabis.ca",
+          "budbardispensary.ca",
+          "kingstoncannabisinc.ca",
+          "duenorthcannabis.com",
+          "delta9.ca",
+          "dacanna.ca",
+          "ganjika-house.com",
+          "chillincheetah.ca",
+          "puffshop.ca",
+          "greenhousegta.com",
+          "www.bloudsdispensary.ca"
+        ],
+        "keywords_count": 21,
+        "keywords_only": false
+      },
+      "_source_log": "competitor-analyst-audit.jsonl"
+    },
     {
       "ts": 1790950890,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1790950890-86",
+      "action_id": "dashboard-publish-1790950890-91",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -30,7 +249,7 @@
       "ts": 1790840720,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1790840720-85",
+      "action_id": "dashboard-publish-1790840720-90",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -54,7 +273,7 @@
       "ts": 1790737218,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1790737218-84",
+      "action_id": "dashboard-publish-1790737218-89",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -78,7 +297,7 @@
       "ts": 1790605349,
       "action": "run_complete",
       "bot": "content-bot",
-      "action_id": "content-bot-1790605349-63",
+      "action_id": "content-bot-1790605349-66",
       "result": "pending",
       "details": {
         "date": "2026-09-28",
@@ -93,7 +312,7 @@
       "ts": 1790605206,
       "action": "run_start",
       "bot": "content-bot",
-      "action_id": "content-bot-1790605206-62",
+      "action_id": "content-bot-1790605206-65",
       "result": "pending",
       "details": {
         "date": "2026-09-28",
@@ -123,7 +342,7 @@
       "ts": 1790604951,
       "action": "audit_complete",
       "bot": "link-auditor",
-      "action_id": "link-auditor-1790604951-112",
+      "action_id": "link-auditor-1790604951-120",
       "result": "pending",
       "details": {
         "date": "2026-09-28",
@@ -139,7 +358,7 @@
       "ts": 1790604926,
       "action": "audit_start",
       "bot": "link-auditor",
-      "action_id": "link-auditor-1790604926-111",
+      "action_id": "link-auditor-1790604926-119",
       "result": "pending",
       "details": {
         "date": "2026-09-28",
@@ -152,7 +371,7 @@
       "ts": 1790604864,
       "action": "run_start",
       "bot": "content-bot",
-      "action_id": "content-bot-1790604864-61",
+      "action_id": "content-bot-1790604864-64",
       "result": "pending",
       "details": {
         "date": "2026-09-28",
@@ -182,7 +401,7 @@
       "ts": 1790085393,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1790085393-83",
+      "action_id": "dashboard-publish-1790085393-88",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -221,7 +440,7 @@
       "ts": 1790010403,
       "action": "drafts_complete",
       "bot": "gbp-drafts",
-      "action_id": "gbp-drafts-1790010403-94",
+      "action_id": "gbp-drafts-1790010403-101",
       "result": "pending",
       "details": {
         "date": "2026-09-21",
@@ -233,7 +452,7 @@
       "ts": 1790010402,
       "action": "audit_complete",
       "bot": "gbp-audit",
-      "action_id": "gbp-audit-1790010402-90",
+      "action_id": "gbp-audit-1790010402-96",
       "result": "pending",
       "details": {
         "date": "2026-09-21",
@@ -247,7 +466,7 @@
       "ts": 1790010379,
       "action": "run_complete",
       "bot": "content-bot",
-      "action_id": "content-bot-1790010379-60",
+      "action_id": "content-bot-1790010379-63",
       "result": "pending",
       "details": {
         "date": "2026-09-21",
@@ -262,7 +481,7 @@
       "ts": 1790010339,
       "action": "audit_complete",
       "bot": "link-auditor",
-      "action_id": "link-auditor-1790010339-110",
+      "action_id": "link-auditor-1790010339-118",
       "result": "pending",
       "details": {
         "date": "2026-09-21",
@@ -318,7 +537,7 @@
       "ts": 1790010264,
       "action": "audit_start",
       "bot": "link-auditor",
-      "action_id": "link-auditor-1790010264-109",
+      "action_id": "link-auditor-1790010264-117",
       "result": "pending",
       "details": {
         "date": "2026-09-21",
@@ -331,7 +550,7 @@
       "ts": 1790010263,
       "action": "run_start",
       "bot": "content-bot",
-      "action_id": "content-bot-1790010263-59",
+      "action_id": "content-bot-1790010263-62",
       "result": "pending",
       "details": {
         "date": "2026-09-21",
@@ -361,7 +580,7 @@
       "ts": 1790010262,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1790010262-82",
+      "action_id": "dashboard-publish-1790010262-87",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -385,7 +604,7 @@
       "ts": 1789425021,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1789425021-81",
+      "action_id": "dashboard-publish-1789425021-86",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -424,7 +643,7 @@
       "ts": 1789388398,
       "action": "audit_complete",
       "bot": "gbp-audit",
-      "action_id": "gbp-audit-1789388398-89",
+      "action_id": "gbp-audit-1789388398-95",
       "result": "pending",
       "details": {
         "date": "2026-09-14",
@@ -438,7 +657,7 @@
       "ts": 1789388168,
       "action": "run_complete",
       "bot": "content-bot",
-      "action_id": "content-bot-1789388168-58",
+      "action_id": "content-bot-1789388168-61",
       "result": "pending",
       "details": {
         "date": "2026-09-14",
@@ -453,7 +672,7 @@
       "ts": 1789388079,
       "action": "drafts_complete",
       "bot": "gbp-drafts",
-      "action_id": "gbp-drafts-1789388079-93",
+      "action_id": "gbp-drafts-1789388079-100",
       "result": "pending",
       "details": {
         "date": "2026-09-14",
@@ -465,7 +684,7 @@
       "ts": 1789388074,
       "action": "run_start",
       "bot": "content-bot",
-      "action_id": "content-bot-1789388074-57",
+      "action_id": "content-bot-1789388074-60",
       "result": "pending",
       "details": {
         "date": "2026-09-14",
@@ -495,7 +714,7 @@
       "ts": 1789388069,
       "action": "run_complete",
       "bot": "content-bot",
-      "action_id": "content-bot-1789388069-56",
+      "action_id": "content-bot-1789388069-59",
       "result": "pending",
       "details": {
         "date": "2026-09-14",
@@ -510,7 +729,7 @@
       "ts": 1789388069,
       "action": "audit_complete",
       "bot": "link-auditor",
-      "action_id": "link-auditor-1789388069-108",
+      "action_id": "link-auditor-1789388069-116",
       "result": "pending",
       "details": {
         "date": "2026-09-14",
@@ -526,7 +745,7 @@
       "ts": 1789388038,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1789388038-80",
+      "action_id": "dashboard-publish-1789388038-85",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -590,7 +809,7 @@
       "ts": 1789387988,
       "action": "audit_start",
       "bot": "link-auditor",
-      "action_id": "link-auditor-1789387988-107",
+      "action_id": "link-auditor-1789387988-115",
       "result": "pending",
       "details": {
         "date": "2026-09-14",
@@ -603,7 +822,7 @@
       "ts": 1789387985,
       "action": "run_start",
       "bot": "content-bot",
-      "action_id": "content-bot-1789387985-55",
+      "action_id": "content-bot-1789387985-58",
       "result": "pending",
       "details": {
         "date": "2026-09-14",
@@ -633,7 +852,7 @@
       "ts": 1789285166,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1789285166-79",
+      "action_id": "dashboard-publish-1789285166-84",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -657,7 +876,7 @@
       "ts": 1789235216,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1789235216-78",
+      "action_id": "dashboard-publish-1789235216-83",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -681,7 +900,7 @@
       "ts": 1789038215,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1789038215-77",
+      "action_id": "dashboard-publish-1789038215-82",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -705,7 +924,7 @@
       "ts": 1788957843,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1788957843-76",
+      "action_id": "dashboard-publish-1788957843-81",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -729,7 +948,7 @@
       "ts": 1788865476,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1788865476-75",
+      "action_id": "dashboard-publish-1788865476-80",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -753,7 +972,7 @@
       "ts": 1788798868,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1788798868-74",
+      "action_id": "dashboard-publish-1788798868-79",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -777,7 +996,7 @@
       "ts": 1788798841,
       "action": "drafts_complete",
       "bot": "gbp-drafts",
-      "action_id": "gbp-drafts-1788798841-92",
+      "action_id": "gbp-drafts-1788798841-99",
       "result": "pending",
       "details": {
         "date": "2026-09-07",
@@ -789,7 +1008,7 @@
       "ts": 1788798839,
       "action": "audit_complete",
       "bot": "gbp-audit",
-      "action_id": "gbp-audit-1788798839-88",
+      "action_id": "gbp-audit-1788798839-94",
       "result": "pending",
       "details": {
         "date": "2026-09-07",
@@ -803,7 +1022,7 @@
       "ts": 1788798739,
       "action": "run_complete",
       "bot": "content-bot",
-      "action_id": "content-bot-1788798739-54",
+      "action_id": "content-bot-1788798739-57",
       "result": "pending",
       "details": {
         "date": "2026-09-07",
@@ -818,7 +1037,7 @@
       "ts": 1788798684,
       "action": "run_start",
       "bot": "content-bot",
-      "action_id": "content-bot-1788798684-53",
+      "action_id": "content-bot-1788798684-56",
       "result": "pending",
       "details": {
         "date": "2026-09-07",
@@ -848,7 +1067,7 @@
       "ts": 1788798680,
       "action": "run_complete",
       "bot": "content-bot",
-      "action_id": "content-bot-1788798680-52",
+      "action_id": "content-bot-1788798680-55",
       "result": "pending",
       "details": {
         "date": "2026-09-07",
@@ -863,7 +1082,7 @@
       "ts": 1788798622,
       "action": "run_start",
       "bot": "content-bot",
-      "action_id": "content-bot-1788798622-51",
+      "action_id": "content-bot-1788798622-54",
       "result": "pending",
       "details": {
         "date": "2026-09-07",
@@ -948,7 +1167,7 @@
       "ts": 1788798354,
       "action": "audit_complete",
       "bot": "link-auditor",
-      "action_id": "link-auditor-1788798354-106",
+      "action_id": "link-auditor-1788798354-114",
       "result": "pending",
       "details": {
         "date": "2026-09-07",
@@ -964,7 +1183,7 @@
       "ts": 1788798280,
       "action": "audit_start",
       "bot": "link-auditor",
-      "action_id": "link-auditor-1788798280-105",
+      "action_id": "link-auditor-1788798280-113",
       "result": "pending",
       "details": {
         "date": "2026-09-07",
@@ -977,7 +1196,7 @@
       "ts": 1788704213,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1788704213-73",
+      "action_id": "dashboard-publish-1788704213-78",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -1001,7 +1220,7 @@
       "ts": 1788643102,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1788643102-72",
+      "action_id": "dashboard-publish-1788643102-77",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -1025,7 +1244,7 @@
       "ts": 1788474619,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1788474619-71",
+      "action_id": "dashboard-publish-1788474619-76",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -1049,7 +1268,7 @@
       "ts": 1788388271,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1788388271-70",
+      "action_id": "dashboard-publish-1788388271-75",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -1073,7 +1292,7 @@
       "ts": 1788329805,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1788329805-69",
+      "action_id": "dashboard-publish-1788329805-74",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -1097,7 +1316,7 @@
       "ts": 1787789440,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1787789440-68",
+      "action_id": "dashboard-publish-1787789440-73",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -1121,7 +1340,7 @@
       "ts": 1787697045,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1787697045-67",
+      "action_id": "dashboard-publish-1787697045-72",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -1145,7 +1364,7 @@
       "ts": 1787643102,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1787643102-66",
+      "action_id": "dashboard-publish-1787643102-71",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -1169,7 +1388,7 @@
       "ts": 1787587498,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1787587498-65",
+      "action_id": "dashboard-publish-1787587498-70",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -1193,7 +1412,7 @@
       "ts": 1787583982,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1787583982-64",
+      "action_id": "dashboard-publish-1787583982-69",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -1217,7 +1436,7 @@
       "ts": 1787583022,
       "action": "fix_generated",
       "bot": "homepage-fix",
-      "action_id": "homepage-fix-1787583022-96",
+      "action_id": "homepage-fix-1787583022-104",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1232,7 +1451,7 @@
       "ts": 1787582854,
       "action": "fix_generated",
       "bot": "homepage-fix",
-      "action_id": "homepage-fix-1787582854-95",
+      "action_id": "homepage-fix-1787582854-103",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1247,7 +1466,7 @@
       "ts": 1787582236,
       "action": "run_complete",
       "bot": "content-bot",
-      "action_id": "content-bot-1787582236-50",
+      "action_id": "content-bot-1787582236-53",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1262,7 +1481,7 @@
       "ts": 1787582230,
       "action": "run_start",
       "bot": "content-bot",
-      "action_id": "content-bot-1787582230-49",
+      "action_id": "content-bot-1787582230-52",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1279,7 +1498,7 @@
       "ts": 1787582229,
       "action": "run_complete",
       "bot": "content-bot",
-      "action_id": "content-bot-1787582229-48",
+      "action_id": "content-bot-1787582229-51",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1294,7 +1513,7 @@
       "ts": 1787582222,
       "action": "run_complete",
       "bot": "content-bot",
-      "action_id": "content-bot-1787582222-46",
+      "action_id": "content-bot-1787582222-49",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1309,7 +1528,7 @@
       "ts": 1787582222,
       "action": "run_start",
       "bot": "content-bot",
-      "action_id": "content-bot-1787582222-47",
+      "action_id": "content-bot-1787582222-50",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1326,7 +1545,7 @@
       "ts": 1787582212,
       "action": "run_start",
       "bot": "content-bot",
-      "action_id": "content-bot-1787582212-45",
+      "action_id": "content-bot-1787582212-48",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1343,7 +1562,7 @@
       "ts": 1787582211,
       "action": "run_complete",
       "bot": "content-bot",
-      "action_id": "content-bot-1787582211-44",
+      "action_id": "content-bot-1787582211-47",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1358,7 +1577,7 @@
       "ts": 1787582205,
       "action": "run_complete",
       "bot": "content-bot",
-      "action_id": "content-bot-1787582205-42",
+      "action_id": "content-bot-1787582205-45",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1373,7 +1592,7 @@
       "ts": 1787582205,
       "action": "run_start",
       "bot": "content-bot",
-      "action_id": "content-bot-1787582205-43",
+      "action_id": "content-bot-1787582205-46",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1390,7 +1609,7 @@
       "ts": 1787582196,
       "action": "run_start",
       "bot": "content-bot",
-      "action_id": "content-bot-1787582196-41",
+      "action_id": "content-bot-1787582196-44",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1407,7 +1626,7 @@
       "ts": 1787581950,
       "action": "run_complete",
       "bot": "content-bot",
-      "action_id": "content-bot-1787581950-40",
+      "action_id": "content-bot-1787581950-43",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1422,7 +1641,7 @@
       "ts": 1787581943,
       "action": "run_start",
       "bot": "content-bot",
-      "action_id": "content-bot-1787581943-39",
+      "action_id": "content-bot-1787581943-42",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1439,7 +1658,7 @@
       "ts": 1787581929,
       "action": "run_complete",
       "bot": "content-bot",
-      "action_id": "content-bot-1787581929-38",
+      "action_id": "content-bot-1787581929-41",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1454,7 +1673,7 @@
       "ts": 1787581886,
       "action": "run_start",
       "bot": "content-bot",
-      "action_id": "content-bot-1787581886-37",
+      "action_id": "content-bot-1787581886-40",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1477,7 +1696,7 @@
       "ts": 1787581869,
       "action": "run_complete",
       "bot": "content-bot",
-      "action_id": "content-bot-1787581869-36",
+      "action_id": "content-bot-1787581869-39",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1492,7 +1711,7 @@
       "ts": 1787581855,
       "action": "run_start",
       "bot": "content-bot",
-      "action_id": "content-bot-1787581855-35",
+      "action_id": "content-bot-1787581855-38",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1511,7 +1730,7 @@
       "ts": 1787581836,
       "action": "run_complete",
       "bot": "content-bot",
-      "action_id": "content-bot-1787581836-34",
+      "action_id": "content-bot-1787581836-37",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1526,7 +1745,7 @@
       "ts": 1787581829,
       "action": "run_start",
       "bot": "content-bot",
-      "action_id": "content-bot-1787581829-33",
+      "action_id": "content-bot-1787581829-36",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1543,7 +1762,7 @@
       "ts": 1787581820,
       "action": "run_complete",
       "bot": "content-bot",
-      "action_id": "content-bot-1787581820-32",
+      "action_id": "content-bot-1787581820-35",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1558,7 +1777,7 @@
       "ts": 1787581794,
       "action": "run_start",
       "bot": "content-bot",
-      "action_id": "content-bot-1787581794-31",
+      "action_id": "content-bot-1787581794-34",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1580,7 +1799,7 @@
       "ts": 1787581775,
       "action": "run_complete",
       "bot": "content-bot",
-      "action_id": "content-bot-1787581775-30",
+      "action_id": "content-bot-1787581775-33",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1595,7 +1814,7 @@
       "ts": 1787581769,
       "action": "run_start",
       "bot": "content-bot",
-      "action_id": "content-bot-1787581769-29",
+      "action_id": "content-bot-1787581769-32",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1612,7 +1831,7 @@
       "ts": 1787581759,
       "action": "run_complete",
       "bot": "content-bot",
-      "action_id": "content-bot-1787581759-28",
+      "action_id": "content-bot-1787581759-31",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1627,7 +1846,7 @@
       "ts": 1787581750,
       "action": "run_start",
       "bot": "content-bot",
-      "action_id": "content-bot-1787581750-27",
+      "action_id": "content-bot-1787581750-30",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1645,7 +1864,7 @@
       "ts": 1787580878,
       "action": "drafts_complete",
       "bot": "gbp-drafts",
-      "action_id": "gbp-drafts-1787580878-91",
+      "action_id": "gbp-drafts-1787580878-98",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1657,7 +1876,7 @@
       "ts": 1787580831,
       "action": "audit_complete",
       "bot": "gbp-audit",
-      "action_id": "gbp-audit-1787580831-87",
+      "action_id": "gbp-audit-1787580831-93",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1671,7 +1890,7 @@
       "ts": 1787579907,
       "action": "run_complete",
       "bot": "content-bot",
-      "action_id": "content-bot-1787579907-26",
+      "action_id": "content-bot-1787579907-29",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1686,7 +1905,7 @@
       "ts": 1787579903,
       "action": "run_start",
       "bot": "content-bot",
-      "action_id": "content-bot-1787579903-25",
+      "action_id": "content-bot-1787579903-28",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1705,7 +1924,7 @@
       "ts": 1787579867,
       "action": "run_complete",
       "bot": "content-bot",
-      "action_id": "content-bot-1787579867-24",
+      "action_id": "content-bot-1787579867-27",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1720,7 +1939,7 @@
       "ts": 1787579861,
       "action": "run_start",
       "bot": "content-bot",
-      "action_id": "content-bot-1787579861-23",
+      "action_id": "content-bot-1787579861-26",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1737,7 +1956,7 @@
       "ts": 1787579823,
       "action": "run_complete",
       "bot": "content-bot",
-      "action_id": "content-bot-1787579823-22",
+      "action_id": "content-bot-1787579823-25",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1752,7 +1971,7 @@
       "ts": 1787579816,
       "action": "run_start",
       "bot": "content-bot",
-      "action_id": "content-bot-1787579816-21",
+      "action_id": "content-bot-1787579816-24",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1764,198 +1983,6 @@
         ]
       },
       "_source_log": "content-bot-audit.jsonl"
-    },
-    {
-      "ts": 1787579586,
-      "action": "run_start",
-      "bot": "content-bot",
-      "action_id": "content-bot-1787579586-20",
-      "result": "pending",
-      "details": {
-        "date": "2026-08-24",
-        "topics": [
-          "best-sativa-strains"
-        ],
-        "cities": [
-          "Brampton"
-        ]
-      },
-      "_source_log": "content-bot-audit.jsonl"
-    },
-    {
-      "ts": 1787578571,
-      "action": "audit_complete",
-      "bot": "competitor-analyst",
-      "action_id": "competitor-analyst-1787578571-13",
-      "result": "pending",
-      "details": {
-        "date": "2026-08-24",
-        "competitors": 8,
-        "keywords": 21,
-        "opportunities": 1,
-        "obsidian_notes": 10
-      },
-      "_source_log": "competitor-analyst-audit.jsonl"
-    },
-    {
-      "ts": 1787578181,
-      "action": "audit_start",
-      "bot": "competitor-analyst",
-      "action_id": "competitor-analyst-1787578181-12",
-      "result": "pending",
-      "details": {
-        "date": "2026-08-24",
-        "competitors": [
-          "shopkindling.ca",
-          "thewoodscannabis.ca",
-          "farmerslink.ca",
-          "thehunnypot.com",
-          "thecrownleaf.ca",
-          "canna-express.co",
-          "www.leafly.ca",
-          "weedmaps.com"
-        ],
-        "keywords_count": 21,
-        "keywords_only": false
-      },
-      "_source_log": "competitor-analyst-audit.jsonl"
-    },
-    {
-      "ts": 1787578093,
-      "action": "audit_start",
-      "bot": "competitor-analyst",
-      "action_id": "competitor-analyst-1787578093-11",
-      "result": "pending",
-      "details": {
-        "date": "2026-08-24",
-        "competitors": [
-          "shopkindling.ca",
-          "thewoodscannabis.ca",
-          "farmerslink.ca",
-          "thehunnypot.com",
-          "thecrownleaf.ca",
-          "canna-express.co",
-          "www.leafly.ca",
-          "weedmaps.com"
-        ],
-        "keywords_count": 21,
-        "keywords_only": false
-      },
-      "_source_log": "competitor-analyst-audit.jsonl"
-    },
-    {
-      "ts": 1787577867,
-      "action": "audit_start",
-      "bot": "competitor-analyst",
-      "action_id": "competitor-analyst-1787577867-10",
-      "result": "pending",
-      "details": {
-        "date": "2026-08-24",
-        "competitors": [
-          "shopkindling.ca",
-          "thewoodscannabis.ca",
-          "farmerslink.ca",
-          "thehunnypot.com",
-          "thecrownleaf.ca",
-          "canna-express.co",
-          "www.leafly.ca",
-          "weedmaps.com"
-        ],
-        "keywords_count": 21,
-        "keywords_only": false
-      },
-      "_source_log": "competitor-analyst-audit.jsonl"
-    },
-    {
-      "ts": 1787577839,
-      "action": "audit_complete",
-      "bot": "competitor-analyst",
-      "action_id": "competitor-analyst-1787577839-9",
-      "result": "pending",
-      "details": {
-        "date": "2026-08-24",
-        "competitors": 8,
-        "keywords": 5,
-        "opportunities": 0,
-        "obsidian_notes": 10
-      },
-      "_source_log": "competitor-analyst-audit.jsonl"
-    },
-    {
-      "ts": 1787577709,
-      "action": "audit_start",
-      "bot": "competitor-analyst",
-      "action_id": "competitor-analyst-1787577709-8",
-      "result": "pending",
-      "details": {
-        "date": "2026-08-24",
-        "competitors": [
-          "shopkindling.ca",
-          "thewoodscannabis.ca",
-          "farmerslink.ca",
-          "thehunnypot.com",
-          "thecrownleaf.ca",
-          "canna-express.co",
-          "www.leafly.ca",
-          "weedmaps.com"
-        ],
-        "keywords_count": 5,
-        "keywords_only": false
-      },
-      "_source_log": "competitor-analyst-audit.jsonl"
-    },
-    {
-      "ts": 1787577704,
-      "action": "audit_complete",
-      "bot": "competitor-analyst",
-      "action_id": "competitor-analyst-1787577704-7",
-      "result": "pending",
-      "details": {
-        "date": "2026-08-24",
-        "competitors": 8,
-        "keywords": 5,
-        "opportunities": 0,
-        "obsidian_notes": 10
-      },
-      "_source_log": "competitor-analyst-audit.jsonl"
-    },
-    {
-      "ts": 1787577569,
-      "action": "audit_start",
-      "bot": "competitor-analyst",
-      "action_id": "competitor-analyst-1787577569-6",
-      "result": "pending",
-      "details": {
-        "date": "2026-08-24",
-        "competitors": [
-          "shopkindling.ca",
-          "thewoodscannabis.ca",
-          "farmerslink.ca",
-          "thehunnypot.com",
-          "thecrownleaf.ca",
-          "canna-express.co",
-          "www.leafly.ca",
-          "weedmaps.com"
-        ],
-        "keywords_count": 5,
-        "keywords_only": false
-      },
-      "_source_log": "competitor-analyst-audit.jsonl"
-    },
-    {
-      "ts": 1787577500,
-      "action": "audit_complete",
-      "bot": "competitor-analyst",
-      "action_id": "competitor-analyst-1787577500-5",
-      "result": "pending",
-      "details": {
-        "date": "2026-08-24",
-        "competitors": 8,
-        "keywords": 5,
-        "opportunities": 0,
-        "obsidian_notes": 10
-      },
-      "_source_log": "competitor-analyst-audit.jsonl"
     }
   ]
 }
