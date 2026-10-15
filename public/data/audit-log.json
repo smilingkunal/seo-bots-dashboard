@@ -1,12 +1,119 @@
 {
-  "last_updated": "2026-10-10T12:40:08.827281Z",
-  "total_actions": 129,
+  "last_updated": "2026-10-15T23:05:54.802266Z",
+  "total_actions": 133,
   "actions": [
+    {
+      "ts": 1792105550,
+      "action": "audit_start",
+      "bot": "competitor-analyst",
+      "action_id": "competitor-analyst-1792105550-23",
+      "result": "pending",
+      "details": {
+        "date": "2026-10-16",
+        "competitors": [
+          "shopkindling.ca",
+          "thewoodscannabis.ca",
+          "farmerslink.ca",
+          "thehunnypot.com",
+          "thecrownleaf.ca",
+          "canna-express.co",
+          "www.leafly.ca",
+          "weedmaps.com",
+          "www.leafythings.com",
+          "www.yelp.ca",
+          "squamishcannabisco.com",
+          "the620.ca",
+          "twdshop.co",
+          "popscannabis.ca",
+          "inspiredcannabis.ca",
+          "budbardispensary.ca",
+          "kingstoncannabisinc.ca",
+          "duenorthcannabis.com",
+          "delta9.ca",
+          "dacanna.ca",
+          "ganjika-house.com",
+          "chillincheetah.ca",
+          "puffshop.ca",
+          "greenhousegta.com",
+          "www.bloudsdispensary.ca"
+        ],
+        "keywords_count": 21,
+        "keywords_only": false
+      },
+      "_source_log": "competitor-analyst-audit.jsonl"
+    },
+    {
+      "ts": 1792105545,
+      "action": "run_start",
+      "bot": "content-bot",
+      "action_id": "content-bot-1792105545-70",
+      "result": "pending",
+      "details": {
+        "date": "2026-10-16",
+        "topics": [
+          "best-sativa-strains",
+          "weed-delivery-guide",
+          "cannabis-edibles-guide",
+          "first-time-buyer",
+          "best-edibles",
+          "best-indica-strains",
+          "pink-chapo-strain",
+          "24-hour-delivery",
+          "edibles-dosage"
+        ],
+        "cities": [
+          "Brampton",
+          "Mississauga",
+          "Burlington",
+          "Oakville",
+          "Milton",
+          "Halton Hills"
+        ]
+      },
+      "_source_log": "content-bot-audit.jsonl"
+    },
+    {
+      "ts": 1792105543,
+      "action": "audit_start",
+      "bot": "link-auditor",
+      "action_id": "link-auditor-1792105543-128",
+      "result": "pending",
+      "details": {
+        "date": "2026-10-16",
+        "site": "https://weedistillery.com",
+        "max_pages": 30
+      },
+      "_source_log": "link-auditor-audit.jsonl"
+    },
+    {
+      "ts": 1791636012,
+      "action": "publish_complete",
+      "bot": "dashboard-publish",
+      "action_id": "dashboard-publish-1791636012-97",
+      "result": "pending",
+      "details": {
+        "files_changed": 10,
+        "files": [
+          "bots-status.json",
+          "gsc-data.json",
+          "ranks-data.json",
+          "competitors-data.json",
+          "links-data.json",
+          "gbp-data.json",
+          "content-data.json",
+          "seo-fixes-data.json",
+          "opportunities.json",
+          "audit-log.json"
+        ],
+        "deployed": true
+      },
+      "_source_log": "dashboard-publish-audit.jsonl"
+    },
     {
       "ts": 1791498665,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1791498665-94",
+      "action_id": "dashboard-publish-1791498665-96",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -30,7 +137,7 @@
       "ts": 1791443166,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1791443166-93",
+      "action_id": "dashboard-publish-1791443166-95",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -109,7 +216,7 @@
       "ts": 1791214248,
       "action": "run_complete",
       "bot": "content-bot",
-      "action_id": "content-bot-1791214248-68",
+      "action_id": "content-bot-1791214248-69",
       "result": "pending",
       "details": {
         "date": "2026-10-05",
@@ -124,7 +231,7 @@
       "ts": 1791214210,
       "action": "audit_complete",
       "bot": "link-auditor",
-      "action_id": "link-auditor-1791214210-124",
+      "action_id": "link-auditor-1791214210-127",
       "result": "pending",
       "details": {
         "date": "2026-10-05",
@@ -140,7 +247,7 @@
       "ts": 1791214200,
       "action": "drafts_complete",
       "bot": "gbp-drafts",
-      "action_id": "gbp-drafts-1791214200-104",
+      "action_id": "gbp-drafts-1791214200-107",
       "result": "pending",
       "details": {
         "date": "2026-10-05",
@@ -152,7 +259,7 @@
       "ts": 1791214190,
       "action": "audit_complete",
       "bot": "gbp-audit",
-      "action_id": "gbp-audit-1791214190-99",
+      "action_id": "gbp-audit-1791214190-102",
       "result": "pending",
       "details": {
         "date": "2026-10-05",
@@ -166,7 +273,7 @@
       "ts": 1791214071,
       "action": "run_start",
       "bot": "content-bot",
-      "action_id": "content-bot-1791214071-67",
+      "action_id": "content-bot-1791214071-68",
       "result": "pending",
       "details": {
         "date": "2026-10-05",
@@ -196,7 +303,7 @@
       "ts": 1791214051,
       "action": "audit_start",
       "bot": "link-auditor",
-      "action_id": "link-auditor-1791214051-123",
+      "action_id": "link-auditor-1791214051-126",
       "result": "pending",
       "details": {
         "date": "2026-10-05",
@@ -209,7 +316,7 @@
       "ts": 1791214009,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1791214009-92",
+      "action_id": "dashboard-publish-1791214009-94",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -273,7 +380,7 @@
       "ts": 1790950890,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1790950890-91",
+      "action_id": "dashboard-publish-1790950890-93",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -297,7 +404,7 @@
       "ts": 1790840720,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1790840720-90",
+      "action_id": "dashboard-publish-1790840720-92",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -321,7 +428,7 @@
       "ts": 1790737218,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1790737218-89",
+      "action_id": "dashboard-publish-1790737218-91",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -345,7 +452,7 @@
       "ts": 1790605349,
       "action": "run_complete",
       "bot": "content-bot",
-      "action_id": "content-bot-1790605349-66",
+      "action_id": "content-bot-1790605349-67",
       "result": "pending",
       "details": {
         "date": "2026-09-28",
@@ -360,7 +467,7 @@
       "ts": 1790605206,
       "action": "run_start",
       "bot": "content-bot",
-      "action_id": "content-bot-1790605206-65",
+      "action_id": "content-bot-1790605206-66",
       "result": "pending",
       "details": {
         "date": "2026-09-28",
@@ -390,7 +497,7 @@
       "ts": 1790604951,
       "action": "audit_complete",
       "bot": "link-auditor",
-      "action_id": "link-auditor-1790604951-122",
+      "action_id": "link-auditor-1790604951-125",
       "result": "pending",
       "details": {
         "date": "2026-09-28",
@@ -406,7 +513,7 @@
       "ts": 1790604926,
       "action": "audit_start",
       "bot": "link-auditor",
-      "action_id": "link-auditor-1790604926-121",
+      "action_id": "link-auditor-1790604926-124",
       "result": "pending",
       "details": {
         "date": "2026-09-28",
@@ -419,7 +526,7 @@
       "ts": 1790604864,
       "action": "run_start",
       "bot": "content-bot",
-      "action_id": "content-bot-1790604864-64",
+      "action_id": "content-bot-1790604864-65",
       "result": "pending",
       "details": {
         "date": "2026-09-28",
@@ -449,7 +556,7 @@
       "ts": 1790085393,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1790085393-88",
+      "action_id": "dashboard-publish-1790085393-90",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -488,7 +595,7 @@
       "ts": 1790010403,
       "action": "drafts_complete",
       "bot": "gbp-drafts",
-      "action_id": "gbp-drafts-1790010403-103",
+      "action_id": "gbp-drafts-1790010403-106",
       "result": "pending",
       "details": {
         "date": "2026-09-21",
@@ -500,7 +607,7 @@
       "ts": 1790010402,
       "action": "audit_complete",
       "bot": "gbp-audit",
-      "action_id": "gbp-audit-1790010402-98",
+      "action_id": "gbp-audit-1790010402-101",
       "result": "pending",
       "details": {
         "date": "2026-09-21",
@@ -514,7 +621,7 @@
       "ts": 1790010379,
       "action": "run_complete",
       "bot": "content-bot",
-      "action_id": "content-bot-1790010379-63",
+      "action_id": "content-bot-1790010379-64",
       "result": "pending",
       "details": {
         "date": "2026-09-21",
@@ -529,7 +636,7 @@
       "ts": 1790010339,
       "action": "audit_complete",
       "bot": "link-auditor",
-      "action_id": "link-auditor-1790010339-120",
+      "action_id": "link-auditor-1790010339-123",
       "result": "pending",
       "details": {
         "date": "2026-09-21",
@@ -585,7 +692,7 @@
       "ts": 1790010264,
       "action": "audit_start",
       "bot": "link-auditor",
-      "action_id": "link-auditor-1790010264-119",
+      "action_id": "link-auditor-1790010264-122",
       "result": "pending",
       "details": {
         "date": "2026-09-21",
@@ -598,7 +705,7 @@
       "ts": 1790010263,
       "action": "run_start",
       "bot": "content-bot",
-      "action_id": "content-bot-1790010263-62",
+      "action_id": "content-bot-1790010263-63",
       "result": "pending",
       "details": {
         "date": "2026-09-21",
@@ -628,7 +735,7 @@
       "ts": 1790010262,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1790010262-87",
+      "action_id": "dashboard-publish-1790010262-89",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -652,7 +759,7 @@
       "ts": 1789425021,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1789425021-86",
+      "action_id": "dashboard-publish-1789425021-88",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -691,7 +798,7 @@
       "ts": 1789388398,
       "action": "audit_complete",
       "bot": "gbp-audit",
-      "action_id": "gbp-audit-1789388398-97",
+      "action_id": "gbp-audit-1789388398-100",
       "result": "pending",
       "details": {
         "date": "2026-09-14",
@@ -705,7 +812,7 @@
       "ts": 1789388168,
       "action": "run_complete",
       "bot": "content-bot",
-      "action_id": "content-bot-1789388168-61",
+      "action_id": "content-bot-1789388168-62",
       "result": "pending",
       "details": {
         "date": "2026-09-14",
@@ -720,7 +827,7 @@
       "ts": 1789388079,
       "action": "drafts_complete",
       "bot": "gbp-drafts",
-      "action_id": "gbp-drafts-1789388079-102",
+      "action_id": "gbp-drafts-1789388079-105",
       "result": "pending",
       "details": {
         "date": "2026-09-14",
@@ -732,7 +839,7 @@
       "ts": 1789388074,
       "action": "run_start",
       "bot": "content-bot",
-      "action_id": "content-bot-1789388074-60",
+      "action_id": "content-bot-1789388074-61",
       "result": "pending",
       "details": {
         "date": "2026-09-14",
@@ -762,7 +869,7 @@
       "ts": 1789388069,
       "action": "run_complete",
       "bot": "content-bot",
-      "action_id": "content-bot-1789388069-59",
+      "action_id": "content-bot-1789388069-60",
       "result": "pending",
       "details": {
         "date": "2026-09-14",
@@ -777,7 +884,7 @@
       "ts": 1789388069,
       "action": "audit_complete",
       "bot": "link-auditor",
-      "action_id": "link-auditor-1789388069-118",
+      "action_id": "link-auditor-1789388069-121",
       "result": "pending",
       "details": {
         "date": "2026-09-14",
@@ -793,7 +900,7 @@
       "ts": 1789388038,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1789388038-85",
+      "action_id": "dashboard-publish-1789388038-87",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -857,7 +964,7 @@
       "ts": 1789387988,
       "action": "audit_start",
       "bot": "link-auditor",
-      "action_id": "link-auditor-1789387988-117",
+      "action_id": "link-auditor-1789387988-120",
       "result": "pending",
       "details": {
         "date": "2026-09-14",
@@ -870,7 +977,7 @@
       "ts": 1789387985,
       "action": "run_start",
       "bot": "content-bot",
-      "action_id": "content-bot-1789387985-58",
+      "action_id": "content-bot-1789387985-59",
       "result": "pending",
       "details": {
         "date": "2026-09-14",
@@ -900,7 +1007,7 @@
       "ts": 1789285166,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1789285166-84",
+      "action_id": "dashboard-publish-1789285166-86",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -924,7 +1031,7 @@
       "ts": 1789235216,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1789235216-83",
+      "action_id": "dashboard-publish-1789235216-85",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -948,7 +1055,7 @@
       "ts": 1789038215,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1789038215-82",
+      "action_id": "dashboard-publish-1789038215-84",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -972,7 +1079,7 @@
       "ts": 1788957843,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1788957843-81",
+      "action_id": "dashboard-publish-1788957843-83",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -996,7 +1103,7 @@
       "ts": 1788865476,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1788865476-80",
+      "action_id": "dashboard-publish-1788865476-82",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -1020,7 +1127,7 @@
       "ts": 1788798868,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1788798868-79",
+      "action_id": "dashboard-publish-1788798868-81",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -1044,7 +1151,7 @@
       "ts": 1788798841,
       "action": "drafts_complete",
       "bot": "gbp-drafts",
-      "action_id": "gbp-drafts-1788798841-101",
+      "action_id": "gbp-drafts-1788798841-104",
       "result": "pending",
       "details": {
         "date": "2026-09-07",
@@ -1056,7 +1163,7 @@
       "ts": 1788798839,
       "action": "audit_complete",
       "bot": "gbp-audit",
-      "action_id": "gbp-audit-1788798839-96",
+      "action_id": "gbp-audit-1788798839-99",
       "result": "pending",
       "details": {
         "date": "2026-09-07",
@@ -1070,7 +1177,7 @@
       "ts": 1788798739,
       "action": "run_complete",
       "bot": "content-bot",
-      "action_id": "content-bot-1788798739-57",
+      "action_id": "content-bot-1788798739-58",
       "result": "pending",
       "details": {
         "date": "2026-09-07",
@@ -1085,7 +1192,7 @@
       "ts": 1788798684,
       "action": "run_start",
       "bot": "content-bot",
-      "action_id": "content-bot-1788798684-56",
+      "action_id": "content-bot-1788798684-57",
       "result": "pending",
       "details": {
         "date": "2026-09-07",
@@ -1115,7 +1222,7 @@
       "ts": 1788798680,
       "action": "run_complete",
       "bot": "content-bot",
-      "action_id": "content-bot-1788798680-55",
+      "action_id": "content-bot-1788798680-56",
       "result": "pending",
       "details": {
         "date": "2026-09-07",
@@ -1130,7 +1237,7 @@
       "ts": 1788798622,
       "action": "run_start",
       "bot": "content-bot",
-      "action_id": "content-bot-1788798622-54",
+      "action_id": "content-bot-1788798622-55",
       "result": "pending",
       "details": {
         "date": "2026-09-07",
@@ -1215,7 +1322,7 @@
       "ts": 1788798354,
       "action": "audit_complete",
       "bot": "link-auditor",
-      "action_id": "link-auditor-1788798354-116",
+      "action_id": "link-auditor-1788798354-119",
       "result": "pending",
       "details": {
         "date": "2026-09-07",
@@ -1231,7 +1338,7 @@
       "ts": 1788798280,
       "action": "audit_start",
       "bot": "link-auditor",
-      "action_id": "link-auditor-1788798280-115",
+      "action_id": "link-auditor-1788798280-118",
       "result": "pending",
       "details": {
         "date": "2026-09-07",
@@ -1244,7 +1351,7 @@
       "ts": 1788704213,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1788704213-78",
+      "action_id": "dashboard-publish-1788704213-80",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -1268,7 +1375,7 @@
       "ts": 1788643102,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1788643102-77",
+      "action_id": "dashboard-publish-1788643102-79",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -1292,7 +1399,7 @@
       "ts": 1788474619,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1788474619-76",
+      "action_id": "dashboard-publish-1788474619-78",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -1316,7 +1423,7 @@
       "ts": 1788388271,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1788388271-75",
+      "action_id": "dashboard-publish-1788388271-77",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -1340,7 +1447,7 @@
       "ts": 1788329805,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1788329805-74",
+      "action_id": "dashboard-publish-1788329805-76",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -1364,7 +1471,7 @@
       "ts": 1787789440,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1787789440-73",
+      "action_id": "dashboard-publish-1787789440-75",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -1388,7 +1495,7 @@
       "ts": 1787697045,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1787697045-72",
+      "action_id": "dashboard-publish-1787697045-74",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -1412,7 +1519,7 @@
       "ts": 1787643102,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1787643102-71",
+      "action_id": "dashboard-publish-1787643102-73",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -1436,7 +1543,7 @@
       "ts": 1787587498,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1787587498-70",
+      "action_id": "dashboard-publish-1787587498-72",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -1460,7 +1567,7 @@
       "ts": 1787583982,
       "action": "publish_complete",
       "bot": "dashboard-publish",
-      "action_id": "dashboard-publish-1787583982-69",
+      "action_id": "dashboard-publish-1787583982-71",
       "result": "pending",
       "details": {
         "files_changed": 10,
@@ -1484,7 +1591,7 @@
       "ts": 1787583022,
       "action": "fix_generated",
       "bot": "homepage-fix",
-      "action_id": "homepage-fix-1787583022-106",
+      "action_id": "homepage-fix-1787583022-109",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1499,7 +1606,7 @@
       "ts": 1787582854,
       "action": "fix_generated",
       "bot": "homepage-fix",
-      "action_id": "homepage-fix-1787582854-105",
+      "action_id": "homepage-fix-1787582854-108",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1514,7 +1621,7 @@
       "ts": 1787582236,
       "action": "run_complete",
       "bot": "content-bot",
-      "action_id": "content-bot-1787582236-53",
+      "action_id": "content-bot-1787582236-54",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1529,7 +1636,7 @@
       "ts": 1787582230,
       "action": "run_start",
       "bot": "content-bot",
-      "action_id": "content-bot-1787582230-52",
+      "action_id": "content-bot-1787582230-53",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1546,7 +1653,7 @@
       "ts": 1787582229,
       "action": "run_complete",
       "bot": "content-bot",
-      "action_id": "content-bot-1787582229-51",
+      "action_id": "content-bot-1787582229-52",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1561,7 +1668,7 @@
       "ts": 1787582222,
       "action": "run_complete",
       "bot": "content-bot",
-      "action_id": "content-bot-1787582222-49",
+      "action_id": "content-bot-1787582222-50",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1576,7 +1683,7 @@
       "ts": 1787582222,
       "action": "run_start",
       "bot": "content-bot",
-      "action_id": "content-bot-1787582222-50",
+      "action_id": "content-bot-1787582222-51",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1593,7 +1700,7 @@
       "ts": 1787582212,
       "action": "run_start",
       "bot": "content-bot",
-      "action_id": "content-bot-1787582212-48",
+      "action_id": "content-bot-1787582212-49",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1610,7 +1717,7 @@
       "ts": 1787582211,
       "action": "run_complete",
       "bot": "content-bot",
-      "action_id": "content-bot-1787582211-47",
+      "action_id": "content-bot-1787582211-48",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1625,7 +1732,7 @@
       "ts": 1787582205,
       "action": "run_complete",
       "bot": "content-bot",
-      "action_id": "content-bot-1787582205-45",
+      "action_id": "content-bot-1787582205-46",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1640,7 +1747,7 @@
       "ts": 1787582205,
       "action": "run_start",
       "bot": "content-bot",
-      "action_id": "content-bot-1787582205-46",
+      "action_id": "content-bot-1787582205-47",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1657,7 +1764,7 @@
       "ts": 1787582196,
       "action": "run_start",
       "bot": "content-bot",
-      "action_id": "content-bot-1787582196-44",
+      "action_id": "content-bot-1787582196-45",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1674,7 +1781,7 @@
       "ts": 1787581950,
       "action": "run_complete",
       "bot": "content-bot",
-      "action_id": "content-bot-1787581950-43",
+      "action_id": "content-bot-1787581950-44",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1689,7 +1796,7 @@
       "ts": 1787581943,
       "action": "run_start",
       "bot": "content-bot",
-      "action_id": "content-bot-1787581943-42",
+      "action_id": "content-bot-1787581943-43",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1706,7 +1813,7 @@
       "ts": 1787581929,
       "action": "run_complete",
       "bot": "content-bot",
-      "action_id": "content-bot-1787581929-41",
+      "action_id": "content-bot-1787581929-42",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1721,7 +1828,7 @@
       "ts": 1787581886,
       "action": "run_start",
       "bot": "content-bot",
-      "action_id": "content-bot-1787581886-40",
+      "action_id": "content-bot-1787581886-41",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1744,7 +1851,7 @@
       "ts": 1787581869,
       "action": "run_complete",
       "bot": "content-bot",
-      "action_id": "content-bot-1787581869-39",
+      "action_id": "content-bot-1787581869-40",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1759,7 +1866,7 @@
       "ts": 1787581855,
       "action": "run_start",
       "bot": "content-bot",
-      "action_id": "content-bot-1787581855-38",
+      "action_id": "content-bot-1787581855-39",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1778,7 +1885,7 @@
       "ts": 1787581836,
       "action": "run_complete",
       "bot": "content-bot",
-      "action_id": "content-bot-1787581836-37",
+      "action_id": "content-bot-1787581836-38",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1793,7 +1900,7 @@
       "ts": 1787581829,
       "action": "run_start",
       "bot": "content-bot",
-      "action_id": "content-bot-1787581829-36",
+      "action_id": "content-bot-1787581829-37",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1810,7 +1917,7 @@
       "ts": 1787581820,
       "action": "run_complete",
       "bot": "content-bot",
-      "action_id": "content-bot-1787581820-35",
+      "action_id": "content-bot-1787581820-36",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1825,7 +1932,7 @@
       "ts": 1787581794,
       "action": "run_start",
       "bot": "content-bot",
-      "action_id": "content-bot-1787581794-34",
+      "action_id": "content-bot-1787581794-35",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1847,7 +1954,7 @@
       "ts": 1787581775,
       "action": "run_complete",
       "bot": "content-bot",
-      "action_id": "content-bot-1787581775-33",
+      "action_id": "content-bot-1787581775-34",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1862,7 +1969,7 @@
       "ts": 1787581769,
       "action": "run_start",
       "bot": "content-bot",
-      "action_id": "content-bot-1787581769-32",
+      "action_id": "content-bot-1787581769-33",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1879,7 +1986,7 @@
       "ts": 1787581759,
       "action": "run_complete",
       "bot": "content-bot",
-      "action_id": "content-bot-1787581759-31",
+      "action_id": "content-bot-1787581759-32",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1894,7 +2001,7 @@
       "ts": 1787581750,
       "action": "run_start",
       "bot": "content-bot",
-      "action_id": "content-bot-1787581750-30",
+      "action_id": "content-bot-1787581750-31",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1912,7 +2019,7 @@
       "ts": 1787580878,
       "action": "drafts_complete",
       "bot": "gbp-drafts",
-      "action_id": "gbp-drafts-1787580878-100",
+      "action_id": "gbp-drafts-1787580878-103",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1924,7 +2031,7 @@
       "ts": 1787580831,
       "action": "audit_complete",
       "bot": "gbp-audit",
-      "action_id": "gbp-audit-1787580831-95",
+      "action_id": "gbp-audit-1787580831-98",
       "result": "pending",
       "details": {
         "date": "2026-08-24",
@@ -1933,72 +2040,6 @@
         "critical_issues": 2
       },
       "_source_log": "gbp-audit-audit.jsonl"
-    },
-    {
-      "ts": 1787579907,
-      "action": "run_complete",
-      "bot": "content-bot",
-      "action_id": "content-bot-1787579907-29",
-      "result": "pending",
-      "details": {
-        "date": "2026-08-24",
-        "topics": 2,
-        "cities": 2,
-        "briefs": 4,
-        "drafts": 4
-      },
-      "_source_log": "content-bot-audit.jsonl"
-    },
-    {
-      "ts": 1787579903,
-      "action": "run_start",
-      "bot": "content-bot",
-      "action_id": "content-bot-1787579903-28",
-      "result": "pending",
-      "details": {
-        "date": "2026-08-24",
-        "topics": [
-          "cannabis-edibles-guide",
-          "first-time-buyer"
-        ],
-        "cities": [
-          "Brampton",
-          "Mississauga"
-        ]
-      },
-      "_source_log": "content-bot-audit.jsonl"
-    },
-    {
-      "ts": 1787579867,
-      "action": "run_complete",
-      "bot": "content-bot",
-      "action_id": "content-bot-1787579867-27",
-      "result": "pending",
-      "details": {
-        "date": "2026-08-24",
-        "topics": 1,
-        "cities": 1,
-        "briefs": 1,
-        "drafts": 1
-      },
-      "_source_log": "content-bot-audit.jsonl"
-    },
-    {
-      "ts": 1787579861,
-      "action": "run_start",
-      "bot": "content-bot",
-      "action_id": "content-bot-1787579861-26",
-      "result": "pending",
-      "details": {
-        "date": "2026-08-24",
-        "topics": [
-          "best-sativa-strains"
-        ],
-        "cities": [
-          "Brampton"
-        ]
-      },
-      "_source_log": "content-bot-audit.jsonl"
     }
   ]
 }
